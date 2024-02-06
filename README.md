@@ -15,5 +15,3 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
 - [Agregar o editar una imagen de fondo personalizada en cualquier tema](https://github.com/ElGatoFiestero/NXTheme-tutoriales/blob/main/layouts/custom-bg.md)
 
 
-- [Layout editing for unsupported applets](https://github.com/Kalyvara/NXTheme-tutorials/blob/main/layouts/uns_applets/uns_applets.md)
-- [Add or edit a custom background image to any theme](https://github.com/Kalyvara/NXTheme-tutorials/blob/main/layouts/custom-bg.md)
