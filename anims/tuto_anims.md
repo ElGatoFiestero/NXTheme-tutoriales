@@ -236,37 +236,35 @@ Ahora, con todos estos pasos, hemos creado con éxito una animación de escalado
 
 De esta manera, el ícono del juego se reducirá a su tamaño inicial cuando deje de estar seleccionado.
 
+Ahora, hay una última cosa que debemos hacer antes de realizar la diferenciación, **agregar grupos**. Más precisamente, agregar grupos al archivo `RdtBtnIconGame.bflyt` en este caso. Esto es necesario para 1) evitar bloqueos que probablemente ocurran sin hacerlo, y 2) "ordenar al `.bflyt` que no siga su comportamiento original". Sí, la redacción es incómoda y no puedo desarrollar mucho sobre los grupos de todos modos, ya que aún no comprendo completamente cómo funcionan; simplemente ten en cuenta que el siguiente paso es obligatorio. Básicamente, necesitamos crear un grupo para cada `.bflan` con el que hemos manipulado, es decir, `RdtBtnIconGame_Active.bflan` y `RdtBtnIconGame_Inactive.bflan`.
 
-Now, there is a last thing we must do before diffing, **adding groups**. More precisely, adding groups to the `RdtBtnIconGame.bflyt` file in this case. This is necessary to 1) prevent crashes that will very likely happen without doing so, and 2) "order the `.bflyt` to not follow its vanilla behavior". Yes, the phrasing is awkward and I can't develop much about groups anyway since I still don't grasp entirely how they function ; just keep in mind that the following step is mandatory. Basically, we need to create a group for each `.bflan` we tampered with, namely `RdtBtnIconGame_Active.bflan` and `RdtBtnIconGame_Inactive.bflan`.
-
-15. Go back to the `.szs` box window and open up `RdtBtnIconGame.bflyt`. Don't mind the gray area on the right, just add a new group as shown in the image below, and make sure to **rename it the same name we defined in step 6.b.** (i.e. `custom_G_Active`). Then select the `Panes` item in the rectangle area below the list and type the panes listed in the `RdtBtnIconGame_Active.bflan` file. Each pane must be separated with a line break.
+15. Vuelve a la ventana del cuadro `.szs` y abre `RdtBtnIconGame.bflyt`. No te preocupes por el área gris a la derecha, simplemente agrega un nuevo grupo como se muestra en la imagen a continuación y asegúrate de **renombrarlo con el mismo nombre que definimos en el paso 6.b.** (es decir, `custom_G_Active`). Luego, selecciona el elemento `Panes` en el área rectangular debajo de la lista e ingresa los paneles enumerados en el archivo `RdtBtnIconGame_Active.bflan`. Cada panel debe separarse con un salto de línea.
 
 | ![Groups (1)](tuto9.jpg "Groups (1)") | ![Groups (2)](tuto10.jpg "Groups (2)") |
-| ------------------------------------- | --------------------------------------------------- |
-| Adding a group                        | Enumerating panes in the group                                   |
+| ------------------------------------- | ---------------------------------------- |
+| Agregar un grupo                      | Enumerar paneles en el grupo                   |
 
-16. Repeat the operation for `RdtBtnIconGame_Inactive.bflan`. Same process except the group needs to be called `custom_G_Inactive`.
+16. Repite la operación para `RdtBtnIconGame_Inactive.bflan`. Mismo proceso, excepto que el grupo debe llamarse `custom_G_Inactive`.
 
-And with this, we are mostly done. Now is finally the time for diffing. **Make sure to save the edits in all the opened windows.**
+Y con esto, ya casi hemos terminado. Ahora finalmente es el momento de realizar la diferenciación. **Asegúrate de guardar las ediciones en todas las ventanas abiertas.**
 
-17. Go back to the `.szs` box window, select `Tools` in the top menu, then the `This is the edited szs` option. You'll be prompted with a new window. Browse the unedited `ResidentMenu.szs` that we've been keeping in `Desktop/`, leave the checkbox as it is and click on `Generate diff`. 
+17. Vuelve a la ventana del cuadro `.szs`, selecciona `Herramientas` en el menú superior y luego la opción `Este es el szs editado`. Se abrirá una nueva ventana. Busca el `ResidentMenu.szs` sin editar que hemos estado guardando en `Desktop/`, deja la casilla de verificación como está y haz clic en `Generar diff`.
 
 ![Diffing](tuto11.jpg "Diffing")
 
-  
-This will output a `.json` file we will be using to compile a `.nxtheme` with Switch Theme Injector. Finally done!
+Esto generará un archivo `.json` que utilizaremos para compilar un `.nxtheme` con Switch Theme Injector. ¡Finalmente terminado!
 
-![Result](home.jpg "Result")
+![Resultado](home.jpg "Resultado")
 
-(hovered game icon scaling has been reduced to `1.2` since it was overlapping, I also hid the game title text)
+(Se redujo la escala al pasar el ratón sobre el ícono del juego a `1.2` ya que se superponía, también oculté el texto del título del juego)
 
-*NB: Looking into the output `.json` code, you can see that groups were added at the end of the `RdtBtnIconGame.bflyt` section. There is also an added `Anims` section at the very end of the source code. Therefore, you totally could make animations without using Layout Editor at all... if you're willing to mess around with the whole `Anims` section's own syntax, that is.*
+*NB: Al analizar el código `.json` de salida, puedes ver que se agregaron grupos al final de la sección `RdtBtnIconGame.bflyt`. También hay una sección `Anims` agregada al final del código fuente. Por lo tanto, podrías hacer animaciones sin usar Layout Editor en absoluto... si estás dispuesto a jugar con la propia sintaxis de toda la sección `Anims`.* 
 
-| ![AddGroups section](tuto12.jpg "AddGroups section") | ![Anims section](tuto13.jpg "Anils section") |
-| ---------------------------------------------------- | -------------------------------------------- |
-| `AddGroups` section                                  | `Anims` section               |
+| ![Sección AddGroups](tuto12.jpg "Sección AddGroups") | ![Sección Anims](tuto13.jpg "Sección Anims") |
+| ---------------------------------------------------- | ---------------------------------------------- |
+| `Sección AddGroups`                                   | `Sección Anims`                      |
 
-## <a href="#further"></a>V. Going further
+## <a href="#further"></a>V. Iendo más lejos
 
 
 ### <a href="#further1"></a>V.1. Active and Inactive states
