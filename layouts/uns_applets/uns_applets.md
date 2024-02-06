@@ -7,7 +7,7 @@ Es posible personalizar prácticamente todos los menús que no son admitidos ofi
 
 ## Tabla de contenidos
 
-- **[I. Applets qlaunch](#i-qlaunch-applets)**
+- **[I. Applets qlaunch](#i-applets-qlaunch)**
 - **[II. Otros applets](#ii-other-applets)**
 - **[III. Tutorial](#iii-tutorial)**
 	- [III.1. Extracción del archivo .szs](#iii1-extracting-the-szs)
