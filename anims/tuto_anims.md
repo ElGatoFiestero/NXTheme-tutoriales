@@ -178,7 +178,7 @@ Ahora, me disculpo de antemano, pero tendrás que seguir mis instrucciones a cie
 
 	6.b. Expande la entrada `Groups` haciendo clic en la flecha izquierda y establece el campo `[0]` en `custom_G_Active` (el valor no es relevante aquí, así que puede ser cualquier cosa).
 
-	6.c. En el panel izquierdo, haz clic en la segunda entrada, `Sección Pai1` y establece `FrameSize` en `9999`.
+	6.c. En el panel izquierdo, haz clic en en el segundo entrada, `Sección Pai1` y establece `FrameSize` en `9999`.
 
   Si has hecho todo correctamente, esto debería verse así.
 
@@ -206,36 +206,36 @@ Ahora, los siguientes pasos definirán la animación de escalado que queremos lo
 	 - `KeyFrames` es... autoexplicativo, supongo. Esto nos permite dividir nuestra animación en fotogramas clave definidos correctamente.
 	 - `DataType` se refiere al tipo de nuestras entradas en el campo `KeyFrames`. **Solo ten en cuenta que siempre debe configurarse en `2`** (lo que significa `float`). Aunque no es relevante aquí, puedes seguir [este enlace](https://layoutdocs.themezer.net/guide/layouts/usd-sections/) si quieres saber un poco más.
 
-
-11. We will define our values as,
+11. Definiremos nuestros valores de la siguiente manera,
 
 	11.a. `AnimationTarget` = `6`
 
 	11.b. `DataType` = `2`
 
-Leave the rest unchanged. Value `6` for `AnimationTarget` means *"scale along the x-axis"* (horizontally).
+Deja el resto sin cambios. El valor `6` para `AnimationTarget` significa *"escalar a lo largo del eje x"* (horizontalmente).
 
 ![AnimationTarget and DataType](tuto7.jpg "AnimationTarget and DataType")
 
-12. Select the `KeyFrames` item and click on the dots button that shows up. A new window will pop up in which we can add our key frames using the `Add` / `Remove` buttons at the bottom. Do as shown below.
+12. Selecciona el elemento `KeyFrames` y haz clic en el botón de puntos que aparece. Se abrirá una nueva ventana en la que podemos agregar nuestros fotogramas clave usando los botones `Agregar` / `Quitar` en la parte inferior. Hazlo como se muestra a continuación.
 
 ![KeyFrames (Active)](tuto6.jpg "KeyFrames (Active)")
 
-This is how you should read this: at frame `0`, value is `1`, meaning that at the initial frame, the `N_Root` pane will keep its base ratio **along its horizontal axis**. Then, **up until frame `8`**, the pane will *progressively* scale up until reaching a `1.4` factor.
+Así es como debes leer esto: en el fotograma `0`, el valor es `1`, lo que significa que en el fotograma inicial, el panel `N_Root` mantendrá su relación base **a lo largo de su eje horizontal**. Luego, **hasta el fotograma `8`**, el panel se escalonará *progresivamente* hasta alcanzar un factor `1.4`.
 
-*NB1: Note that we defined earlier the `FrameSize` to be `9999` in the `Pai1 section`. We're good as long as this value is superior to the `Keyframe` maximum value, which is `8` here.*
+*NB1: Ten en cuenta que definimos anteriormente `FrameSize` en `9999` en la `Sección Pai1`. Estamos bien siempre que este valor sea superior al valor máximo de `Keyframe`, que es `8` aquí.*
 
-*NB2: The `Blend` field refers to the function's slope (as in mathematics) that guides the animation. In layman's terms, it conditions the pace at which a pane will travel from one frame to another. Since the `Blend` values aren't documented and hard to figure out, I won't bother at all about it. My personal advice is always setting the value to `0`, which seems to make the pane's animation follow a simple linear function.*
+*NB2: El campo `Blend` se refiere a la pendiente de la función (como en matemáticas) que guía la animación. En términos sencillos, condiciona la velocidad a la que un panel se desplazará de un fotograma a otro. Dado que los valores de `Blend` no están documentados y son difíciles de entender, no me preocuparé en absoluto por ello. Mi consejo personal es siempre establecer el valor en `0`, lo que parece hacer que la animación del panel siga una función lineal simple.*
 
-13. Repeat the 10th, 11th and 12th steps to the second `[Entry]` under `FLPA`, but the `AnimationTarget` value should be `7` here instead of `6` here, meaning *"scale along the y-axis"* (vertically).
+13. Repite los pasos 10, 11 y 12 para la segunda `[Entrada]` bajo `FLPA`, pero el valor de `AnimationTarget` debe ser `7` aquí en lugar de `6`, lo que significa *"escalar a lo largo del eje y"* (verticalmente).
 
-Now with all of these steps, we successfully made a scaling up animation when the game icon is **selected**. But what about when the icon is **being unselected**? Well, Switch's UI also offers us the possibility to tamper with that. If not done, the icon will actually keep its `1.4` factor **even after being unhovered**. So if we want to get things done properly, what follows is pretty much a mandatory thing to do. So, back to square one,
+Ahora, con todos estos pasos, hemos creado con éxito una animación de escalado cuando el ícono del juego está **seleccionado**. Pero ¿qué pasa cuando el ícono está **deseleccionado**? Bueno, la interfaz de usuario de Switch también nos ofrece la posibilidad de modificar eso. Si no se hace, el ícono realmente mantendrá su factor `1.4` **incluso después de dejar de estar seleccionado**. Entonces, si queremos hacer las cosas correctamente, lo que sigue es prácticamente obligatorio hacerlo. Así que, volvamos a empezar,
 
- 14. Go back to the little box window that lists the `.szs` content and search for `RdtBtnIconGame_Inactive.bflan`. Open this file and repeat all the steps above starting from step 6. **At step 6.b., change the `[0]` value to `custom_G_Inactive`** (it doesn't actually matter but it's for convenience). For the animation, we will do things the other way around, so step 12 should look like this.
+ 14. Vuelve a la pequeña ventana que lista el contenido del archivo `.szs` y busca `RdtBtnIconGame_Inactive.bflan`. Abre este archivo y repite todos los pasos anteriores a partir del paso 6. **En el paso 6.b., cambia el valor `[0]` a `custom_G_Inactive`** (en realidad no importa, pero es por conveniencia). Para la animación, haremos las cosas al revés, así que el paso 12 debería verse así.
 
 ![KeyFrames (Inactive)](tuto8.jpg "KeyFrames (Inactive)")
 
-This way, the game icon will scale down to its initial size when being unselected.
+De esta manera, el ícono del juego se reducirá a su tamaño inicial cuando deje de estar seleccionado.
+
 
 Now, there is a last thing we must do before diffing, **adding groups**. More precisely, adding groups to the `RdtBtnIconGame.bflyt` file in this case. This is necessary to 1) prevent crashes that will very likely happen without doing so, and 2) "order the `.bflyt` to not follow its vanilla behavior". Yes, the phrasing is awkward and I can't develop much about groups anyway since I still don't grasp entirely how they function ; just keep in mind that the following step is mandatory. Basically, we need to create a group for each `.bflan` we tampered with, namely `RdtBtnIconGame_Active.bflan` and `RdtBtnIconGame_Inactive.bflan`.
 
