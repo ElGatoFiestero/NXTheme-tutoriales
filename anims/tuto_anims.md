@@ -266,47 +266,48 @@ Esto generará un archivo `.json` que utilizaremos para compilar un `.nxtheme` c
 
 ## <a href="#further"></a>V. Iendo más lejos
 
+### <a href="#further1"></a>V.1. Estados Activo e Inactivo
 
-### <a href="#further1"></a>V.1. Active and Inactive states
+Por ejemplo, si quisiéramos animar el botón de la aplicación de configuración en la pantalla de inicio, habríamos buscado `RdtBtnSet_Active.bflan` y `RdtBtnSet_Inactive.bflan`. De hecho, algunos elementos de la interfaz de usuario vienen en pares de archivos `.bflan` llamados `[nombre_bflyt_asociado]_Active.bflan` / `[nombre_bflyt_asociado]_Inactive.bflan`. Estos archivos `.bflan` dictan el estado de los paneles contenidos en `[nombre_bflyt_asociado].bflyt`, cuando están siendo seleccionados por el cursor (Activo) y cuando no lo están (Inactivo). Hay un par de archivos `.bflan` más siguiendo la misma lógica, como los archivos `[nombre_bflyt_asociado]_FocusKey.bflan` / `[nombre_bflyt_asociado]_UnfocusKey.bflan`, pero no los discutiré aquí.
 
-For example, if we wanted to animate the settings applet button on the home screen, we would have searched for `RdtBtnSet_Active.bflan` and `RdtBtnSet_Inactive.bflan`. In fact, a few UI elements come as a pair of `.bflan` files named `[associated_bflyt_name]_Active.bflan` / `[associated_bflyt_name]_Inactive.bflan`. These `.bflan` dictate the state of the panes contained in `[associated_bflyt_name].bflyt`, when they are being selected by the cursor (Active) and unselected (Inactive). There are a couple more similar `.bflan` files following the same logic, like the `[associated_bflyt_name]_FocusKey.bflan` / `[associated_bflyt_name]_UnfocusKey.bflan` ones, but I won't discuss that here.
+También vale la pena señalar que las ediciones realizadas para los estados Inactivos sobrescribirán efectivamente los datos USD que hayas definido en tu código `.json` (por ejemplo, la posición de un panel, colores, etc.). Por ejemplo, si has establecido la coordenada x del botón del álbum en `660px` en tu código `.json` mientras que está definida como `680px` en su `.bflan` Inactivo, el valor de `680px` tomará prioridad sobre el valor de `660px` y se aplicará.
 
-It's also worth noting that the edits made for Inactive states will actually overwrite the USD data you might have defined in your `.json` code (e.g. pane's position, colors, etc.). For example, if you've set the album button's x-coordinate to `660px` in your `.json` code while it is defined as `680px` in its Inactive `.bflan`, the `680px` value will take priority over the `660px` one and be applied.
+### <a href="#further2"></a>V.2. Animaciones en bucle
 
-### <a href="#further2"></a>V.2. Looping animations
+Es posible hacer un bucle para una animación. Tal cosa se puede ver en el [diseño JAG](https://themezer.net/layouts/homemenu/JAG-Layout-2) de [Migush](https://themezer.net/creators/123859829453357056) donde los íconos de juego seleccionados siguen una animación de escala hacia arriba y hacia abajo en reposo. Todo lo que tienes que hacer para hacer una animación en bucle es establecer el valor de `Flags` en `1` (mientras que `0` desactiva el bucle) en la sección `Pai1` de un archivo `.bflan`. Desafortunadamente, **no se pueden lograr animaciones más complejas que combinen múltiples transformaciones de manera adecuada**, ya que la bandera se aplica a todo el `.bflan`. Para ser más explícito, un ícono de juego no podría moverse `10px` hacia arriba Y LUEGO seguir una animación en bucle de escala hacia arriba y hacia abajo. En tal caso, el desplazamiento lineal también se repetiría.
 
-It is possible to make a loop for an animation. Such a thing can be seen in [Migush](https://themezer.net/creators/123859829453357056)'s [JAG layout](https://themezer.net/layouts/homemenu/JAG-Layout-2) where selected game icons follow a scale up and down idle animation. All you have to do to make a looping animation is to set the `Flags` value to `1` (while `0` disables the loop) in the `Pai1 section` of a `.bflan` file. Unfortunately, **more complex animations that combine multiple transformations can't be achieved properly** since the flag is applied to the whole `.bflan`. To be more explicit, a game icon wouldn't be able to move `10px` above AND THEN follow a looping scale up and down. In such a case, the linear displacement would also be looped.
+### <a href="#further3"></a>V.3. Animaciones de fundido de entrada y salida
 
-### <a href="#further3"></a>V.3. Fade in and fade out animations
+Aunque es demasiado complicado hacer animaciones de cambio de color (como dije en mi discurso de introducción), aún podemos jugar con el canal alfa (transparencia) de un panel. Si lo has adivinado, esto nos permite hacer animaciones de fundido de entrada y salida de manera muy sencilla.
 
-While it's too convoluted to make changing colors animations (as I said in my introduction speech), we still can tinker with a pane's alpha (transparency) channel. If you've guessed it, this allows us to very easily make fade in and fade out animations.
+Digamos que quiero un cursor parpadeante para el menú de navegación en la aplicación de configuración. Esta vez, cargaremos `Set.szs` en Layout Editor. Aquí están los pasos,
 
-Let's say I want a blinking cursor for the navigation menu in the settings applet. This time, we'll load up `Set.szs` in Layout Editor. Here are the steps,
+1. Abre `BtnNav_Root_Active.bflan`. **Como siempre cuando creas animaciones personalizadas,** haz las modificaciones adecuadas en las secciones `Pat1` y `Pai1`. Agrega la entrada `N_BtnFocusKey` (panel del cursor) a la lista, crea una entrada **`FLVC` (¡no `FLPA`!)** justo debajo de ella, y luego otra entrada debajo de `FLVC`. Elegí hacer mis fotogramas clave como se muestra a continuación. Observa que el valor de `AnimationTarget` es `16` aquí.
+2. También editaremos `BtnNav_Root_Inactive.bflan`, de lo contrario, al navegar por las pestañas, la animación del cursor se interrumpirá y se bloqueará en un cierto fotograma (mismo comportamiento que en nuestra animación anterior del ícono del juego). Considerando eso, simplemente "reiniciamos" el estado de `N_BtnFocusKey` (después de agregar este panel a la lista) estableciendo su canal alfa en `0` en el fotograma `0`.
+3. Una vez más, para cada archivo `.bflan`, crea grupos con nombres adecuados en la sección `RootGroup` de `BtnNav_Root.bflyt`. **No olvides guardar todas tus ediciones.**
+4. Realiza la diferenciación de diseño, compila e instala, y listo: ahora tienes un cursor parpadeante.
 
-1. Open `BtnNav_Root_Active.bflan`. **As always when creating custom animations,** do the proper modifications to the `Pat1` and `Pai1` sections. Add the `N_BtnFocusKey` entry (cursor pane) to the list, create a **`FLVC` entry** (not `FLPA`!) right under it, and then another entry under `FLVC`. I chose to make my key frames as shown below. Notice that the `AnimationTarget` value is `16` here.
-2. We'll also edit `BtnNav_Root_Inactive.bflan`, otherwise navigating the tabs will interrupt the cursor animation and lock it to a certain frame (same behavior as in our previous game icon animation). Considering that, we simply "reset" `N_BtnFocusKey`'s state (after adding this pane to the list) by setting its alpha channel to `0` at frame `0`.
-3. Then again, for each `.bflan` file, create properly named groups in the `RootGroup` section of `BtnNav_Root.bflyt`. **Don't forget to save all your edits.**
-4. Layout diff, compile and install, and there you go: now you have a blinking cursor.
+| ![Configuración (1)](tuto14.jpg "Configuración (1)") | ![Configuración (2)](tuto15.jpg "Configuración (2)") |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| Agregando entrada `FLVC` (Activo)                        | Agregando entrada `FLVC` (Inactivo)                      |
 
-| ![Settings (1)](tuto14.jpg "Settings (1)") | ![Settings (2)](tuto15.jpg "Settings (2)") |
-| ------------------------------------------ | ------------------------------------------ |
-| Adding `FLVC` entry (Active)               | Adding `FLVC` entry (Inactive)             |
+### <a href="#further4"></a>V.4. Fondos animados
 
-### <a href="#further4"></a>V.4. Animated backgrounds
+No hay una manera *correcta* ni fácil conocida de crear fondos de pantalla animados. Switch Theme Injector solo admite archivos `.dds` y `.jpg`.
+Una solución alternativa sería animar el panel que contiene tu imagen de fondo personalizada. Esto *realmente* funciona, y ya hay algunos temas que lo han logrado. Para hacerlo, trabajando con `ResidentMenu.szs`, necesitas agregar `L_BgNml` a la lista de paneles en `RdtBase_Enter.bflan` y realizar tus ediciones según tu conveniencia. Sin embargo, esta solución tiene sus limitaciones:
 
-There is no *proper* nor easy known way to make animated backgrounds. Switch Theme Injector only supports `.dds` and `.jpg` files.
-An alternative solution would be to animate the pane that contains your custom background image. That *indeed* works, and there are a few themes that already have achieved this out there. To do so, working with `ResidentMenu.szs`, you need to add `L_BgNml` to the pane list in `RdtBase_Enter.bflan` and make your edits to your convenience. However, this solution has its limitations:
+- Aún estás limitado a una imagen de fondo estática, ya que no hay soporte para imágenes animadas de ningún tipo ni para archivos de video.
+- `RdtBase_Enter.bflan` contiene la animación de desbloqueo de la pantalla de inicio. Intenta hacer un bucle con tu animación usando el elemento `Flags` y tal vez puedas adivinar lo que sucederá (bucle de inicio, fallas en la interfaz de usuario y el sonido). La única forma de emular el bucle es duplicar tu patrón de animación a través de una cantidad absurda de fotogramas clave. [Zhi](https://themezer.net/creators/239384767785730048) realmente hizo esto en su [tema Patterns](https://themezer.net/packs/Patterns.-58f) con un límite de 64000 fotogramas clave (lo que equivale a unos 8 minutos). Si estás interesado en aprender todo el proceso, puedes leer [su propia documentación aquí](https://github.com/zzzribas/Patterns/wiki). Como nota adicional, es posible que desees estar atento a las próximas versiones de Zhi, ya que siempre tiene ideas interesantes.
 
-- You're still stuck with a static background image since there is no support for animated images of any kind, nor for video files
-- `RdtBase_Enter.bflan` contains the home screen unlocking animation. Try to loop your animation using the `Flags` item and maybe you can guess what will happen (boot loop, UI and sound glitches). The only thing you can do to sort of emulate the loop is to duplicate your animation pattern all the way through an absurd amount of key frames. [Zhi](https://themezer.net/creators/239384767785730048) actually did this in his [Patterns theme](https://themezer.net/packs/Patterns.-58f) with a frame limit of 64000 (which makes it about 8 minutes). If you are interested in learning the whole process, you can read through [his own documentation there](https://github.com/zzzribas/Patterns/wiki). As a side note, you might want to stay tuned for Zhi's next releases because he comes up with quite some good ideas!
+Para otros applets (por ejemplo, configuración, página de usuario, etc.), en realidad no hay ninguna manera conocida de aplicar algún tipo de comportamiento de animación a una imagen de fondo personalizada.
 
-For other applets (e.g. settings, user page, etc.), there is actually no known way at all to apply any kind of animation behavior to a custom background image.
 
-### <a href="#further6"></a>V.5. Animations *may* overwrite things</a>
 
-If you've spent some time editing `.json` layouts, you may have encountered cases where, no matter what you do, the changes you make to a pane (e.g. colors, position, etc.), even while having the `C_W` and `C_B` patches enabled, lead to no result. **In such cases, chances are that an animation is overwriting your edits.**
+### <a href="#further6"></a>V.5. Las animaciones *pueden* sobrescribir cosas</a>
 
-To illustrate this, one notable case is the Redownload Software button at the bottom of the full launcher applet's main page (`Flauncher.szs`). The panes corresponding to this button are `L_Shop` and `T_Empty`, and these won't hide by simply attaching the `Visible: false` property to them. This is due to the `FLVI` entries within `FlcCntMain_Type.bflan` that overwrite any attempt made in your `.json` code. To sort this out, the `KeyFrames` values under each `FLVI` entry must be set to `0` (`1` by default).
+Si has pasado algún tiempo editando diseños en formato `.json`, es posible que te hayas encontrado con casos en los que, sin importar lo que hagas, los cambios que realices en un panel (por ejemplo, colores, posición, etc.), incluso cuando tienes habilitados los parches `C_W` y `C_B`, no tengan ningún efecto. **En tales casos, es probable que una animación esté sobrescribiendo tus ediciones.**
+
+Para ilustrar esto, un caso notable es el botón de "Volver a descargar software" en la parte inferior de la página principal de la aplicación completa del lanzador (`Flauncher.szs`). Los paneles correspondientes a este botón son `L_Shop` y `T_Empty`, y estos no se ocultarán simplemente adjuntando la propiedad `Visible: false` a ellos. Esto se debe a las entradas `FLVI` dentro de `FlcCntMain_Type.bflan` que sobrescriben cualquier intento hecho en tu código `.json`. Para solucionar esto, los valores de `KeyFrames` bajo cada entrada `FLVI` deben establecerse en `0` (`1` de forma predeterminada).
 
 | ![Shop (1)](tuto16.jpg "Shop (1)") | ![Full launcher (2)](tuto17.jpg "Shop (2)") |
 | ------------------------------------------ | ------------------------------------------ |
@@ -314,95 +315,94 @@ To illustrate this, one notable case is the Redownload Software button at the bo
 
 | ![Full launcher (1)](flaunch1.jpg "Full launcher (1)") | ![Full launcher (2)](flaunch2.jpg "Full launcher (2)") |
 | ------------------------------------------ | ------------------------------------------ |
-| Visible Redownload Software button               | Hidden Redownload Software button             |
+| Botón de "Volver a descargar software" visible     | Botón de "Volver a descargar software" oculto            |
 
-To give another example, a highlighted game in my Spotify Deck home menu has a gray rounded card around its icon. These are `P_BtnBase` panes found in `RdtBtnIconGame.bflyt`. They actually have some transparency by default, meaning that simply changing their colors in your `.json` won't render as intended. I made them full opaque by changing the `KeyFrames` value under the `P_BtnBase`'s `FLVC` entry to `255`.
+Como otro ejemplo, un juego destacado en el menú principal de mi Spotify Deck tiene una tarjeta redonda gris alrededor de su icono. Estos son paneles `P_BtnBase` que se encuentran en `RdtBtnIconGame.bflyt`. En realidad, tienen cierta transparencia por defecto, lo que significa que simplemente cambiar sus colores en tu código `.json` no se representará como se esperaba. Los hice completamente opacos cambiando el valor de `KeyFrames` bajo la entrada `FLVC` de `P_BtnBase` a `255`.
 
-*NB: Notice that I never mentioned the `FLVI PaiTag` up to now. It's because I don't actually know what they stand for as their occurrences are rather rare, therefore had no opportunity to actually figure them out (apart from hiding the shop button in the full launcher).*
+*NB: Observa que nunca mencioné la `FLVI PaiTag` hasta ahora. Es porque realmente no sé qué representan, ya que sus ocurrencias son bastante raras y, por lo tanto, no tuve la oportunidad de descifrarlas realmente (excepto para ocultar el botón de la tienda en el lanzador completo).*
 
-### <a href="#further6"></a>V.6. Useful tables
+### <a href="#further6"></a>V.6. Tablas útiles
 
-#### V.6.a. PaiTag entries
+#### V.6.a. Entradas de PaiTag
 
-`AnimationTarget` values and subsequent animation behavior change depending on the defined `PaiTag`.
+Los valores de `AnimationTarget` y el comportamiento de la animación subsiguiente cambian dependiendo del `PaiTag` definido.
 
-| `PaiTag` | Used for                |
+| `PaiTag` | Usado para                |
 | -------- | --------------------- |
-| `FLPA`   | basic transformations |
-| `FLVC`     | vertex colors         |
-| `FLEU`     | USD patches           |
-| `FLVI`     | *unknown*           |
-| `FLMC`     | *unknown*                      |
+| `FLPA`   | transformaciones básicas |
+| `FLVC`     | colores de vértices         |
+| `FLEU`     | parches USD           |
+| `FLVI`     | *desconocido*           |
+| `FLMC`     | *desconocido*                      |
 
 #### V.6.b. AnimationTarget
 
 ##### FLPA PaiTag
 
-Related to basic transformations listed below.
-Expected value type for `KeyFrames` is `float`.
+Relacionado con las transformaciones básicas enumeradas a continuación.
+El tipo de valor esperado para `KeyFrames` es `float`.
 
-| `AnimationTarget` (`FLPA PaiTag`) | Transformation                     | Unit    | 
+| `AnimationTarget` (`FLPA PaiTag`) | Transformación                     | Unidad    | 
 | --------------------------------- | ---------------------------------- | --- |
-| `0`                               | x-axis translation                 | px    |
-| `1`                               | y-axis translation                 | px    |
-| `2`                               | *unknown*                                   | /    |
-| `3`                               | y-axis scale **down**                                   | px    |
-| `4`                               | z-axis rotation (clockwise)        | degrees    |
-| `5`                               | z-axis rotation (counterclockwise) | degrees    |
-| `6`                               | x-axis scale   | none    |
-| `7`                               | y-axis scale   | none    |
-| `8`                               | pane size along x-axis             | px    |
-| `9`                               | pane size along y-axis             | px    |
+| `0`                               | traslación en el eje x             | px    |
+| `1`                               | traslación en el eje y             | px    |
+| `2`                               | *desconocido*                                   | /    |
+| `3`                               | escala en el eje y **hacia abajo**                                   | px    |
+| `4`                               | rotación en el eje z (sentido horario)        | grados    |
+| `5`                               | rotación en el eje z (sentido antihorario) | grados    |
+| `6`                               | escala en el eje x   | ninguna    |
+| `7`                               | escala en el eje y   | ninguna    |
+| `8`                               | tamaño del panel a lo largo del eje x             | px    |
+| `9`                               | tamaño del panel a lo largo del eje y             | px    |
 
-- Translations are relative to the (x, y) coordinates defined in your `.json` layout, so a (0, 0) translation means that the pane keeps its base position
-- Scaling is also relative to what is defined in your `.json` layout. To keep your pane size at a 1:1 ratio, `KeyFrames` values should be set to `1`
-- Value `3` for `AnimationTarget` scales the pane down along the y-axis by a certain px amount (no cropping involved), **although** it needs further testing to be completely sure. It seems to work with absolute values within `KeyFrames`, meaning that negative values have the same effect as if they were positive
-- Value `2` for `AnimationTarget` also needs further testing. This time I couldn't figure out what it actually does. An obvious guess would be that it scales the pane down along the x-axis, but my trial and error sessions haven't given any luck towards that expected result
+- Las traslaciones son relativas a las coordenadas (x, y) definidas en tu diseño `.json`, por lo que una traslación (0, 0) significa que el panel mantiene su posición base.
+- La escala también es relativa a lo que se define en tu diseño `.json`. Para mantener el tamaño del panel en una relación 1:1, los valores de `KeyFrames` deben establecerse en `1`.
+- El valor `3` para `AnimationTarget` escala el panel hacia abajo a lo largo del eje y por una cierta cantidad de px (sin recorte involucrado), **aunque** necesita más pruebas para estar completamente seguro. Parece funcionar con valores absolutos dentro de `KeyFrames`, lo que significa que los valores negativos tienen el mismo efecto que si fueran positivos.
+- El valor `2` para `AnimationTarget` también necesita más pruebas. En esta ocasión, no pude entender realmente qué hace. Una suposición obvia sería que escala el panel hacia abajo a lo largo del eje x, pero mis sesiones de prueba y error no han dado suerte hacia ese resultado esperado.
 
 ##### FLVC PaiTag
 
-Related to vertex colors transformations listed below.
-`KeyFrames` values range from 0 (invisible color channel) to 255 (opaque color channel).
+Relacionado con transformaciones de colores de vértices enumeradas a continuación.
+Los valores de `KeyFrames` van desde 0 (canal de color invisible) hasta 255 (canal de color opaco).
 
-| `AnimationTarget` (`FLVC PaiTag`) | Channel | Corner    | 
+| `AnimationTarget` (`FLVC PaiTag`) | Canal | Esquina    | 
 | --------------------------------- | ------- | --- |
-| `16`                             | alpha        | whole pane    |
+| `16`                             | alfa        | todo el panel    |
 
-*NB: I haven't tested this thoroughly for RGB channels (now you're probably seeing how annoying it is), but my guess is that `AnimationTarget` values follow a fairly simple and similar pattern: `0`, `1`, `2` = R, G, B for a specific pane corner, `3` = alpha for that same corner ; `4`, `5`, `6` = R, G, B for another corner, `7` = alpha for this second corner, ..., `16` = alpha channel for the whole pane.*
+*NB: No he probado esto a fondo para los canales RGB (ahora probablemente estás viendo lo molesto que es), pero mi suposición es que los valores de `AnimationTarget` siguen un patrón bastante simple y similar: `0`, `1`, `2` = R, G, B para una esquina específica del panel, `3` = alfa para esa misma esquina; `4`, `5`, `6` = R, G, B para otra esquina, `7` = alfa para esta segunda esquina, ..., `16` = canal alfa para todo el panel.*
 
-#### V.6.c. Notable files
+#### V.6.c. Archivos notables
 
-##### ResidentMenu.szs (home screen)
+##### ResidentMenu.szs (pantalla de inicio)
 
-| `.bflyt`           | UI element                 | Notable `.bflan` files                         |
+| `.bflyt`           | Elemento de la interfaz de usuario   | Archivos `.bflan` notables                         |
 | ------------------ | -------------------------- | ---------------------------------------------- |
-| `RdtBase`          | entire home screen menu     | `RdtBase_Enter` (animation upon unlocking the console to home screen)                               |
-| `RdtBtnIconGame`   | game button                | `RdtBtnIconGame_Active`, `RdtBtnGame_Inactive` |
-| `RdtBtnFullLauncher` | all software applet button | `RdtBtnFullLauncher_Active`, `RdtBtnFullLauncher_Inactive`                                               |
-| `RdtBtnPvr`        | album applet button        | `RdtBtnPvr_Active`, `RdtBtnPvr_Inactive`       |
-| `RdtBtnCtrl`       | controllers applet button  | `RdtBtnCtrl_Active`, `RdtBtnCtrl_Inactive`     |
-| `RdtBtnSet`        | settings applet button     | `RdtBtnSet_Active`, `RdtBtnSet_Inactive`       |
-| `RdtBtnPow`        | power button               | `RdtBtnPow_Active`, `RdtBtnPow_Inactive`       |
-| `RdtBtnMyPage`        | user profile button               | `RdtBtnMyPage_Active`, `RdtBtnMyPage_Inactive`       |
+| `RdtBase`          | menú completo de la pantalla de inicio     | `RdtBase_Enter` (animación al desbloquear la consola hasta la pantalla de inicio)                               |
+| `RdtBtnIconGame`   | botón de juego                | `RdtBtnIconGame_Active`, `RdtBtnGame_Inactive` |
+| `RdtBtnFullLauncher` | botón de la aplicación de software completa | `RdtBtnFullLauncher_Active`, `RdtBtnFullLauncher_Inactive`                                               |
+| `RdtBtnPvr`        | botón de la aplicación de álbum        | `RdtBtnPvr_Active`, `RdtBtnPvr_Inactive`       |
+| `RdtBtnCtrl`       | botón de la aplicación de controladores  | `RdtBtnCtrl_Active`, `RdtBtnCtrl_Inactive`     |
+| `RdtBtnSet`        | botón de la aplicación de configuración     | `RdtBtnSet_Active`, `RdtBtnSet_Inactive`       |
+| `RdtBtnPow`        | botón de encendido               | `RdtBtnPow_Active`, `RdtBtnPow_Inactive`       |
+| `RdtBtnMyPage`        | botón de perfil de usuario               | `RdtBtnMyPage_Active`, `RdtBtnMyPage_Inactive`       |
 
 
-##### Set.szs (settings applet)
+##### Set.szs (aplicación de configuración)
 
-| `.bflyt`      | UI element          | Notable `.bflan` files                       |
+| `.bflyt`      | Elemento de la interfaz de usuario          | Archivos `.bflan` notables                       |
 | ------------- | ------------------- | -------------------------------------------- |
-| `BtnNav_Root` | Navigation menu tab | `BtnNav_Root_Active`, `BtnNav_Root_Inactive` |
+| `BtnNav_Root` | pestaña del menú de navegación | `BtnNav_Root_Active`, `BtnNav_Root_Inactive` |
 
-##### Flauncher.szs (all software applet)
+##### Flauncher.szs (aplicación de software completa)
 
-| `.bflyt`             | UI element                                 | Notable `.bflan` files                             |
+| `.bflyt`             | Elemento de la interfaz de usuario                              | Archivos `.bflan` notables                             |
 | -------------------- | ------------------------------------------ | -------------------------------------------------- |
-| `FlcBtnIconGame`     | game icon in the main and group screens               | `FlcBtnIconGame_Active`, `FlcBtnIconGame_Inactive` |
-| `FlcBtnIconGameEdit` | game icon in the create group and add/remove software screens | `FlcBtnIconGameEdit_Active`, `FlcBtnIconGameEdit_Inactive`                                                   |
+| `FlcBtnIconGame`     | icono de juego en las pantallas principales y de grupo               | `FlcBtnIconGame_Active`, `FlcBtnIconGame_Inactive` |
+| `FlcBtnIconGameEdit` | icono de juego en las pantallas de creación de grupo y añadir/eliminar software | `FlcBtnIconGameEdit_Active`, `FlcBtnIconGameEdit_Inactive`                                                   |
 
-## <a href="#thanks"></a>VI. Additional notes and special thanks
+## <a href="#thanks"></a>VI. Notas adicionales y agradecimientos especiales
 
-At last, special (and big) thanks to:
-- exelix and Migush for all the tips
-- Zhi for the animated background testing part
-- All the contributors from the Nintendo Switch modding scene
-
+Finalmente, un agradecimiento especial (y grande) a:
+- exelix y Migush por todos los consejos
+- Zhi por la parte de pruebas de fondo animado
+- Todos los colaboradores de la escena de modding de Nintendo Switch
