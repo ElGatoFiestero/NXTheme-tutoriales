@@ -59,85 +59,83 @@ Nota adicional: Lo siguiente permitirá la edición de los archivos `common.szs`
 
 ## III. Tutorial
 
-As an example, my goal here is to theme the Album applet.
+Como ejemplo, mi objetivo aquí es tematizar el applet del Álbum.
 
-### III.1. Extracting the .szs
+### III.1. Extracción del .szs
 
-1) We need to check the Album's title id on the switchbrew wiki and take note of it (`010000000000100D`).
+1) Necesitamos verificar el ID del título del Álbum en el wiki de switchbrew y tomar nota de él (`010000000000100D`).
 
 ![PhotoViewer](titleid.jpg "PhotoViewer")
 
-2) Open Goldleaf on your Switch and navigate to `Manage console contents` > `NAND SYSTEM`.
+2) Abre Goldleaf en tu Switch y ve a `Administrar contenidos de la consola` > `NAND SYSTEM`.
 
-**Warning: Now be careful, although we won't do anything major here, you don't want to accidentally mess up your NAND.**
+**Advertencia: Ahora ten cuidado, aunque no haremos nada importante aquí, no querrás estropear accidentalmente tu NAND.**
 
 
 | ![Goldleaf](goldleaf1.jpg "Goldleaf") | ![Goldleaf](goldleaf2.jpg "Goldleaf") |
 | ------------------------------------- | --------------------------------------------- |
 
-Look for the applet's title id within the list (`010000000000100D` here), select it, press A and choose `Export`. Select `Yes` to confirm the title NSP export. The Album applet should then be exported and saved as `010000000000100D.nsp` at `switch/Goldleaf/export/title`.
+Busca el ID del título del applet en la lista (`010000000000100D` aquí), selecciónalo, presiona A y elige `Exportar`. Selecciona `Sí` para confirmar la exportación del título NSP. El applet del Álbum debería exportarse y guardarse como `010000000000100D.nsp` en `switch/Goldleaf/export/title`.
 
 | ![Goldleaf](goldleaf3.jpg "Goldleaf") | ![Goldleaf](goldleaf4.jpg "Goldleaf") |
 | ------------------------------------- | --------------------------------------------- |
 
-3) We can proceed on extracting the `.szs` off the exported `.nsp`.
-First, download hactool and put `hactool.exe` into a new directory (which I named unsApplets here). [Dump your keys](https://nh-server.github.io/switch-guide/extras/dumping_title_keys/) if you haven't done it already, then drop them into your hactool directory along with the exported `.nsp`.
+3) Podemos proceder a extraer el `.szs` del `.nsp` exportado.
+Primero, descarga hactool y coloca `hactool.exe` en un nuevo directorio (que he llamado unsApplets aquí). [Extrae tus claves](https://nh-server.github.io/switch-guide/extras/dumping_title_keys/) si aún no lo has hecho, luego colócalas en tu directorio de hactool junto con el `.nsp` exportado.
 
 ![hactool folder](hactoolfolder.JPG "hactool folder")
 
-4) Press `Win` + `R`, type `cmd` and press `Enter` to open the command line. Browse your hactool folder by typing `cd ` (keep the space at the end), then drag and drop the hactool folder onto the command line. Press `Enter` to confirm.
+4) Presiona `Win` + `R`, escribe `cmd` y presiona `Enter` para abrir la línea de comandos. Navega hasta tu carpeta de hactool escribiendo `cd ` (mantén el espacio al final), luego arrastra y suelta la carpeta de hactool sobre la línea de comandos. Presiona `Enter` para confirmar.
 
-5) Copy and paste the following command, press `Enter` to confirm.
+5) Copia y pega el siguiente comando, presiona `Enter` para confirmar.
 
 `hactool -t pfs0 --pfs0dir=photoViewer 010000000000100D.nsp`
 
 ![Command line](cmd.JPG "Command line")
 
-Side note: Don't pay attention to the `[WARN] prod.keys does not exist` error if you happen to get it.
+Nota adicional: No prestes atención al error `[WARN] prod.keys does not exist` si llegas a obtenerlo.
 
-This will output two `.nca` files into the `photoViewer` folder, using `010000000000100D.nsp` as the input file. The `.szs` files we're interested in are contained in the largest `.nca` (one should be a few KBs and the other 25-ish MBs).
+Esto generará dos archivos `.nca` en la carpeta `photoViewer`, utilizando `010000000000100D.nsp` como el archivo de entrada. Los archivos `.szs` que nos interesan están contenidos en el archivo `.nca` más grande (uno debería tener unos pocos KB y el otro alrededor de 25 MB).
 
 ![nca](nca.JPG "nca")
 
-6) We'll do a second extraction using the largest `.nca`.
+6) Realizaremos una segunda extracción usando el archivo `.nca` más grande.
 
 `hactool -k prod.keys --romfsdir=romfs photoViewer/af070417a5b3b841864512df9f701d34.nca`
 
-This will extract the `romFS` into the `romfs` folder. The `.szs` have been extracted as well and should be located at `romfs/lyt`.
+Esto extraerá el `romFS` en la carpeta `romfs`. Los archivos `.szs` también se han extraído y deberían estar ubicados en `romfs/lyt`.
 
 | ![Command line done](cmd_done.JPG "Command line done") | ![romfs/lyt](lyt.JPG "romfs/lyt") |
 | ------------------------------------- | --------------------------------------------- |
 
-Side note: Refer to this [repository](https://github.com/SciresM/hactool) for more info on using hactool.
+Nota adicional: Consulta este [repositorio](https://github.com/SciresM/hactool) para obtener más información sobre cómo usar hactool.
 
-### III.2. Diffpatching and installation
+### III.2. Diffpatching e instalación
 
-We're basically done with the extra steps required to theme non-`qlaunch` unsupported applets as we finally got our hands on their `.szs` files. What's next now is just the usual `.szs` diffpatching with Layout Editor. I won't be implementing animations here so I'll just stick with Visual Studio Code to write my `.json`. Note that the `.json`'s header must be edited accordingly, like so in this case:
+Básicamente, hemos terminado con los pasos adicionales necesarios para tematizar los applets no admitidos por `qlaunch`, ya que finalmente hemos obtenido sus archivos `.szs`. Lo siguiente ahora es simplemente la diffpatching habitual de los archivos `.szs` con Layout Editor. No implementaré animaciones aquí, así que solo usaré Visual Studio Code para escribir mi `.json`. Ten en cuenta que el encabezado del `.json` debe editarse en consecuencia, así es en este caso:
 
 ```json
-"PatchName": "Your theme name",
-"AuthorName": "Capybara",
-"TargetName": "PhotoViewer.szs"
+  "PatchName": "Nombre de tu tema",
+  "AuthorName": "Capybara",
+  "TargetName": "PhotoViewer.szs"
 ```
 
-What differs is the installation process, which is normally automated by NXTheme Installer for supported applets. Patched `.szs` must be copied to `atmosphere/contents/<title id>/romfs/lyt/<file>.szs`, i.e. `atmosphere/contents/010000000000100D/romfs/lyt/PhotoViewer.szs` here. It's normal that these directories don't exist, you have to create them and make sure to reproduce this folder tree. Atmosphere's LayeredFS should then load the custom theme instead of the default one.
+Lo que difiere es el proceso de instalación, que normalmente es automatizado por NXTheme Installer para applets admitidos. Los archivos `.szs` parcheados deben copiarse en `atmosphere/contents/<ID del título>/romfs/lyt/<archivo>.szs`, por ejemplo, `atmosphere/contents/010000000000100D/romfs/lyt/PhotoViewer.szs`. Es normal que estos directorios no existan, debes crearlos y asegurarte de reproducir esta estructura de carpetas. LayeredFS de Atmosphere debería cargar el tema personalizado en lugar del predeterminado.
 
-| ![Album](album.jpg "Album") | ![Player selection](psl.jpg "Player selection") |
-| ------------------------------------- | --------------------------------------------- |
+![Álbum](album.jpg "Álbum") | ![Selección de jugador](psl.jpg "Selección de jugador")
+| ------------------------------------- | ---------------------------------------------
+*¡Sin más línea inferior en la selección de jugadores, finalmente!*
 
+### III.3. Implementando imágenes de fondo personalizadas
 
-*No more bottom line in player selection, finally!*
+Las imágenes de fondo personalizadas para menús no admitidos *pueden ser* alcanzables también utilizando la función de plantillas adicionales del inyector, aunque necesitarás realizar tus propias pruebas para asegurarte de que funcione correctamente, ya que el script original se basa en la sustitución de texturas dentro de `.btnx` y puede provocar problemas de interfaz si eliges las texturas incorrectas. Para obtener más detalles sobre cómo implementar fondos personalizados en applets no admitidos, consulta la [documentación de exelix](https://github.com/exelix11/SwitchThemeInjector/blob/master/SzsPatching.md).
 
-### III.3. Implementing custom background images
+## IV. Notas adicionales
 
-Custom background images for unsupported menus *may be* achievable as well using the extra templates feature of the injector, although you'll have to do your own testing to make it work properly as the original script relies on texture replacement within the `.btnx` and thus may lead to mild UI glitches if you picked the wrong textures. For more details on how to implement custom backgrounds to unsupported applets, please refer to [exelix's documentation](https://github.com/exelix11/SwitchThemeInjector/blob/master/SzsPatching.md).
+- La instalación de un tema modificado en `.szs` desde `overlayDisp` provoca una pantalla en negro al iniciar la consola y no estoy seguro de por qué.
+- Se necesita realizar más pruebas para otros applets.
 
-## IV. Additional notes
+## V. Agradecimientos especiales
 
-- Installing a modified `.szs` theme from `overlayDisp` blackscreens the console on boot and I'm not sure why
-- Further testing for other applets is needed
-
-## V. Special thanks
-
-- exelix for his advice
-- contributors of the NX scene
+- exelix por sus consejos.
+- Colaboradores de la escena de Nintendo Switch.
