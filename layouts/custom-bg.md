@@ -13,9 +13,9 @@ He estado recibiendo muchas solicitudes sobre eso, aunque el proceso es realment
 
 *NB: applets no admitidos (por ejemplo, álbum, controladores, etc.) no están cubiertos aquí.*
 
-- **[I. Elegir una imagen de fondo](#i-choosing-a-background-image)**
-- **[II. Elegir un diseño](#ii-picking-a-layout)**
-- **[III. Construcción con Switch Theme Injector](#iii-building-with-switch-theme-injector)**
+- **[I. Elegir una imagen de fondo](##i-elegir-una-imagen-de-fondo)**
+- **[II. Elegir un diseño](#ii-elegir-un-dise%C3%B1o)**
+- **[III. Construcción con Switch Theme Injector](#iii-construcci%C3%B3n-con-switch-theme-injector)**
 
 ## Requisitos
 
