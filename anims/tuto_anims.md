@@ -36,19 +36,21 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 - **[VI. Notas adicionales y agradecimientos especiales](#vi-additional-notes-and-special-thanks)**
 
 
-## Useful links
+## Enlaces útiles
 
-#### Documentation and download links
+#### Documentación y enlaces de descarga
 - [LayoutDocs](https://layoutdocs.themezer.net/)
-- [exelix's github (Switch Theme Injector)](https://github.com/exelix11/SwitchThemeInjector)
-- [FuryBaguette's github (Switch Layout Editor)](https://github.com/FuryBaguette/SwitchLayoutEditor)
-- [Migush's github (ThemezerNX)](https://github.com/ThemezerNX/)
-- [Zhi's github (Patterns theme)](https://github.com/zzzribas/Patterns)
+- [GitHub de exelix (Switch Theme Injector)](https://github.com/exelix11/SwitchThemeInjector)
+- [GitHub de FuryBaguette (Switch Layout Editor)](https://github.com/FuryBaguette/SwitchLayoutEditor)
+- [GitHub de Migush (ThemezerNX)](https://github.com/ThemezerNX/)
+- [GitHub de Zhi (Tema Patterns)](https://github.com/zzzribas/Patterns)
+- [GitHub de ElGatoFiestero (Tema Patterns)](https://github.com/ElGatoFiestero)
 
-#### To ask for support
-- [ThemezerNX Discord server](https://discord.com/invite/nnm8wyM)
-- [exelix's Discord server](https://discord.gg/rqU5Tf8)
-- [NXTheme subreddit](https://www.reddit.com/r/NXThemes/)
+#### Para solicitar soporte
+- [Servidor de Discord de ThemezerNX](https://discord.com/invite/nnm8wyM)
+- [Servidor de Discord de exelix](https://discord.gg/rqU5Tf8)
+- [Subreddit de NXTheme](https://www.reddit.com/r/NXThemes/)
+- [Canal de El Gato Fiestero](https://www.youtube.com/@RevistaElGatoFiestero/videos)
 
 
 ## <a href="#intro"></a>I. Introduction
