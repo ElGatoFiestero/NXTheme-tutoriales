@@ -90,37 +90,30 @@ Crear temas implica alterar archivos `.szs`. Estos son archivos que contienen lo
 
 
   
+Las imágenes, iconos, texto y prácticamente todo lo que se muestra en la pantalla de tu consola son objetos de tipo *pane* que se encuentran en archivos `.bflyt`. Estos archivos `.bflyt` también contienen información sobre la posición/tamaño/escala de los paneles y sus canales RGBA. En otras palabras, esos paneles son con los que jugaremos en este tutorial, **es decir, son precisamente los objetos a los que adjuntaremos nuestras animaciones.** Así que es posible que desees **ver de antemano el archivo** `.bflyt` **que contiene el panel que deseas animar.**
 
-Pictures, icons, text, and pretty much everything displayed on your console screen are *pane* objects that are contained in `.bflyt` files. These `.bflyt` files also contain information on panes' position/size/scale and their RGBA channels. In other words, those panes are what we will mess around with in this tutorial, **i.e. they are precisely the objects on which we will attach our animations.** So you might want to **check beforehand the**  `.bflyt`  **file that contains the pane you want to animate.**
+En la práctica, **nos centraremos principalmente en los archivos** `.bflan`, **donde se almacenan partes de los datos de animación para un archivo específico** `.bflyt`. **Casi todo el proceso se realiza a través de Switch Layout Editor**, que comenzaré a presentar en la próxima subsección.
 
-  
+Volviendo a los archivos de archivos `.szs`, los encontrarás en `themes/systemData` en tu tarjeta SD; estos ya han sido extraídos por la aplicación homebrew NXTheme Installer. Ten en cuenta que los archivos `.szs` contienen material con derechos de autor, lo que los hace ilegales para compartir (esa es la razón por la cual los modders implementaron el formato `.nxtheme` para evitar esto).
 
-In practice, **we'll essentially be focusing on**  `.bflan`  **files**, in which are stored parts of the animation data **for a specific**  `.bflyt`  **file**. Almost all the process is done through Switch Layout Editor which I'll start to introduce in the next subsection.
-
-  
-
-Getting back to `.szs` archives, you'll find those in `themes/systemData` on your SD card, these have already been extracted by the NXTheme Installer homebrew app. Please note that `.szs` files contain copyrighted stuff, making them illegal to share (that's the reason why modders implemented the `.nxtheme` format to get around this).
+Cada archivo corresponde a un menú específico,
 
   
 
-Each file corresponds to a specific menu,
-
-  
-
-| `.szs` file               | Menu       |
+| Archivo `.szs`          | Menú                |
 | ------------------ | ---------------- |
-| `ResidentMenu.szs` | Home screen      |
-| `Set.szs`          | Settings         |
-| `Psl.szs`          | Player selection |
-| `Flauncher.szs`    | All software / full launcher    |
-| `Lock.szs`         | Lock screen      |
-| `MyPage.szs`       | User page        |
+| `ResidentMenu.szs` | Pantalla de inicio |
+| `Set.szs`          | Configuración       |
+| `Psl.szs`          | Selección de jugador |
+| `Flauncher.szs`    | Todo el software / lanzador completo |
+| `Lock.szs`         | Pantalla de bloqueo |
+| `MyPage.szs`       | Página de usuario    |
 
 
+Entonces, si alguien quiere editar elementos de la interfaz de usuario en la página de inicio, necesitaría obtener el archivo `ResidentMenu.szs`. De manera similar, si queremos realizar ediciones en la sección de todas las aplicaciones, trabajaremos con el archivo `Flauncher.szs`. Ya captas la idea.
 
-so if one wants to edit UI elements on the home page, we would need to grab the `ResidentMenu.szs` file. Likewise, if we want to make edits to the all apps section, `Flauncher.szs` is the file we will be working with. You get the idea.
+Como nota adicional, también encontrarás en `themes/systemData` otros archivos `.szs` que no se enumeran aquí, por ejemplo, `Option.szs`. **Estos no son compatibles oficialmente con el inyector de temas**, pero *aún puedes* modificarlos utilizando la función de plantillas adicionales proporcionada por el inyector. Para ver cómo hacerlo, es posible que desees estar atento a un próximo tutorial.
 
-As a side note, you'll also find in `themes/systemData` other `.szs` files that aren't listed here, e.g. `Option.szs`. **Those are not officially supported by the theme injector**, but you *still can* modify them using the extra templates feature provided by the injector. To see how, you might want to stay tuned for an upcoming tutorial.
 
 ### <a href="#before2"></a>III.2. Layout Editor and diffing
 
