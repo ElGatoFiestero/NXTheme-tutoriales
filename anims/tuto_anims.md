@@ -58,19 +58,17 @@ En este tutorial, veremos cómo implementar animaciones personalizadas para los 
 
 Las animaciones se crean utilizando **3 transformaciones básicas: translación (desplazamiento lineal), escala y rotación**. Puede sonar bastante minimalista, pero, de hecho, puedes lograr casi cualquier cosa con estas; al final, depende de tu propia creatividad. Con fines pedagógicos, elaboraré todo el proceso pasando por un ejemplo sencillo, pero en caso de que desees ampliar tus posibilidades, se proporcionarán tablas con los valores que necesitarás más adelante en este tutorial, para que puedas probarlos por ti mismo. Ten en cuenta que también es posible manipular los canales RGBA de un objeto dado y, así, crear paneles de colores cambiantes. Sin embargo, *excepto para las transformaciones alfa (es decir, transparencia)*, esto resulta ser un proceso bastante tedioso y que consume mucho tiempo con las herramientas que tenemos a nuestra disposición, así que no lo cubriré aquí.
 
-You can have a glance at [my Themezer profile](https://themezer.net/creators/382997176307154945) for examples. If you want to witness themeing at its maximum potential, you might want to check [NSX's work](https://www.youtube.com/channel/UCtvgkpsXAGp0P3dJr6buxRg) out. Most of his themes still work on firmware 15.0.1 (it also should on 16.0.0), but some might glitch, and they likely won't be updated since NSX is sadly not active in the scene anymore.
+Puedes echar un vistazo a [mi perfil en Themezer](https://themezer.net/creators/382997176307154945) para ver ejemplos. Si quieres presenciar la personalización de temas en su máximo potencial, es posible que desees revisar el trabajo de [NSX](https://www.youtube.com/channel/UCtvgkpsXAGp0P3dJr6buxRg). La mayoría de sus temas aún funcionan en el firmware 15.0.1 (también deberían funcionar en 16.0.0), pero algunos podrían tener problemas y es probable que no se actualicen, ya que NSX lamentablemente ya no está activo en la escena.
 
-![Mod AnimNX theme](nsx.jpg "Mod AnimNX theme")
+![Tema Mod AnimNX de NSX](nsx.jpg "Tema Mod AnimNX de NSX. Destacados: el cursor cambia de forma en una animación en bucle, animación de crecimiento en iconos de juegos y applets al pasar el cursor")
 
-*NSX's **Mod AnimNX** theme. Highlights: the cursor changes its shape in a looping animation, growing animation on game & applet icons on hover*
+![Tema Spotify Deck](spotideck.jpg "Tema Spotify Deck. Destacados: al desbloquear la consola hasta la pantalla de inicio, se activa una animación de zoom y fade in. Animación de despliegue para los títulos de juegos, iconos animados de applets del sistema, puntos saltarines para el botón de Todo el software.")
 
-![Spotify Deck theme](spotideck.jpg "Spotify Deck theme")
+Ten en cuenta que la modificación de temas aún se encuentra en una etapa "temprana" (bueno, para ser completamente honesto...
 
-*My own **[Spotify Deck](https://themezer.net/packs/Spotify-Deck-596)** theme. Highlights: unlocking the console to home screen triggers a zoom out+fade in animation. Drop down animation for game titles, animated system applet icons, jumping dots for the All Software button.*
 
-  
+Ten en cuenta que la modificación de temas aún se encuentra en una etapa "temprana" (bueno, para ser completamente honesto, la escena está algo inactiva en este momento...) y aún falta proporcionar una documentación completa. No dudes en comunicarte con el servidor de [Discord de Themezer](https://discord.com/invite/nnm8wyM) si necesitas ayuda.
 
-Please keep in mind that theme modding still is in "early" stage (well, to be completely honest, the scene is now kinda dead...) and full documentation has yet to be provided. Don't hesitate to reach out to the [Themezer Discord](https://discord.com/invite/nnm8wyM) server to ask for help.
 
   
 
