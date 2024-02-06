@@ -1,8 +1,8 @@
-# Creating custom animations for your NX themes
+# Creación de animaciones personalizadas para tus temas de NX
 
-*Written by [Capybara](https://themezer.net/creators/382997176307154945), March 2023*
+*Escrito por [Capybara](https://themezer.net/creators/382997176307154945), marzo de 2023*
 
-<em><strong>Update: This tutorial is now part of [LayoutDocs](https://layoutdocs.themezer.net/guide/animations/). Thanks to Migush for proofreading it.</strong></em>
+<em><strong>Actualización: Este tutorial ahora forma parte de [LayoutDocs](https://layoutdocs.themezer.net/guide/animations/). Gracias a Migush por corregirlo.</strong></em>
 
 <br />
 
@@ -11,7 +11,8 @@
 </div>
 
 <br />
-This tutorial virtually sums up everything I know about animations. However, some parts of this tutorial aren't as complete and rigorous as I'd have wanted them to be, so feel free to reach out to either me or Migush (links down below) if you know about additional resource that can be put into this document.
+Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo, algunas partes de este tutorial no son tan completas y rigurosas como me hubiera gustado, así que no dudes en ponerte en contacto conmigo o con Migush (enlaces más abajo) si conoces algún recurso adicional que se pueda incluir en este documento.
+
 	
 ## Table of contents
 
