@@ -8,9 +8,9 @@ Es posible personalizar prácticamente todos los menús que no son admitidos ofi
 ## Tabla de contenidos
 
 - **[I. Applets qlaunch](#i-applets-qlaunch)**
-- **[II. Otros applets](#ii-other-applets)**
+- **[II. Otros applets](#ii-otros-applets)**
 - **[III. Tutorial](#iii-tutorial)**
-	- [III.1. Extracción del archivo .szs](#iii1-extracting-the-szs)
+	- [III.1. Extracción del archivo .szs](#iii1-extraccion-del-archivo)
 	- [III.2. Parcheo de diferencias e instalación](#iii2-diffpatching-and-installation)
 	- [III.3. Implementación de imágenes de fondo personalizadas](#iii3-implementing-custom-background-images)
 - **[IV. Notas adicionales](#iv-additional-notes)**
