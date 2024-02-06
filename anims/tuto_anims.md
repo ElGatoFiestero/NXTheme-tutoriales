@@ -14,26 +14,27 @@
 Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo, algunas partes de este tutorial no son tan completas y rigurosas como me hubiera gustado, así que no dudes en ponerte en contacto conmigo o con Migush (enlaces más abajo) si conoces algún recurso adicional que se pueda incluir en este documento.
 
 	
-## Table of contents
+## Tabla de contenidos
 
-- **[I. Introduction](#i-introduction)**
-- **[II. Requirements](#ii-requirements)**
-- **[III. Before actually starting](#iii-before-actually-starting)**
-	- [III.1. A few words on .szs files](#iii1-a-few-words-on-szs-files)
-	- [III.2. Layout Editor and diffing](#iii2-layout-editor-and-diffing)
-	- [III.3. Summing up the process](#iii3-summing-up-the-process)
+- **[I. Introducción](#i-introduction)**
+- **[II. Requisitos](#ii-requirements)**
+- **[III. Antes de comenzar](#iii-before-actually-starting)**
+	- [III.1. Algunas palabras sobre archivos .szs](#iii1-a-few-words-on-szs-files)
+	- [III.2. Editor de diseño y diferenciación](#iii2-layout-editor-and-diffing)
+	- [III.3. Resumen del proceso](#iii3-summing-up-the-process)
 - **[IV. Tutorial](#iv-tutorial)**
-- **[V. Going further](#v-going-further)**
-	- [V.1. Active and Inactive states](#v1-active-and-inactive-states)
-	- [V.2. Looping animations](#v2-looping-animations)
-	- [V.3. Fade in and fade out animations](#v3-fade-in-and-fade-out-animations)
-	- [V.4. Animated backgrounds](#v4-animated-backgrounds)
-	- [V.5. Animations may overwrite things](#v5-animations-may-overwrite-things)
-    - [V.6. Useful tables](#v6-useful-tables)
-	    - [V.6.a. PaiTag entries](#v6a-paitag-entries)
+- **[V. Avanzando](#v-going-further)**
+	- [V.1. Estados activos e inactivos](#v1-active-and-inactive-states)
+	- [V.2. Animaciones en bucle](#v2-looping-animations)
+	- [V.3. Animaciones de desvanecimiento](#v3-fade-in-and-fade-out-animations)
+	- [V.4. Fondos animados](#v4-animated-backgrounds)
+	- [V.5. Las animaciones pueden sobrescribir cosas](#v5-animations-may-overwrite-things)
+    - [V.6. Tablas útiles](#v6-useful-tables)
+	    - [V.6.a. Entradas PaiTag](#v6a-paitag-entries)
          - [V.6.b. AnimationTarget](#v6b-animationtarget)
-         - [V.6.c. Notable files](#v6c-notable-files)
-- **[VI. Additional notes and special thanks](#vi-additional-notes-and-special-thanks)**
+         - [V.6.c. Archivos notables](#v6c-notable-files)
+- **[VI. Notas adicionales y agradecimientos especiales](#vi-additional-notes-and-special-thanks)**
+
 
 ## Useful links
 
