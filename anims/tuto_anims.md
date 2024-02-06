@@ -114,132 +114,98 @@ Entonces, si alguien quiere editar elementos de la interfaz de usuario en la pá
 
 Como nota adicional, también encontrarás en `themes/systemData` otros archivos `.szs` que no se enumeran aquí, por ejemplo, `Option.szs`. **Estos no son compatibles oficialmente con el inyector de temas**, pero *aún puedes* modificarlos utilizando la función de plantillas adicionales proporcionada por el inyector. Para ver cómo hacerlo, es posible que desees estar atento a un próximo tutorial.
 
+### <a href="#before2"></a>III.2. Editor de diseño y diferenciación
 
-### <a href="#before2"></a>III.2. Layout Editor and diffing
+Deberías estar acostumbrado a trastear con archivos `.json` y compilar temas con Switch Theme Injector, pero tal vez no estés familiarizado con Switch Layout Editor. Piensa en él como un lector/archivador de archivos `.szs` que también ofrece una vista previa real en pantalla de la posición de los paneles, lo cual es bastante conveniente para la edición de diseños. Resulta que Layout Editor también se utiliza para la edición de animaciones.
 
-  
+*Nota: alternativamente, puedes usar Switch Toolbox (también incluido con [LayoutKit](https://github.com/ThemezerNX/LayoutKit)), que es otro software que tiene prácticamente los mismos propósitos que Layout Editor. Sin embargo, dado que he estado trabajando con Layout Editor, no cubriré Switch Toolbox aquí, pero al final del día depende de tu preferencia. Solo pruébalos.*
 
-You should be used to messing around with `.json` files and compiling themes with Switch Theme Injector, but maybe you're not familiar with Switch Layout Editor. Think of it as a `.szs` reader/archiver that also offers an actual on-screen preview of the panes' positioning, which is quite convenient for layout editing. It turns out that Layout Editor is also used for animation editing.
+Una vez que las animaciones hayan sido implementadas, necesitaremos hacer una *diferencia de diseño* (como en *diferencia*). Básicamente, queremos trabajar con dos versiones del archivo `.szs` de interés: la primera se mantiene intacta y la segunda contendrá todas las ediciones que se hayan realizado a través de Layout Editor. La diferenciación de diseño es el proceso de comparar (*hacer diff*) ambos archivos `.szs` y generar un archivo de diseño (del mismo tipo que has estado utilizando para tus temas) que traduzca todas las ediciones al formato de código JSON. El archivo `.json` resultante luego se puede usar en Switch Theme Injector para compilar el `.nxtheme`, como lo harías normalmente.
 
-  
+### <a href="#before3"></a>III.3. Resumen del proceso
 
-*NB: alternatively, you can use Switch Toolbox (also included with [LayoutKit](https://github.com/ThemezerNX/LayoutKit)), which is another piece of software that has pretty much the same purposes as Layout Editor. However, since I've been working with Layout Editor, I won't be covering Switch Toolbox here, but at the end of the day it's up to your preference. Just try them out.*
+Pasaremos por estos pasos generales que aplican para cualquier tipo de edición de animación:
 
-  
+1. Hacer dos copias del archivo `.szs` seleccionado.
 
-Once the animations have been implemented, we'll need to make a *layout diff* (as in *difference*). Basically, we want to work with two versions of the `.szs` file of interest: the first one stays untouched and the second one will contain all the edits that have been made through Layout Editor. Layout diffing is the process of comparing (*diffing*) both these `.szs` files and spitting out a layout file (the same type you've been using for your themes) that translates all the edits into JSON code format. The output `.json` file can then be used in Switch Theme Injector to compile the `.nxtheme` as you would normally do.
+2. Editar uno de ellos con nuestras animaciones.
 
-  
+3. Diferenciación de diseño.
 
-### <a href="#before3"></a>III.3. Summing up the process
-
-  
-
-We'll go through these general steps that apply for any type of animation editing:
-
-  
-
-1. make two copies of the picked `.szs` file
-
-2. edit one of them with our animations
-
-3. layout diffing
-
-4. compile the `.nxtheme` using the output/diffed `.json` and install onto the console (usual process with Switch Theme Injector and NXTheme Installer)
-
-  
+4. Compilar el `.nxtheme` utilizando el archivo `.json` de salida/diferenciado e instalar en la consola (proceso habitual con Switch Theme Injector y NXTheme Installer).
 
 ## <a href="#tuto"></a>IV. Tutorial
 
-  
-
-### o) Our goal
 
   
+### o) Nuestro objetivo
 
-From now on, I'll only focus on creating an animation for the game icons on the home screen. **I want those icons to scale up when they are being selected, and to scale down to their initial size when the cursor goes off. This will be our goal throughout this tutorial section.** As I mentioned in the introduction section, tables will be provided later on if you want to experiment further and make more exotic animations.
+A partir de ahora, me enfocaré únicamente en crear una animación para los iconos de juegos en la pantalla de inicio. **Quiero que esos iconos se escalen cuando se seleccionan y vuelvan a su tamaño inicial cuando el cursor se aleja. Este será nuestro objetivo a lo largo de esta sección del tutorial.** Como mencioné en la sección de introducción, se proporcionarán tablas más adelante si deseas experimentar más y realizar animaciones más exóticas.
 
-  
+### a) Configuración del espacio de trabajo
 
-### a) Setting up the workspace
+Para llevar un seguimiento de lo que estamos haciendo, primero configuraremos adecuadamente nuestro espacio de trabajo. Aquí sugiero una jerarquía de directorios que hace que mi propio flujo de trabajo sea lo suficientemente eficiente, pero puedes hacer lo que quieras a medida que te acostumbras a saber lo que estás haciendo.
 
-  
+1. Crea un directorio en tu escritorio y llámalo `animEdit`.
 
-To keep track on what we are doing, we'll first properly set up our workspace. Here I suggest a directory hierarchy that makes my own workflow efficient enough, but you can do as you please as you get the hang of knowing what you're doing.
+2. Ve a `themes/systemData` en la tarjeta SD de tu Switch. Dado que estoy interesado en editar la pantalla de inicio para este ejemplo, solo tomaré `ResidentMenu.szs`.
 
-  
+3. Copia `ResidentMenu.szs`, pégalo en tu escritorio y en `Desktop/animEdit`.
 
-1. Create a directory on your desktop and name it `animEdit`.
+| ![Escritorio](hierarchy1.jpg "Escritorio/") | ![Escritorio](hierarchy2.jpg "Escritorio/animEdit") |
+| -------------------------------------------- | ------------------------------------------------- |
+| `Escritorio/`                                | `Escritorio/animEdit`                              |
 
-2. Go in `themes/systemData` on your Switch's SD card. Since I'm interested in editing the home screen for this example, I'll only grab `ResidentMenu.szs`.
+Recuerda, necesitaremos un archivo `.szs` normal y una copia del mismo que editaremos, para poder diferenciarlos al final. Aquí el de escritorio se mantendrá sin cambios, así que editaremos el que está en `Escritorio/animEdit`.
 
-3. Copy `ResidentMenu.szs`, paste it on your desktop and in `Desktop/animEdit`.
+### b) Editor de Diseño
 
-| ![Desktop](hierarchy1.jpg "Desktop/") | ![Desktop](hierarchy2.jpg "Desktop/animEdit") |
-| ------------------------------------- | --------------------------------------------- |
-| `Desktop/`                            | `Desktop/animEdit`                              |
+4. Abre el Editor de Diseño y carga `animEdit/ResidentMenu.szs`. Puedes simplemente arrastrar y soltar el archivo en la ventana. Se abrirá una pequeña ventana que enumera todos los archivos contenidos en el archivo `.szs`.
 
-   
+5. Primero, crearemos la animación de escalado cuando el ícono del juego está **seleccionado**. En la ventana de la caja, busca `RdtBtnIconGame_Active.bflan` y ábrelo con un doble clic. Aparecerá una nueva ventana. En esta ventana, expande todos los elementos haciendo clic en los íconos `+`.
 
-Remember, we'll need one vanilla `.szs` and one copy of it that we'll edit, so we can diff them at the end. Here the desktop one will remain vanilla, so we will edit the one in `Desktop/animEdit`.
+![Tuto1](tuto1.jpg)
 
-  
+A la izquierda se enumeran *algunos* paneles contenidos en `RdtBtnIconGame.bflyt` (en realidad, solo uno en este caso, llamado `P_InnerCursor`). Dependiendo de lo que queramos lograr, es probable que necesitemos agregar más paneles a esta lista. Ese será el caso aquí para nuestro ejemplo.
 
-### b) Layout Editor
+A la derecha se muestran elementos que se utilizan para definir el comportamiento de la animación. No te preocupes, solo necesitaremos editar algunos de ellos.
 
-  
+Ahora, me disculpo de antemano, pero tendrás que seguir mis instrucciones a ciegas... por ahora. Explicaré algunos de ellos a lo largo de esta sección.
 
-4. Open Layout Editor and load up `animEdit/ResidentMenu.szs`. You can simply drag and drop the file onto the window. A little box will open listing all the files contained in the `.szs` archive.
+6. En el panel izquierdo, haz clic en la primera entrada, `Sección Pat1`. Luego, en el panel derecho,
 
-5. First, we will create the scaling up animation when the game icon is **selected**. In the box window, search for `RdtBtnIconGame_Active.bflan` and open by double clicking. A new window will show up. On this window, expand all the items by clicking the `+` icons.
+	6.a. Establece `AnimationBinding` en `0`
 
-  
+	6.b. Expande la entrada `Groups` haciendo clic en la flecha izquierda y establece el campo `[0]` en `custom_G_Active` (el valor no es relevante aquí, así que puede ser cualquier cosa).
 
-![](tuto1.jpg)
+	6.c. En el panel izquierdo, haz clic en la segunda entrada, `Sección Pai1` y establece `FrameSize` en `9999`.
 
-  
+  Si has hecho todo correctamente, esto debería verse así.
 
-On the left are listed *some* panes contained in `RdtBtnIconGame.bflyt` (actually only one in this case, namely `P_InnerCursor`). Depending on what we want to achieve, we'll likely need to add more panes to this list. That will be the case here for our example.
+| ![Sección Pat1](tuto2.jpg "Sección Pat1") | ![Sección Pai1](tuto3.jpg "Sección Pai1") |
+| ----------------------------------------- | ----------------------------------------- |
+| `Sección Pat1`                            | `Sección Pai1`                            |
 
-On the right are displayed items that are used to define the animation behavior. Don't worry, we'll only need to edit a few of them.
+**Todo el paso 6 es una configuración recurrente que siempre debe hacerse para crear cualquier tipo de animación, independientemente de nuestro objetivo actual.** Ahora, para crear nuestra animación real, lo haremos editando el panel `N_Root` de `RdtBtnIconGame.bflyt`, lo que significa agregar una entrada a la lista de paneles.
 
+*Nota: Si estás familiarizado con la personalización de temas, `N_Root` es el panel que básicamente contiene todos los demás en el archivo `.bflyt`. Así que aquí no nos molestaremos y animaremos todo (incluido el texto, el cursor, etc.), pero nada impide que seas más específico y animes, por ejemplo, solo el texto del título del juego. En este caso específico, agregarías la entrada `L_Balloon` en su lugar.*
 
-Now I apologize in advance, but you'll need to blindly follow my instructions... for now. I will elaborate some of them throughout this section.
-  
+8. Para agregar el panel `N_Root` a la lista, haz clic izquierdo en `Sección Pai1` Y LUEGO haz clic derecho en esta misma entrada (de lo contrario, esto se estropeará y sí, es un poco tonto). Selecciona la opción `Añadir entrada`. El panel izquierdo debería actualizarse con el nuevo elemento agregado al final de la lista. Haz clic en él y cámbiale el nombre a `N_Root` en el panel derecho.
 
-6. In the left panel, click on the first entry, `Pat1 section`. Then on the right panel,
+| ![Añadiendo un panel (1)](tuto4.jpg "Añadiendo un panel (1)") | ![Añadiendo un panel (2)](tuto5.jpg "Añadiendo un panel (2)") |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
+| Añadiendo un panel (1)                                        | Añadiendo un panel (2)                                        |
 
-	6.a. Set `AnimationBinding` to `0`
+9. Haz clic derecho en `N_Root` en la lista de paneles y selecciona `Añadir entrada`. Expande el panel `N_Root` y cambia el nombre de la entrada `PaiTag` a `FLPA`. Luego, agrega *2 sub-entradas* más a la entrada `FLPA`.
 
-	6.b. Expand the `Groups` entry by clicking on the left arrow, and set the `[0]` field to `custom_G_Active` (the value isn't relevant here so this actually can be anything).
+Ahora, los siguientes pasos definirán la animación de escalado que queremos lograr.
 
-	6.c. In the left panel, click on the second entry, `Pai1 section` and set the `FrameSize` to `9999`.
+10. Bajo `FLPA`, selecciona la primera `[Entrada]`. El panel derecho mostrará otro conjunto de valores. Algunos de ellos realmente importarán, así que ten nota de estos,
 
-  If you've done everything correctly, this should look like this.
+	 - `AnimationTarget` es el tipo de animación que elegimos asignar a nuestro panel. Básicamente, aquí es donde le decimos al panel si debe escalar hacia arriba o hacia abajo, traducirse a lo largo del eje x o y, o rotar alrededor del eje z en sentido horario o antihorario. Más adelante, aquí es donde podrías estar interesado en consultar las tablas para probar los valores asociados a otros tipos de animaciones.
+	 - `KeyFrames` es... autoexplicativo, supongo. Esto nos permite dividir nuestra animación en fotogramas clave definidos correctamente.
+	 - `DataType` se refiere al tipo de nuestras entradas en el campo `KeyFrames`. **Solo ten en cuenta que siempre debe configurarse en `2`** (lo que significa `float`). Aunque no es relevante aquí, puedes seguir [este enlace](https://layoutdocs.themezer.net/guide/layouts/usd-sections/) si quieres saber un poco más.
 
-| ![Pat1 section](tuto2.jpg "Pat1 section") | ![Pai1 section](tuto3.jpg "Pai1 section") |
-| ------------------------------------- | --------------------------------------------- |
-| `Pat1 section`                            | `Pai1 section`                              |
-
-**The whole 6th step is a recurring setup that always needs to be done in order to create any kind of animation, regardless of our current goal.** Now about creating our actual animation, we will do so by editing the `N_Root` pane from `RdtBtnIconGame.bflyt`, which means adding an entry to the pane list.
-
-*NB: If you are familiar with themeing, `N_Root` is the pane that basically contains all the others in the `.bflyt`. Thus here we won't bother and we will animate the whole thing (including text, cursor, etc.), but nothing prevents you from being more specific and animate, for example, only the game title text. In this very case, you would add the `L_Balloon` entry instead.*
-
-8. To add the `N_Root` pane to the list, left click on `Pai1 section` AND THEN right click on this same entry (otherwise this will mess up and yeah, this is dumb). Select the `Add Entry` option. The left panel should update with the newly added item at the end of the list. Click on it and rename it as `N_Root` in the right panel.
-
-| ![Adding a pane (1)](tuto4.jpg "Adding a pane (1)") | ![Adding a pane (2)](tuto5.jpg "Adding a pane (2)") |
-| --------------------------------------------------- | --------------------------------------------------- |
-| Adding a pane (1)                                   | Adding a pane (2)                                       |
-
- 9. Right click on `N_Root` in the pane list and select `Add Entry`. Expand the `N_Root` pane and rename the `PaiTag` entry as `FLPA`. Then again, add *2 sub-entries* to the `FLPA` entry.
-
-Now, the following steps will define the scaling up animation we want to achieve.
-
-10. Under `FLPA`, select the first `[Entry]`. The right panel will display another set of values. Some of them will actually matter, so please take note of these,
-
-	 - `AnimationTarget` is the type of animation we choose to assign to our pane. This is basically here that we tell the pane to either scale up or down, translate along the x-axis or y-axis, or rotate around the z-axis clockwise/counterclockwise. Later on, this is where you might be interested in checking the tables to test the values associated to other types of animations.
-	 - `KeyFrames` is... self-explanatory, I guess. This allows us to break our animation down into properly defined key frames.
-	 - `DataType` refers to the type of our inputs in the `KeyFrames` field. **Just keep in mind that it should always be set to `2`** (meaning `float`). Although it's not really relevant here, you can follow [this link](https://layoutdocs.themezer.net/guide/layouts/usd-sections/) if you want to know a little more.
 
 11. We will define our values as,
 
