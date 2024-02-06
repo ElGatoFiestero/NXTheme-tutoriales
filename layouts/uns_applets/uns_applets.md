@@ -10,7 +10,7 @@ Es posible personalizar prácticamente todos los menús que no son admitidos ofi
 - **[I. Applets qlaunch](#i-applets-qlaunch)**
 - **[II. Otros applets](#ii-otros-applets)**
 - **[III. Tutorial](#iii-tutorial)**
-	- **[III.1. Extracción del archivo .szs](#iii1-extracción-del-archivo)**
+	- **[III.1. Extracción del archivo .szs](#iii1-extraccion-del-archivo-.szs)**
 	- [III.2. Diffpatching e instalación](#iii2-diffpatching-e-installation)
 	- [III.3. Implementación de fondos personalizados](#iii3-implementación-de-fondos-personalizados)
 - **[IV. Notas adicionales](#iv-notas-adicionales)**
