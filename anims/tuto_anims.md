@@ -16,24 +16,24 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 	
 ## Tabla de contenidos
 
-- **[I. Introducción](#i-introduction)**
-- **[II. Requisitos](#ii-requirements)**
-- **[III. Antes de comenzar](#iii-before-actually-starting)**
-	- [III.1. Algunas palabras sobre archivos .szs](#iii1-a-few-words-on-szs-files)
-	- [III.2. Editor de diseño y diferenciación](#iii2-layout-editor-and-diffing)
-	- [III.3. Resumen del proceso](#iii3-summing-up-the-process)
+- **[I. Introducción](##i-introducci%C3%B3n)**
+- **[II. Requisitos](#ii-requisitos)**
+- **[III. Antes de comenzar](#iii-antes-de-comenzar)**
+	- [III.1. Algunas palabras sobre archivos .szs](#iii1-algunas-palabras-sobre-archivos-szs)
+	- [III.2. Editor de diseño y diferenciación](#iii2-editor-de-dise%C3%B1o-y-diferenciaci%C3%B3n)
+	- [III.3. Resumen del proceso](#iii3-resumen-del-proceso)
 - **[IV. Tutorial](#iv-tutorial)**
-- **[V. Avanzando](#v-going-further)**
-	- [V.1. Estados activos e inactivos](#v1-active-and-inactive-states)
-	- [V.2. Animaciones en bucle](#v2-looping-animations)
-	- [V.3. Animaciones de desvanecimiento](#v3-fade-in-and-fade-out-animations)
-	- [V.4. Fondos animados](#v4-animated-backgrounds)
-	- [V.5. Las animaciones pueden sobrescribir cosas](#v5-animations-may-overwrite-things)
-    - [V.6. Tablas útiles](#v6-useful-tables)
-	    - [V.6.a. Entradas PaiTag](#v6a-paitag-entries)
+- **[V. Avanzando](#v-iendo-m%C3%A1s-lejos)**
+	- [V.1. Estados activos e inactivos](#v1-estados-activo-e-inactivo)
+	- [V.2. Animaciones en bucle](#v2-animaciones-en-bucle)
+	- [V.3. Animaciones de desvanecimiento](#v3-animaciones-de-fundido-de-entrada-y-salida)
+	- [V.4. Fondos animados](#v4-fondos-animados)
+	- [V.5. Las animaciones pueden sobrescribir cosas](#v5-las-animaciones-pueden-sobrescribir-cosas)
+    - [V.6. Tablas útiles](#v6-tablas-%C3%BAtiles)
+	    - [V.6.a. Entradas PaiTag](#v6a-entradas-de-paitag)
          - [V.6.b. AnimationTarget](#v6b-animationtarget)
-         - [V.6.c. Archivos notables](#v6c-notable-files)
-- **[VI. Notas adicionales y agradecimientos especiales](#vi-additional-notes-and-special-thanks)**
+         - [V.6.c. Archivos notables](#v6c-archivos-notables)
+- **[VI. Notas adicionales y agradecimientos especiales](#vi-notas-adicionales-y-agradecimientos-especiales)**
 
 
 ## Enlaces útiles
