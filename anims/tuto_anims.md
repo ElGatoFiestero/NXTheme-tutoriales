@@ -52,17 +52,11 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 - [Subreddit de NXTheme](https://www.reddit.com/r/NXThemes/)
 - [Canal de El Gato Fiestero](https://www.youtube.com/@RevistaElGatoFiestero/videos)
 
+## <a href="#intro"></a>I. Introducción
 
-## <a href="#intro"></a>I. Introduction
+En este tutorial, veremos cómo implementar animaciones personalizadas para los temas de NX. Este no es un tema trivial y espero que tengas un conocimiento mínimo sobre cómo está organizada la interfaz de usuario de la consola, cómo funcionan los diseños y cómo usar Switch Theme Injector. Todos los conceptos básicos están cubiertos en LayoutDocs.
 
-
-In this tutorial, we'll see how to implement custom animations to NX themes. This isn't a trivial topic and I expect you to have minimum knowledge on how the console's UI is organized, how layouts work and how to use Switch Theme Injector. All the basics are covered in LayoutDocs.
-
-  
-
-Animations are made using **3 basic transformations: translation (linear displacement), scaling and rotation**. It sounds rather minimalistic but, in fact, you achieve pretty much anything with these, in the end it's up to your own creativity. For the sake of pedagogy, I'll elaborate the whole process by going through one easy example, but in case you want to expand your possibilities, tables with the values you'll be needing will be provided later on in this tutorial, so you can try them out by yourself. Note that it's also possible to tinker with a given object's RGBA channels and so, create changing colors panes. However, *except for alpha transformations (i.e. transparency)*, this turns out to be quite the tedious and time consuming process with the tools we have at our disposal, so I won't be covering that here.
-
-  
+Las animaciones se crean utilizando **3 transformaciones básicas: translación (desplazamiento lineal), escala y rotación**. Puede sonar bastante minimalista, pero, de hecho, puedes lograr casi cualquier cosa con estas; al final, depende de tu propia creatividad. Con fines pedagógicos, elaboraré todo el proceso pasando por un ejemplo sencillo, pero en caso de que desees ampliar tus posibilidades, se proporcionarán tablas con los valores que necesitarás más adelante en este tutorial, para que puedas probarlos por ti mismo. Ten en cuenta que también es posible manipular los canales RGBA de un objeto dado y, así, crear paneles de colores cambiantes. Sin embargo, *excepto para las transformaciones alfa (es decir, transparencia)*, esto resulta ser un proceso bastante tedioso y que consume mucho tiempo con las herramientas que tenemos a nuestra disposición, así que no lo cubriré aquí.
 
 You can have a glance at [my Themezer profile](https://themezer.net/creators/382997176307154945) for examples. If you want to witness themeing at its maximum potential, you might want to check [NSX's work](https://www.youtube.com/channel/UCtvgkpsXAGp0P3dJr6buxRg) out. Most of his themes still work on firmware 15.0.1 (it also should on 16.0.0), but some might glitch, and they likely won't be updated since NSX is sadly not active in the scene anymore.
 
