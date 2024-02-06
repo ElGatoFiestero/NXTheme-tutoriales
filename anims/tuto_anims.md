@@ -37,9 +37,9 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
          	- [flpa-paitag](#flpa-paitag)
           	- [flvc-paitag](#flvc-paitag)
          - [V.6.c. Archivos notables](#v6c-archivos-notables)
-		-- [ResidentMenu.szs - Pantalla de Inicio](#residentmenuszs-pantalla-de-inicio)
-		-- [Set.szs - Configuración](#setszs-aplicaci%C3%B3n-de-configuraci%C3%B3n)
-		-- [Flauncher.szs - Todas las aplicaciones](#flauncherszs-aplicaci%C3%B3n-de-software-completa)
+         	- [ResidentMenu.szs - Pantalla de Inicio](#residentmenuszs-pantalla-de-inicio)
+         	- [Set.szs - Configuración](#setszs-aplicaci%C3%B3n-de-configuraci%C3%B3n)
+         	- [Flauncher.szs - Todas las aplicaciones](#flauncherszs-aplicaci%C3%B3n-de-software-completa)
 - **[VI. Notas adicionales y agradecimientos especiales](#vi-notas-adicionales-y-agradecimientos-especiales)**
 
 
