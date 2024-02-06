@@ -1,61 +1,61 @@
-# Themes for unsupported applets: going further
-*Written by [Capybara](https://themezer.net/creators/382997176307154945), June 2023*
+# Temas para applets no compatibles: yendo más allá
+*Escrito por [Capybara](https://themezer.net/creators/382997176307154945), junio de 2023*
 
-It's possible to theme basically all the menus that aren't officially supported by Switch Theme Injector using the usual `.json` layout patching method and some extra steps. In this tutorial, I'll only be focusing on how to patch unsupported `.szs`, e.g. `PhotoViewer.szs` (Album applet).
+Es posible personalizar prácticamente todos los menús que no son admitidos oficialmente por Switch Theme Injector utilizando el método estándar de parcheo de diseño `.json` y algunos pasos adicionales. En este tutorial, me centraré únicamente en cómo parchear archivos `.szs` no admitidos, como `PhotoViewer.szs` (applet de Álbum).
 
-**szs files contain copyrighted assets and are strictly intended for personal use. For sharing purposes, use nxthemes.**
+**Los archivos .szs contienen activos con derechos de autor y están estrictamente destinados para uso personal. Para compartir, utiliza nxthemes.**
 
-## Table of contents
+## Tabla de contenidos
 
-- **[I. qlaunch applets](#i-qlaunch-applets)**
-- **[II. Other applets](#ii-other-applets)**
+- **[I. Applets qlaunch](#i-qlaunch-applets)**
+- **[II. Otros applets](#ii-other-applets)**
 - **[III. Tutorial](#iii-tutorial)**
-	- [III.1. Extracting the .szs](#iii1-extracting-the-szs)
-	- [III.2. Diffpatching and installation](#iii2-diffpatching-and-installation)
-	- [III.3. Implementing custom background images](#iii3-implementing-custom-background-images)
-- **[IV. Additional notes](#iv-additional-notes)**
-- **[V. Special thanks](#v-special-thanks)**
+	- [III.1. Extracción del archivo .szs](#iii1-extracting-the-szs)
+	- [III.2. Parcheo de diferencias e instalación](#iii2-diffpatching-and-installation)
+	- [III.3. Implementación de imágenes de fondo personalizadas](#iii3-implementing-custom-background-images)
+- **[IV. Notas adicionales](#iv-additional-notes)**
+- **[V. Agradecimientos especiales](#v-special-thanks)**
 
-## Prerequisites
+## Requisitos
 
-- Fair knowledge on layout editing and diffing, see [LayoutDocs](layoutdocs.themezer.net/)
+- Conocimientos sólidos sobre edición de diseño y diferenciación, consulta [LayoutDocs](layoutdocs.themezer.net/)
 - [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor/releases/tag/beta15)
 - [Goldleaf](https://github.com/XorTroll/Goldleaf)
 - [hactool](https://github.com/SciresM/hactool/releases/tag/1.4.0)
-- Lockpick_RCM for providing keys to hactool
-- A text editor, [Visual Studio Code](https://code.visualstudio.com/) highly recommended
-- Windows 10 or 11
+- Lockpick_RCM para proporcionar claves a hactool
+- Un editor de texto, se recomienda [Visual Studio Code](https://code.visualstudio.com/)
+- Windows 10 o 11
 
-## I. qlaunch applets
+## I. Applets qlaunch
 
-Each installed app on the Switch is a title that has a unique id.
+Cada aplicación instalada en la Switch es un título que tiene un identificador único.
 
-`qlaunch` is the one that contains the home menu applets under it. Some of those are officially supported by the injector (e.g. `ResidentMenu.szs`, `Flaunch.szs`, `Set.szs`, etc.), while some aren't (e.g. `Option.szs`). Those `.szs` files have already been extracted by the NXTheme Installer homebrew app and should be located at `themes/systemData` on your SD card, so diffing them is a straightforward process as you don't need to manually extract these files. I won't elaborate this here, rather I recommend checking out [SodaSoba's tutorial](https://layoutdocs.themezer.net/guide/diffpatch/) on the subject.
+`qlaunch` es el que contiene los applets del menú principal debajo de él. Algunos de ellos son admitidos oficialmente por el inyector (por ejemplo, `ResidentMenu.szs`, `Flaunch.szs`, `Set.szs`, etc.), mientras que otros no lo son (por ejemplo, `Option.szs`). Esos archivos `.szs` ya han sido extraídos por la aplicación homebrew NXTheme Installer y deben ubicarse en `themes/systemData` en tu tarjeta SD, por lo que diferenciarlos es un proceso sencillo ya que no necesitas extraer manualmente estos archivos. No elaboraré esto aquí, más bien recomiendo revisar el [tutorial de SodaSoba](https://layoutdocs.themezer.net/guide/diffpatch/) sobre el tema.
 
-`qlaunch`'s id is `0100000000001000`.
+El ID de `qlaunch` es `0100000000001000`.
 
-## II. Other applets
+## II. Otros applets
 
-Applets that aren't part of `qlaunch` (except for the player selection menu and user page which are officially supported) need manual extracting and installation. Here are the general steps:
+Los applets que no forman parte de `qlaunch` (excepto el menú de selección de jugador y la página de usuario que son admitidos oficialmente) necesitan extracción e instalación manual. Aquí están los pasos generales:
 
-- export the desired applet title as an `.nsp` using Goldleaf
-- extract the `romFS` from this `.nsp` using hactool, which will subsequently extract `.szs` files we can work with
-- make the `.json` layout, then patch the `.szs` with it
-- use Atmosphere's LayeredFS to install the patched `.szs` (i.e. drag and drop onto your SD card)
+- exporta el título del applet deseado como un archivo `.nsp` usando Goldleaf
+- extrae el `romFS` de este archivo `.nsp` usando hactool, que posteriormente extraerá archivos `.szs` con los que podemos trabajar
+- crea el diseño `.json`, luego parchea el `.szs` con él
+- utiliza LayeredFS de Atmosphere para instalar el `.szs` parcheado (es decir, arrastra y suelta en tu tarjeta SD)
 
-Important note: Firmware updates may provide different `.szs` files along with them, meaning you will have to redo these steps **at each firmware update** to avoid possible incompatibility issues (likely crashes). NXTheme Installer automates this process for the applets it supports, as you maybe noticed. Fortunately, there shouldn't be any need to rewrite your `.json` layout, as `.bflyt` and `.bflan` files should carry over firmware updates, so you can keep your `.json` as-is.
+Nota importante: Las actualizaciones del firmware pueden proporcionar archivos `.szs` diferentes junto con ellas, lo que significa que tendrás que repetir estos pasos **en cada actualización del firmware** para evitar posibles problemas de incompatibilidad (probables bloqueos). NXTheme Installer automatiza este proceso para los applets que admite, como quizás hayas notado. Afortunadamente, no debería ser necesario reescribir tu diseño `.json`, ya que los archivos `.bflyt` y `.bflan` deberían conservarse en las actualizaciones del firmware, por lo que puedes mantener tu `.json` tal como está.
 
-For reference, an exhaustive list of titles is provided on the [switchbrew wiki](https://switchbrew.org/wiki/Title_list). Here are some id's that might be of interest:
+Como referencia, se proporciona una lista exhaustiva de títulos en el [wiki de switchbrew](https://switchbrew.org/wiki/Title_list). Aquí tienes algunos ID que podrían ser de interés:
 
-|      Title     | Title id           |         Applet         |
+|      Título    | ID de Título        |        Applet         |
 |:--------------:|--------------------|:----------------------:|
-|  `photoViewer` | `010000000000100D` |          Album         |
-|  `overlayDisp` | `010000000000100C` | Overlay (quick settings, notifications, etc.) |
-|  `controller`  | `0100000000001003` |    Controllers menu    |
-| `playerSelect` | `0100000000001007` |  Player selection menu |
-|    `myPage`    | `0100000000001013` |        User page       |
+|  `photoViewer` | `010000000000100D` |          Álbum         |
+|  `overlayDisp` | `010000000000100C` | Overlay (configuración rápida, notificaciones, etc.) |
+|  `controller`  | `0100000000001003` |    Menú de controladores    |
+| `playerSelect` | `0100000000001007` |  Menú de selección de jugador |
+|    `myPage`    | `0100000000001013` |        Página de usuario       |
 
-Side note: The following will allow editing the `common.szs` files associated to `Psl.szs` (player selection menu) and `MyPage.szs` (user page), which by the way *aren't* part of `qlaunch`. This especially makes the bottom line removal possible for these applets, which is otherwise not possible by solely using Switch Theme Injector as it only supports the `common.szs` from `qlaunch`.
+Nota adicional: Lo siguiente permitirá la edición de los archivos `common.szs` asociados a `Psl.szs` (menú de selección de jugador) y `MyPage.szs` (página de usuario), que por cierto *no* forman parte de `qlaunch`. Esto hace posible la eliminación de la línea inferior en estos applets, lo cual no es posible únicamente usando Switch Theme Injector, ya que solo admite el `common.szs` de `qlaunch`.
 
 ## III. Tutorial
 
