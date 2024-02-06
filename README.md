@@ -11,8 +11,8 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
 ## Tutoriales disponibles
 
 - [Creación de animaciones personalizadas para tus temas de NX](https://github.com/ElGatoFiestero/NXTheme-tutoriales/blob/main/anims/tuto_anims.md)
-- [Edición de diseño para applets no admitidos](https://github.com/ElGatoFiestero/NXTheme-tutorials/blob/main/layouts/uns_applets/uns_applets.md)
-- [Agregar o editar una imagen de fondo personalizada en cualquier tema](https://github.com/ElGatoFiestero/NXTheme-tutorials/blob/main/layouts/custom-bg.md)
+- [Edición de diseño para applets no admitidos](https://github.com/ElGatoFiestero/NXTheme-tutoriales/blob/main/layouts/uns_applets/uns_applets.md)
+- [Agregar o editar una imagen de fondo personalizada en cualquier tema](https://github.com/ElGatoFiestero/NXTheme-tutoriales/blob/main/layouts/custom-bg.md)
 
 
 
