@@ -23,6 +23,8 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 	- [III.2. Editor de diseño y diferenciación](#iii2-editor-de-dise%C3%B1o-y-diferenciaci%C3%B3n)
 	- [III.3. Resumen del proceso](#iii3-resumen-del-proceso)
 - **[IV. Tutorial](#iv-tutorial)**
+	- **[a. Configuración del espacio de trabajo](#a-configuraci%C3%B3n-del-espacio-de-trabajo)**
+ 	- **[b. Editor de Diseño](#b-editor-de-dise%C3%B1o)**
 - **[V. Avanzando](#v-iendo-m%C3%A1s-lejos)**
 	- [V.1. Estados activos e inactivos](#v1-estados-activo-e-inactivo)
 	- [V.2. Animaciones en bucle](#v2-animaciones-en-bucle)
@@ -32,6 +34,8 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
     - [V.6. Tablas útiles](#v6-tablas-%C3%BAtiles)
 	    - [V.6.a. Entradas PaiTag](#v6a-entradas-de-paitag)
          - [V.6.b. AnimationTarget](#v6b-animationtarget)
+         	- [flpa-paitag](#flpa-paitag)
+          	- [flvc-paitag](#flvc-paitag)
          - [V.6.c. Archivos notables](#v6c-archivos-notables)
 - **[VI. Notas adicionales y agradecimientos especiales](#vi-notas-adicionales-y-agradecimientos-especiales)**
 
