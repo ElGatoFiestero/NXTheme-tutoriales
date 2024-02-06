@@ -12,7 +12,7 @@ Es posible personalizar prácticamente todos los menús que no son admitidos ofi
 - **[III. Tutorial](#iii-tutorial)**
 	- [III.1. Extracción del archivo .szs](#iii1-extracci%C3%B3n-del-szs)
 	- [III.2. Diffpatching e instalación](#iii2-diffpatching-e-instalaci%C3%B3n)
-	- [III.3. Implementación de fondos personalizados](iii3-implementando-im%C3%A1genes-de-fondo-personalizadas)
+	- [III.3. Implementación de fondos personalizados](#iii3-implementando-im%C3%A1genes-de-fondo-personalizadas)
 - **[IV. Notas adicionales](#iv-notas-adicionales)**
 - **[V. Agradecimientos especiales](#v-agradecimientos-especiales)**
 
