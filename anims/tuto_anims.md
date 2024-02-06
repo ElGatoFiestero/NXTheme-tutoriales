@@ -64,43 +64,30 @@ Puedes echar un vistazo a [mi perfil en Themezer](https://themezer.net/creators/
 
 ![Tema Spotify Deck](spotideck.jpg "Tema Spotify Deck. Destacados: al desbloquear la consola hasta la pantalla de inicio, se activa una animación de zoom y fade in. Animación de despliegue para los títulos de juegos, iconos animados de applets del sistema, puntos saltarines para el botón de Todo el software.")
 
-Ten en cuenta que la modificación de temas aún se encuentra en una etapa "temprana" (bueno, para ser completamente honesto...
-
-
 Ten en cuenta que la modificación de temas aún se encuentra en una etapa "temprana" (bueno, para ser completamente honesto, la escena está algo inactiva en este momento...) y aún falta proporcionar una documentación completa. No dudes en comunicarte con el servidor de [Discord de Themezer](https://discord.com/invite/nnm8wyM) si necesitas ayuda.
 
 
   
+## <a href="#req"></a>II. Requisitos
 
-## <a href="#req"></a>II. Requirements
+- Como mencioné, es obligatorio tener un conocimiento mínimo sobre personalización de temas. **Simplemente saber cómo cambiar la imagen de fondo usando el inyector definitivamente no funcionará**. Asegúrate de leer la documentación encontrada en [LayoutDocs](https://layoutdocs.themezer.net/) **cuidadosamente** antes de continuar. Aunque haré un repaso rápido, sería demasiado extenso elaborar esos temas aquí.
 
-  
+- Windows 10 o 11
 
-- As I said, a minimum knowledge on themeing is mandatory. **Merely knowing how to background image swap using the injector definitely won't work out**. Be sure to **carefully** read the documentation found on [LayoutDocs](https://layoutdocs.themezer.net/) before going any further. While I'll be doing a quick refresher course, it would be too long to extra elaborate those subjects here.
+- [Switch Theme Injector + NXTheme Installer](https://github.com/exelix11/SwitchThemeInjector/releases) para compilar e instalar tu tema
 
-- Windows 10 or 11
+- [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor) para hacer animaciones y revisar los archivos de la consola
 
-- [Switch Theme Injector + NXTheme Installer](https://github.com/exelix11/SwitchThemeInjector/releases) to compile and install your theme
+- Un editor de texto. Se recomienda altamente [Visual Studio Code](https://code.visualstudio.com/download).
 
-- [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor) to make animations and check the console's files
+Asegúrate de descargar la última versión para cada software mencionado.
 
-- A text editor. [Visual Studio Code](https://code.visualstudio.com/download) highly recommended.
+## <a href="#before"></a>III. Antes de comenzar
 
-  
+### <a href="#before1"></a>III.1. Algunas palabras sobre archivos .szs
 
-Make sure you download the latest version for each aforementioned software.
+Crear temas implica alterar archivos `.szs`. Estos son archivos que contienen los activos gráficos de la interfaz de usuario, almacenados en archivos `.bflyt` y `.bflan`. Básicamente, toda la interfaz de usuario se descompone en estos archivos. Así que, para crear animaciones, obviamente tendremos que modificarlos.
 
-  
-
-## <a href="#before"></a>III. Before actually starting
-
-  
-
-### <a href="#before1"></a>III.1. A few words on .szs files
-
-  
-
-Making themes means altering `.szs` files. Those are archives that contain the UI's graphical assets, all of them being stored in `.bflyt` and `.bflan` files. Basically, the whole UI is broken down into such files. So in order to create animations, we'll obviously need to tamper them.
 
   
 
