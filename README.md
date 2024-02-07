@@ -22,11 +22,11 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
 ## Tutoriales disponibles
 
 - Información Básica
-  - Glosario /main/docs/definitions.md#diffing-diffed-json
-  - Tipos de Archivos /main/docs/guide/filetypes.md#szs-files
+  - [Glosario](/main/docs/definitions.md#diffing-diffed-json) 
+  - [Tipos de Archivos](/main/docs/guide/filetypes.md#szs-files) 
   - [Archivos de Menus](/main/docs/menu-docs/index.md)
-  - Secciones UDS /main/docs/guide/layouts/usd-sections.md
-  - - [Agregar o editar una imagen de fondo personalizada en cualquier tema](/layouts/custom-bg.md)
+  - [Secciones UDS](/main/docs/guide/layouts/usd-sections.md) 
+  - [Agregar o editar una imagen de fondo personalizada en cualquier tema](/layouts/custom-bg.md)
 
 - Diffing, usando diferenciales
   - [Qué es el diffing?](/main/docs/guide/diffpatch/index.md)
