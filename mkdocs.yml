@@ -1,0 +1,73 @@
+site_name: LayoutDocs
+extra_css: [css/extra.css]
+extra_javascript: [js/color_blocks.js]
+theme:
+    name: material
+    #     features:
+    #   - search.highlight <--- in the future
+    palette:
+        scheme: slate
+markdown_extensions:
+    - admonition
+    - toc: # https://python-markdown.github.io/extensions/toc/
+          permalink: True
+          toc_depth: 4
+    - md_in_html
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight
+    - pymdownx.superfences
+    - pymdownx.details
+nav:
+  - Home: index.md
+  - Guides:
+      - Getting Started: guide/index.md
+      - Menu Files: guide/menu-files.md
+      - Filetypes: guide/filetypes.md
+      - Layouts:
+          - Getting Started: guide/layouts/index.md
+          - USD Sections: guide/layouts/usd-sections.md
+      - Animations:
+          - Introduction: guide/animations/index.md
+          - "Quick refresher course: Nintendo Switch files, diffing": guide/animations/refresher.md
+          - Main tutorial: guide/animations/main-tutorial.md
+          - Animation templates: guide/animations/anim-templates.md
+          - More on animations: guide/animations/going-further.md
+          - "PaiTags and Targets": guide/animations/paitags-and-targets.md
+          - "szs, bflyt, bflan files": guide/animations/szs-bflyt-bflan.md
+      - Diffing: 
+          - What is Diffing?:  guide/diffpatch/index.md
+          - Diffpatching: guide/diffpatch/diff-example.md
+      - Manual szs theming (unsupported applets): guide/manualszs/index.md
+      - Specific Guides:
+          - Getting Started: guide/examples/index.md
+          #     Changing Component Sizes: guide/examples/changing-component-sizes/index.md
+          #     Repositioning the Gamerow: guide/examples/reposition-gamerow/index.md
+          - Stationary Game Icons: guide/examples/stationary-game-icons/index.md
+          - Custom Element Colors: guide/examples/custom-element-colors/index.md
+          - Custom Applet Icons: guide/examples/custom-applet-icons/index.md
+          - Custom Cursor: guide/examples/custom-cursor/index.md
+          - Hide Footer Line: guide/examples/hide-footer-line/index.md
+          - Hide Header Lines: guide/examples/hide-header-lines/index.md
+          #     Changing Applet Cursor Size: guide/examples/changing-applet-cursor-size/index.md
+          - Pulling & Pushing Panes: guide/examples/pull-push-front-back/index.md
+          - Disabling Hud Movement: guide/examples/disabling-clock-movement-caused-by-battery/index.md
+  - Menu Documentation:
+      - Introduction: menu-docs/index.md
+      - Menus:
+          - Common: menu-docs/menus/common/index.md
+          - Home Menu: menu-docs/menus/ResidentMenu/index.md
+          - Lockscreen: menu-docs/menus/Entrance/index.md
+          - All Apps: menu-docs/menus/Flaunch/index.md
+          #     - Settings: menu-docs/menus/Set/index.md
+          - Player Select: menu-docs/menus/Psl/index.md
+          #     - User Page: menu-docs/MyPage/index.md
+          #     - News: menu-docs/Notification/index.md
+  - Definitions: definitions.md
+  - Custom Messages/Text: custom-messages.md
+  - Extras:
+      - Guides: extras/guides.md
+      - Tools: extras/tools.md
+      - Discord Servers: extras/discord-servers.md
+      - Other: extras/other.md
