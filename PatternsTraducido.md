@@ -36,7 +36,7 @@ Una vez que tengas tu patrón, deberás exportarlo como JPG, no lo exportes como
 
 Después de eso, puedes usar esta plantilla JSON que utilizo en mi tema Patterns.
 
-[Patterns. JSONs Vertical & 1x1](/tree/main/JSON%20TEMPLATE%20FOR%20ANIMATION)
+[Patterns. JSONs Vertical & 1x1](/JSON%20TEMPLATE%20FOR%20ANIMATION)
 
 Si deseas utilizar tu propio tema JSON, debes cambiar el panel blyt/BgNml.bflyt en el JSON del menú principal por el siguiente:
 
