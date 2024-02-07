@@ -1,14 +1,12 @@
 # Tutorial de temas de Nintendo Switch en español
 
+<div align="center">
+  <video src="https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/8bfd0f0a-0e1d-417a-8958-920b90d34ea0" width="720" />
+</div>
 
-
-https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/8bfd0f0a-0e1d-417a-8958-920b90d34ea0
-
-
-
-https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/9f55d734-84b4-4817-8354-d22b132e0529
-
-
+<div align="center">
+  <video src="https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/9f55d734-84b4-4817-8354-d22b132e0529" width="720" />
+</div>
 
 ---
 
