@@ -22,28 +22,29 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
 ## Tutoriales disponibles
 
 - Información Básica
-  - Glosario https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/definitions.md#diffing-diffed-json
-  - Tipos de Archivos https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/filetypes.md#szs-files
-  - [Archivos de Menus](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/menu-docs/index.md)
-  - Secciones UDS https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/layouts/usd-sections.md
+  - Glosario /main/docs/definitions.md#diffing-diffed-json
+  - Tipos de Archivos /main/docs/guide/filetypes.md#szs-files
+  - [Archivos de Menus](/main/docs/menu-docs/index.md)
+  - Secciones UDS /main/docs/guide/layouts/usd-sections.md
   - - [Agregar o editar una imagen de fondo personalizada en cualquier tema](/layouts/custom-bg.md)
 
 - Diffing, usando diferenciales
-  - Qué es el diffing? https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/diffpatch/index.md
-  - Qué es diffpatching https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/diffpatch/diff-example.md
-  - Crear temas manualmente https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/manualszs/index.md
+  - [Qué es el diffing?](/main/docs/guide/diffpatch/index.md)
+  - [Qué es diffpatching](/main/docs/guide/diffpatch/diff-example.md)
+  - [Crear temas manualmente](/main/docs/guide/manualszs/index.md)
 
   - Animaciones
     - [Animar fondo en Nintendo Switch con Patterns](/PatternsTraducido.md)
     - [Creación de animaciones personalizadas para tus temas de NX](/anims/tuto_anims.md)
-    - Creando animaciones personalizadas para tus temas de NX https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/index.md
-    - Animaciones y Diffing https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/refresher.md
-    - Animaciones, tutorial principal https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/main-tutorial.md
-    - Usar plantillas BFLAN para las animaciones https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/anim-templates.md
-    - Información extra para las animaciones https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/going-further.md
-    - Animaciones PAI TAGS y Animaciones FLAN https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/paitags-and-targets.md
-    - Componentes que pueden ser animados https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/blob/main/docs/guide/animations/szs-bflyt-bflan.md
+    - [Creando animaciones personalizadas para tus temas de NX](/main/docs/guide/animations/index.md)
+    - [Animaciones y Diffing](/main/docs/guide/animations/refresher.md)
+    - [Animaciones, tutorial principal](/main/docs/guide/animations/main-tutorial.md)
+    - [Usar plantillas BFLAN para las animaciones](/main/docs/guide/animations/anim-templates.md)
+    - [Información extra para las animaciones ](/main/docs/guide/animations/going-further.md)
+    - [Animaciones PAI TAGS y Animaciones FLAN](/main/docs/guide/animations/paitags-and-targets.md)
+    - [Componentes que pueden ser animados](/main/docs/guide/animations/szs-bflyt-bflan.md)
     - [Edición de diseño para applets no admitidos](/layouts/uns_applets/uns_applets.md)
+    
 
 
 
