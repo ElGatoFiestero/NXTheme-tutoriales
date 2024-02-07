@@ -69,7 +69,7 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
     - [RdtBalloonCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloonCtrl.bflyt/index.md)
     - [RdtBase.bflyt.md](/docs/menu-docs/menus/ResidentMenu/RdtBase.bflyt.md)
     - [RdtBtnCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnCtrl.bflyt/index.md)
-    - [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt)/index.md
+    - [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt/index.md)
     - [RdtBtnSet.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnSet.bflyt/index.md)
 
   - [Common](/docs/menu-docs/menus/common/index.md)
