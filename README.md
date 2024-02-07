@@ -40,14 +40,22 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
   - [Animaciones y Diffing](/docs/guide/animations/refresher.md)
   - [Animaciones, tutorial principal](/docs/guide/animations/main-tutorial.md)
   - [Usar plantillas BFLAN para las animaciones](/docs/guide/animations/anim-templates.md)
-  - [Información extra para las animaciones ](/docs/guide/animations/going-further.md)
+  - [Información extra para las animaciones](/docs/guide/animations/going-further.md)
   - [Animaciones PAI TAGS y Animaciones FLAN](/docs/guide/animations/paitags-and-targets.md)
   - [Componentes que pueden ser animados](/docs/guide/animations/szs-bflyt-bflan.md)
   - [Edición de diseño para applets no admitidos](/layouts/uns_applets/uns_applets.md)
     
+- Guias Utiles y trucos para personalizar los temas
+  - [Creación y personalización íconos de Applets](/docs/guide/examples/custom-applet-icons/index.md)
+  - [Personalizacion cursor](/docs/guide/examples/custom-cursor/index.md)
+  - [Personalizacion Colores](/docs/guide/examples/custom-element-colors/index.md)
+  - [Deshabilitar el Movimiento del HUD Causado por la Batería](/docs/guide/examples/disabling-clock-movement-caused-by-battery/index.md)
+  - [Ocultar linea del footer](/docs/guide/examples/hide-footer-line/index.md)
+  - [Ocultar linea del header](/docs/guide/examples/hide-header-lines/index.md)
+  - [Empujar o jalar elementos hacia el fondo o hacia el frente](/docs/guide/examples/pull-push-front-back/index.md)
+  - [Moviendo la seccion de los iconos de los juegos](/docs/guide/examples/stationary-game-icons/index.md)
 
-
-
+  
 
 
 
