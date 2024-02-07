@@ -13,6 +13,15 @@ En este tutorial, aprenderás cómo tomar una imagen de patrón con una escala d
 
 Primero, hablemos sobre los conceptos básicos de crear un tema de fondo en movimiento. Un tema de fondo en movimiento es esencialmente un archivo de imagen que se repite continuamente en el fondo del menú de inicio de tu Nintendo Switch. La imagen generalmente está compuesta por un patrón o imagen que se repite y escala para crear una sensación de movimiento.
 
+<div align="center">
+  <video src="https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/f45c6285-934c-435d-a65a-347d5d9d026a" width="720" />
+</div>
+
+
+
+
+
+
 [](#requisitos)Requisitos:
 ------------------------------
 
