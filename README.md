@@ -1,5 +1,15 @@
 # Tutorial de temas de Nintendo Switch en español
 
+
+
+https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/8bfd0f0a-0e1d-417a-8958-920b90d34ea0
+
+
+
+https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/9f55d734-84b4-4817-8354-d22b132e0529
+
+
+
 ---
 
 Este repo es una combinación de los repositorios en inglés que ha sido traducida al español por [ElGatoFiestero](https://www.youtube.com/@RevistaElGatoFiestero)
