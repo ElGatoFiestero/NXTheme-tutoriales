@@ -25,8 +25,6 @@ Bienvenidos a esta recopilación de tutoriales sobre creación de temas para la 
 
 ---
 
----
-
 ## Tutoriales disponibles
 
 - Información Básica
