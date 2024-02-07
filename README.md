@@ -1,12 +1,15 @@
-# Tutoriales de NXTheme
+# Tutorial de temas de Nintendo Switch en español
 
 ---
 
-**Importante: Es probable que este repositorio ya no se actualice. Los tutoriales ahora se obtienen directamente del repositorio de LayoutDocs. Consulta las versiones actualizadas de las guías en el [sitio web](https://layoutdocs.themezer.net).**
+Este repo es una combinación de los repositorios en inglés que ha sido traducida al español por [ElGatoFiestero](https://www.youtube.com/@RevistaElGatoFiestero)
+- https://github.com/Kalyvara/NXTheme-tutorials
+- https://github.com/ThemezerNX/LayoutDocs
+- https://github.com/zzzribas/Patterns
 
 ---
 
-Si deseas aprender más sobre la personalización de temas de Nintendo Switch, este repositorio podría ser para ti. Aún así, recomiendo leer a través de [LayoutDocs](https://layoutdocs.themezer.net), donde se cubren los conceptos básicos que necesitarás.
+Si deseas aprender más sobre la personalización de temas de Nintendo Switch, este repositorio podría ser para ti. Pero recomiendo leer esta otra documentación en inglés [LayoutDocs](https://layoutdocs.themezer.net), donde se cubren los conceptos básicos que necesitarás.
 
 ## Tutoriales disponibles
 
