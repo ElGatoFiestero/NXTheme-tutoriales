@@ -50,8 +50,7 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 - [GitHub de exelix (Switch Theme Injector)](https://github.com/exelix11/SwitchThemeInjector)
 - [GitHub de FuryBaguette (Switch Layout Editor)](https://github.com/FuryBaguette/SwitchLayoutEditor)
 - [GitHub de Migush (ThemezerNX)](https://github.com/ThemezerNX/)
-- [GitHub de Zhi (Tema Patterns)](https://github.com/zzzribas/Patterns)
-- [GitHub de ElGatoFiestero (Tema Patterns)](/PatternsTraducido.md)
+- [GitHub de Zhi (Tema Patterns)](/PatternsTraducido.md)
 
 #### Para solicitar soporte
 - [Servidor de Discord de ThemezerNX](https://discord.com/invite/nnm8wyM)

@@ -6,7 +6,7 @@ _Escrito por [Capybara](https://themezer.net/creators/382997176307154945), revis
 ---
 
 !!! info
-      Aunque esta guía proporciona una cantidad razonable de información sobre animaciones, siempre hay espacio para recursos adicionales ya que las cosas aún no están completamente documentadas. Siéntete libre de contribuir ya sea [enviando una solicitud de extracción en GitHub](https://github.com/ThemezerNX/LayoutDocs) o simplemente comunicándote con el [Discord de Themezer](https://discord.com/invite/nnm8wyM).
+      Aunque esta guía proporciona una cantidad razonable de información sobre animaciones, siempre hay espacio para recursos adicionales ya que las cosas aún no están completamente documentadas. Siéntete libre de contribuir ya sea [enviando una solicitud de extracción en GitHub](/README-LayoutsDocsTraducido.md) o simplemente comunicándote con el [Discord de Themezer](https://discord.com/invite/nnm8wyM).
 
 ## Introducción
 

@@ -96,7 +96,7 @@ Bajo `FLPA`, selecciona el primer `[Entry]`. El panel derecho mostrará otro con
 
 - `KeyFrames` es... autoexplicativo, supongo. Esto nos permite desglosar nuestra animación en key frames correctamente definidos.
     
-- `DataType` se refiere al tipo de nuestras entradas en el campo `KeyFrames`. **Solo ten en cuenta que siempre debe establecerse en `2`** (significa `float`). Aunque no es realmente relevante aquí, puedes seguir [este enlace](https://layoutdocs.themezer.net/guide/layouts/usd-sections/) si quieres saber un poco más.
+- `DataType` se refiere al tipo de nuestras entradas en el campo `KeyFrames`. **Solo ten en cuenta que siempre debe establecerse en `2`** (significa `float`). Aunque no es realmente relevante aquí, puedes seguir [este enlace](/docs/guide/layouts/usd-sections.md) si quieres saber un poco más.
 
 **10-**
 

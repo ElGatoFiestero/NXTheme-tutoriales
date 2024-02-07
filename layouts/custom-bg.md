@@ -48,18 +48,18 @@ Switch Theme Injector proporciona diseños predeterminados. Si no te satisfacen,
 
 Alternativamente, si tienes un archivo `.nxtheme` y deseas extraer sus recursos, puedes hacerlo a través de Switch Theme Injector. Se extraerán tanto los diseños como los archivos de imagen durante el proceso.
 
-![image](https://github.com/ElGatoFiestero/NXTheme-tutoriales/assets/159089859/2d01962d-549d-4755-88c2-bfaf20698b59)
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/2d01962d-549d-4755-88c2-bfaf20698b59)
 
 
 Ten en cuenta que algunos temas de pantalla de inicio también proporcionan un diseño común (`common.json`), que se necesitará para construir nuestro `.nxtheme`. En general, puedes decir a primera vista si la sección del pie de página (que contiene botones e iconos de controladores) ha sido alterada o no.
 
-![image](https://github.com/ElGatoFiestero/NXTheme-tutoriales/assets/159089859/1bb21b74-920e-4d57-8e9f-8c967750b89a)
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/1bb21b74-920e-4d57-8e9f-8c967750b89a)
 
 
 ## III. Construcción con Switch Theme Injector
 
 Ahora, para la parte final. Abre Switch Theme Injector y deberías estar en la pestaña `NXTHEME BUILDER`. Selecciona tu applet (pantalla de inicio en mi ejemplo), busca tu imagen de fondo y el diseño que elegiste y luego confirma haciendo clic en `BUILD NXTHEME`. Elige tu ubicación de guardado preferida. Si todo se hizo correctamente, no se te solicitará ningún mensaje de error y se generará un archivo `.nxtheme`. Luego puedes proceder a instalar tu tema usando NXTheme Installer después de poner tu archivo `.nxtheme` compilado en la carpeta `themes` de tu tarjeta SD.
 
-![image](https://github.com/ElGatoFiestero/NXTheme-tutoriales/assets/159089859/4f60ba5d-d9f8-4c66-8a4a-797cf653786b)
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/4f60ba5d-d9f8-4c66-8a4a-797cf653786b)
 
 
