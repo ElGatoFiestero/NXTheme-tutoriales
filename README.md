@@ -55,8 +55,8 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
   - [Personalizacion cursor](/docs/guide/examples/custom-cursor/index.md)
   - [Moviendo la seccion de los iconos de los juegos](/docs/guide/examples/stationary-game-icons/index.md)
 
-- [Archivos de los menú ](/docs/menu-docs/index.md)
-
+- Archivos de los menú
+  - [Archivos principales de los menú ](/docs/menu-docs/index.md)
   - [Resident Menu ](/docs/menu-docs/menus/ResidentMenu/index.md)
     - [BatteryConsole.bflyt](/docs/menu-docs/menus/ResidentMenu/BatteryConsole.bflyt/index.md)
     - [GTNumL.bflyt](/docs/menu-docs/menus/ResidentMenu/GTNumL.bflyt/index.md)
