@@ -1,7 +1,7 @@
 # Patterns
 Un tema para Nintendo Switch.
 
-![Vista previa vertical](https://github.com/zzzribas/Patterns/blob/main/Vertical/github.gif)
+![Vista previa vertical](/main/Vertical/github.gif)
 
 Hola de nuevo,
 
@@ -23,7 +23,7 @@ También crearé documentación sobre cómo crear tus propios temas móviles en 
 
 - ACTUALIZACIÓN -
 Ahora también disponible para iconos estándar 1x1 de Nintendo.
-![Vista previa 1x1](https://github.com/zzzribas/Patterns/blob/main/1x1/github1x1.gif)
+![Vista previa 1x1](/1x1/github1x1.gif)
 
 # ERRORES:
 

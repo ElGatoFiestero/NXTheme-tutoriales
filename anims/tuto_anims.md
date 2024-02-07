@@ -51,7 +51,7 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 - [GitHub de FuryBaguette (Switch Layout Editor)](https://github.com/FuryBaguette/SwitchLayoutEditor)
 - [GitHub de Migush (ThemezerNX)](https://github.com/ThemezerNX/)
 - [GitHub de Zhi (Tema Patterns)](https://github.com/zzzribas/Patterns)
-- [GitHub de ElGatoFiestero (Tema Patterns)](https://github.com/ElGatoFiestero)
+- [GitHub de ElGatoFiestero (Tema Patterns)](/PatternsTraducido.md)
 
 #### Para solicitar soporte
 - [Servidor de Discord de ThemezerNX](https://discord.com/invite/nnm8wyM)
@@ -304,7 +304,7 @@ No hay una manera *correcta* ni fácil conocida de crear fondos de pantalla anim
 Una solución alternativa sería animar el panel que contiene tu imagen de fondo personalizada. Esto *realmente* funciona, y ya hay algunos temas que lo han logrado. Para hacerlo, trabajando con `ResidentMenu.szs`, necesitas agregar `L_BgNml` a la lista de paneles en `RdtBase_Enter.bflan` y realizar tus ediciones según tu conveniencia. Sin embargo, esta solución tiene sus limitaciones:
 
 - Aún estás limitado a una imagen de fondo estática, ya que no hay soporte para imágenes animadas de ningún tipo ni para archivos de video.
-- `RdtBase_Enter.bflan` contiene la animación de desbloqueo de la pantalla de inicio. Intenta hacer un bucle con tu animación usando el elemento `Flags` y tal vez puedas adivinar lo que sucederá (bucle de inicio, fallas en la interfaz de usuario y el sonido). La única forma de emular el bucle es duplicar tu patrón de animación a través de una cantidad absurda de fotogramas clave. [Zhi](https://themezer.net/creators/239384767785730048) realmente hizo esto en su [tema Patterns](https://themezer.net/packs/Patterns.-58f) con un límite de 64000 fotogramas clave (lo que equivale a unos 8 minutos). Si estás interesado en aprender todo el proceso, puedes leer [su propia documentación aquí](https://github.com/zzzribas/Patterns/wiki). Como nota adicional, es posible que desees estar atento a las próximas versiones de Zhi, ya que siempre tiene ideas interesantes.
+- `RdtBase_Enter.bflan` contiene la animación de desbloqueo de la pantalla de inicio. Intenta hacer un bucle con tu animación usando el elemento `Flags` y tal vez puedas adivinar lo que sucederá (bucle de inicio, fallas en la interfaz de usuario y el sonido). La única forma de emular el bucle es duplicar tu patrón de animación a través de una cantidad absurda de fotogramas clave. [Zhi](https://themezer.net/creators/239384767785730048) realmente hizo esto en su [tema Patterns](https://themezer.net/packs/Patterns.-58f) con un límite de 64000 fotogramas clave (lo que equivale a unos 8 minutos). Si estás interesado en aprender todo el proceso, puedes leer [su propia documentación aquí](/PatternsTraducido.md). Como nota adicional, es posible que desees estar atento a las próximas versiones de Zhi, ya que siempre tiene ideas interesantes.
 
 Para otros applets (por ejemplo, configuración, página de usuario, etc.), en realidad no hay ninguna manera conocida de aplicar algún tipo de comportamiento de animación a una imagen de fondo personalizada.
 

@@ -74,4 +74,4 @@ Echa un vistazo a estas guías para obtener más información sobre cómo crear 
 -   [Hacer tus propias animaciones personalizadas](https://www.reddit.com/r/NXThemes/comments/biu5hc/making_your_own_custom_animations/)
 -   [Importar animaciones a tu propio diseño desde otro tema](https://www.reddit.com/r/NXThemes/comments/biti3d/importing_animations_to_your_own_layout_from/)
 -   [Importar animaciones usando el SwitchLayoutEditor](https://www.reddit.com/r/NXThemes/comments/bkb5ix/importing_animations_using_the_layout_editor/)
-- [Guía de temas de Zhi's Patterns](https://github.com/ElGatoFiestero/PatternsTraducido/blob/main/PatternsTraducido.md): un enfoque específico sobre fondos animados
+- [Guía de temas de Zhi's Patterns](/PatternsTraducido.md): un enfoque específico sobre fondos animados
