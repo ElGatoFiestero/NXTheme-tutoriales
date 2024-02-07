@@ -12,7 +12,7 @@ Es posible tematizar básicamente todos los menús que no son oficialmente compa
 
 ## Requisitos
 
-- Conocimientos básicos sobre edición de diseño y diferenciación, consulta las guías disponibles en el sitio web
+- Conocimientos básicos sobre edición de diseño y diffing, consulta las guías disponibles en el sitio web
 - [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor/releases/tag/beta15)
 - [Goldleaf](https://github.com/XorTroll/Goldleaf)
 - [hactool](https://github.com/SciresM/hactool/releases/tag/1.4.0)
@@ -24,7 +24,7 @@ Es posible tematizar básicamente todos los menús que no son oficialmente compa
 
 Cada aplicación instalada en Switch es un título que tiene un ID único.
 
-`qlaunch` es el que contiene los applets del menú de inicio debajo de él. Algunos de estos son compatibles oficialmente con el inyector (por ejemplo, `ResidentMenu.szs`, `Flaunch.szs`, `Set.szs`, etc.), mientras que otros no lo son (por ejemplo, `Option.szs`). Estos archivos `.szs` ya han sido extraídos por la aplicación homebrew NXTheme Installer y deberían estar ubicados en `themes/systemData` en tu tarjeta SD, por lo que diferenciarlos es un proceso sencillo ya que no necesitas extraer manualmente estos archivos. No elaboraré esto aquí, sino que recomiendo revisar la [sección de parcheo diferencial](/docs/guide/diffpatch/index.md).
+`qlaunch` es el que contiene los applets del menú de inicio debajo de él. Algunos de estos son compatibles oficialmente con el inyector (por ejemplo, `ResidentMenu.szs`, `Flaunch.szs`, `Set.szs`, etc.), mientras que otros no lo son (por ejemplo, `Option.szs`). Estos archivos `.szs` ya han sido extraídos por la aplicación homebrew NXTheme Installer y deberían estar ubicados en `themes/systemData` en tu tarjeta SD, por lo que diferenciarlos es un proceso sencillo ya que no necesitas extraer manualmente estos archivos. No elaboraré esto aquí, sino que recomiendo revisar la [sección de parcheo diferencial o diffpatching](/docs/guide/diffpatch/index.md).
 
 El ID de `qlaunch` es `0100000000001000`.
 
@@ -115,7 +115,9 @@ Esto extraerá el `romFS` en la carpeta `romfs`. Los archivos `.szs` también se
 
 ### Parcheo diferencial e instalación
 
-Básicamente hemos terminado con los pasos adicionales necesarios para tematizar applets no compatibles con `qlaunch`, ya que finalmente hemos obtenido los archivos `.szs`. Lo siguiente ahora es simplemente el parcheo diferencial de `.szs` con Layout Editor. Aquí solo usaré Visual Studio Code para escribir mi `.json` ya que no implementaré animaciones. Ten en cuenta que el encabezado del `.json` debe editarse en consecuencia, como en este caso:
+Parcheo diferencial es diffpatching pero en español
+
+Básicamente hemos terminado con los pasos adicionales necesarios para tematizar applets no compatibles con `qlaunch`, ya que finalmente hemos obtenido los archivos `.szs`. Lo siguiente ahora es simplemente el diffpatching de `.szs` con Layout Editor. Aquí solo usaré Visual Studio Code para escribir mi `.json` ya que no implementaré animaciones. Ten en cuenta que el encabezado del `.json` debe editarse en consecuencia, como en este caso:
 
 ```json
 "PatchName": "El nombre de tu tema",

@@ -28,7 +28,7 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
   - [Secciones UDS](/docs/guide/layouts/usd-sections.md) 
   - [Agregar o editar una imagen de fondo personalizada en cualquier tema](/layouts/custom-bg.md)
 
-- Diffing, usando diferenciales
+- Diffing, usando diferenciales/diffpatching
   - [Qué es el diffing?](/docs/guide/diffpatch/index.md)
   - [Qué es diffpatching](/docs/guide/diffpatch/diff-example.md)
   - [Crear temas manualmente](/docs/guide/manualszs/index.md)

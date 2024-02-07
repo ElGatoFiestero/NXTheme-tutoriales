@@ -18,7 +18,7 @@ Es posible personalizar prácticamente todos los menús que no son admitidos ofi
 
 ## Requisitos
 
-- Conocimientos sólidos sobre edición de diseño y diferenciación, consulta [LayoutDocs](layoutdocs.themezer.net/)
+- Conocimientos sólidos sobre edición de diseño y diffing, consulta [LayoutDocs](layoutdocs.themezer.net/)
 - [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor/releases/tag/beta15)
 - [Goldleaf](https://github.com/XorTroll/Goldleaf)
 - [hactool](https://github.com/SciresM/hactool/releases/tag/1.4.0)

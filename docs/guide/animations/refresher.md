@@ -51,7 +51,7 @@ Es posible que estés acostumbrado a trastear con archivos `.json` y compilar te
 !!! tip
       Alternativamente, puedes utilizar Switch Toolbox (también incluido con [LayoutKit](https://github.com/ThemezerNX/LayoutKit)), que es otro software que tiene prácticamente los mismos propósitos que Layout Editor, al menos para nuestras necesidades actuales. Sin embargo, dado que he estado trabajando con Layout Editor, no cubriré Switch Toolbox aquí, pero al final del día depende de tu preferencia.
 
-Una vez que se hayan implementado las animaciones, necesitaremos hacer una *diferencia de diseño* (como en *diferencia*). Básicamente, queremos trabajar con dos versiones del archivo `.szs` de interés: el primero se mantiene intacto y el segundo contendrá todas las ediciones que se hayan realizado a través de Layout Editor. La diferenciación de diseño es el proceso de comparar (*difuminar*) estos dos archivos `.szs` y generar un diseño `.json` que refleje todas tus ediciones. El archivo `.json` de salida luego se puede utilizar en Switch Theme Injector para compilar el `.nxtheme` como lo harías normalmente.
+Una vez que se hayan implementado las animaciones, necesitaremos hacer una *diferencia de diseño* (como en *diffing*). Básicamente, queremos trabajar con dos versiones del archivo `.szs` de interés: el primero se mantiene intacto y el segundo contendrá todas las ediciones que se hayan realizado a través de Layout Editor. La diferenciación de diseño es el proceso de comparar (*diffing*) estos dos archivos `.szs` y generar un diseño `.json` que refleje todas tus ediciones. El archivo `.json` de salida luego se puede utilizar en Switch Theme Injector para compilar el `.nxtheme` como lo harías normalmente.
 
 ## En resumen
 

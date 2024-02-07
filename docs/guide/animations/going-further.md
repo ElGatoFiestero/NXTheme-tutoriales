@@ -46,7 +46,7 @@ Digamos que quiero un cursor parpadeante para el menú de navegación en la apli
 1. Abre `Set.szs` y luego `BtnNav_Root_Active.bflan`. **Como siempre al crear animaciones personalizadas,** haz las modificaciones adecuadas en las secciones `Pat1` y `Pai1`. Agrega la entrada `N_BtnFocusKey` (panel de cursor) a la lista, crea una **entrada `FLVC`** (¡no `FLPA`!) justo debajo de ella, y luego otra entrada debajo de `FLVC`. Elegí configurar mis fotogramas clave como se muestra en las capturas de pantalla a continuación.
 2. También editaremos `BtnNav_Root_Inactive.bflan`, de lo contrario, navegar por las pestañas interrumpirá la animación del cursor y lo bloqueará en un fotograma determinado (el mismo comportamiento que en nuestra animación anterior de iconos de juego). Considerando eso, simplemente "restablecemos" el estado de `N_BtnFocusKey` (después de agregar este panel a la lista) estableciendo su canal alfa en `0` en el fotograma `0`.
 3. Para cada archivo `.bflan`, crea grupos con nombres adecuados en la sección `RootGroup` de `BtnNav_Root.bflyt`. **No olvides guardar todas tus ediciones.**
-4. Realiza una diferencia de diseño, compila e instala, ¡y listo! Ahora tienes un cursor parpadeante que funciona.
+4. Realiza una diferencia de diseño o diffpatch, compila e instala, ¡y listo! Ahora tienes un cursor parpadeante que funciona.
 
 | ![Configuración (1)](tuto14.jpg "Configuración (1)") | ![Configuración (2)](tuto15.jpg "Configuración (2)") |
 |------------------------------------------------------|------------------------------------------------------|

@@ -20,7 +20,7 @@ Este tutorial resume virtualmente todo lo que sé sobre animaciones. Sin embargo
 - **[II. Requisitos](#ii-requisitos)**
 - **[III. Antes de comenzar](#iii-antes-de-comenzar)**
 	- [III.1. Algunas palabras sobre archivos .szs](#iii1-algunas-palabras-sobre-archivos-szs)
-	- [III.2. Editor de diseño y diferenciación](#iii2-editor-de-dise%C3%B1o-y-diferenciaci%C3%B3n)
+	- [III.2. Editor de diseño y diffing](#iii2-editor-de-dise%C3%B1o-y-diferenciaci%C3%B3n)
 	- [III.3. Resumen del proceso](#iii3-resumen-del-proceso)
 - **[IV. Tutorial](#iv-tutorial)**
 	- **[a. Configuración del espacio de trabajo](#a-configuraci%C3%B3n-del-espacio-de-trabajo)**
@@ -126,7 +126,7 @@ Deberías estar acostumbrado a trastear con archivos `.json` y compilar temas co
 
 *Nota: alternativamente, puedes usar Switch Toolbox (también incluido con [LayoutKit](https://github.com/ThemezerNX/LayoutKit)), que es otro software que tiene prácticamente los mismos propósitos que Layout Editor. Sin embargo, dado que he estado trabajando con Layout Editor, no cubriré Switch Toolbox aquí, pero al final del día depende de tu preferencia. Solo pruébalos.*
 
-Una vez que las animaciones hayan sido implementadas, necesitaremos hacer una *diferencia de diseño* (como en *diferencia*). Básicamente, queremos trabajar con dos versiones del archivo `.szs` de interés: la primera se mantiene intacta y la segunda contendrá todas las ediciones que se hayan realizado a través de Layout Editor. La diferenciación de diseño es el proceso de comparar (*hacer diff*) ambos archivos `.szs` y generar un archivo de diseño (del mismo tipo que has estado utilizando para tus temas) que traduzca todas las ediciones al formato de código JSON. El archivo `.json` resultante luego se puede usar en Switch Theme Injector para compilar el `.nxtheme`, como lo harías normalmente.
+Una vez que las animaciones hayan sido implementadas, necesitaremos hacer una *diferencia de diseño*  (como en *diffing*). Básicamente, queremos trabajar con dos versiones del archivo `.szs` de interés: la primera se mantiene intacta y la segunda contendrá todas las ediciones que se hayan realizado a través de Layout Editor. La diferenciación de diseño es el proceso de comparar (*hacer diff*) ambos archivos `.szs` y generar un archivo de diseño (del mismo tipo que has estado utilizando para tus temas) que traduzca todas las ediciones al formato de código JSON. El archivo `.json` resultante luego se puede usar en Switch Theme Injector para compilar el `.nxtheme`, como lo harías normalmente.
 
 ### <a href="#before3"></a>III.3. Resumen del proceso
 
@@ -138,7 +138,7 @@ Pasaremos por estos pasos generales que aplican para cualquier tipo de edición 
 
 3. Diferenciación de diseño.
 
-4. Compilar el `.nxtheme` utilizando el archivo `.json` de salida/diferenciado e instalar en la consola (proceso habitual con Switch Theme Injector y NXTheme Installer).
+4. Compilar el `.nxtheme` utilizando el archivo `.json` de salida/diffed e instalar en la consola (proceso habitual con Switch Theme Injector y NXTheme Installer).
 
 ## <a href="#tuto"></a>IV. Tutorial
 
@@ -242,7 +242,7 @@ Ahora, con todos estos pasos, hemos creado con éxito una animación de escalado
 
 De esta manera, el ícono del juego se reducirá a su tamaño inicial cuando deje de estar seleccionado.
 
-Ahora, hay una última cosa que debemos hacer antes de realizar la diferenciación, **agregar grupos**. Más precisamente, agregar grupos al archivo `RdtBtnIconGame.bflyt` en este caso. Esto es necesario para 1) evitar bloqueos que probablemente ocurran sin hacerlo, y 2) "ordenar al `.bflyt` que no siga su comportamiento original". Sí, la redacción es incómoda y no puedo desarrollar mucho sobre los grupos de todos modos, ya que aún no comprendo completamente cómo funcionan; simplemente ten en cuenta que el siguiente paso es obligatorio. Básicamente, necesitamos crear un grupo para cada `.bflan` con el que hemos manipulado, es decir, `RdtBtnIconGame_Active.bflan` y `RdtBtnIconGame_Inactive.bflan`.
+Ahora, hay una última cosa que debemos hacer antes de realizar la diferenciación/diffing, **agregar grupos**. Más precisamente, agregar grupos al archivo `RdtBtnIconGame.bflyt` en este caso. Esto es necesario para 1) evitar bloqueos que probablemente ocurran sin hacerlo, y 2) "ordenar al `.bflyt` que no siga su comportamiento original". Sí, la redacción es incómoda y no puedo desarrollar mucho sobre los grupos de todos modos, ya que aún no comprendo completamente cómo funcionan; simplemente ten en cuenta que el siguiente paso es obligatorio. Básicamente, necesitamos crear un grupo para cada `.bflan` con el que hemos manipulado, es decir, `RdtBtnIconGame_Active.bflan` y `RdtBtnIconGame_Inactive.bflan`.
 
 15. Vuelve a la ventana del cuadro `.szs` y abre `RdtBtnIconGame.bflyt`. No te preocupes por el área gris a la derecha, simplemente agrega un nuevo grupo como se muestra en la imagen a continuación y asegúrate de **renombrarlo con el mismo nombre que definimos en el paso 6.b.** (es decir, `custom_G_Active`). Luego, selecciona el elemento `Panes` en el área rectangular debajo de la lista e ingresa los paneles enumerados en el archivo `RdtBtnIconGame_Active.bflan`. Cada panel debe separarse con un salto de línea.
 
@@ -252,7 +252,7 @@ Ahora, hay una última cosa que debemos hacer antes de realizar la diferenciaci�
 
 16. Repite la operación para `RdtBtnIconGame_Inactive.bflan`. Mismo proceso, excepto que el grupo debe llamarse `custom_G_Inactive`.
 
-Y con esto, ya casi hemos terminado. Ahora finalmente es el momento de realizar la diferenciación. **Asegúrate de guardar las ediciones en todas las ventanas abiertas.**
+Y con esto, ya casi hemos terminado. Ahora finalmente es el momento de realizar la diferenciación/diffing. **Asegúrate de guardar las ediciones en todas las ventanas abiertas.**
 
 17. Vuelve a la ventana del cuadro `.szs`, selecciona `Herramientas` en el menú superior y luego la opción `Este es el szs editado`. Se abrirá una nueva ventana. Busca el `ResidentMenu.szs` sin editar que hemos estado guardando en `Desktop/`, deja la casilla de verificación como está y haz clic en `Generar diff`.
 
@@ -291,7 +291,7 @@ Digamos que quiero un cursor parpadeante para el menú de navegación en la apli
 1. Abre `BtnNav_Root_Active.bflan`. **Como siempre cuando creas animaciones personalizadas,** haz las modificaciones adecuadas en las secciones `Pat1` y `Pai1`. Agrega la entrada `N_BtnFocusKey` (panel del cursor) a la lista, crea una entrada **`FLVC` (¡no `FLPA`!)** justo debajo de ella, y luego otra entrada debajo de `FLVC`. Elegí hacer mis fotogramas clave como se muestra a continuación. Observa que el valor de `AnimationTarget` es `16` aquí.
 2. También editaremos `BtnNav_Root_Inactive.bflan`, de lo contrario, al navegar por las pestañas, la animación del cursor se interrumpirá y se bloqueará en un cierto fotograma (mismo comportamiento que en nuestra animación anterior del ícono del juego). Considerando eso, simplemente "reiniciamos" el estado de `N_BtnFocusKey` (después de agregar este panel a la lista) estableciendo su canal alfa en `0` en el fotograma `0`.
 3. Una vez más, para cada archivo `.bflan`, crea grupos con nombres adecuados en la sección `RootGroup` de `BtnNav_Root.bflyt`. **No olvides guardar todas tus ediciones.**
-4. Realiza la diferenciación de diseño, compila e instala, y listo: ahora tienes un cursor parpadeante.
+4. Realiza la diferenciación/diffing de diseño, compila e instala, y listo: ahora tienes un cursor parpadeante.
 
 | ![Configuración (1)](tuto14.jpg "Configuración (1)") | ![Configuración (2)](tuto15.jpg "Configuración (2)") |
 | ----------------------------------------------------- | ----------------------------------------------------- |
