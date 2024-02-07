@@ -55,7 +55,47 @@ Si deseas aprender más sobre la personalización de temas de Nintendo Switch, e
   - [Personalizacion cursor](/docs/guide/examples/custom-cursor/index.md)
   - [Moviendo la seccion de los iconos de los juegos](/docs/guide/examples/stationary-game-icons/index.md)
 
+- [Archivos de los menú ](/docs/menu-docs/index.md)
+
+  - [Resident Menu ](/docs/menu-docs/menus/ResidentMenu/index.md)
+    - [BatteryConsole.bflyt](/docs/menu-docs/menus/ResidentMenu/BatteryConsole.bflyt/index.md)
+    - [GTNumL.bflyt](/docs/menu-docs/menus/ResidentMenu/GTNumL.bflyt/index.md)
+    - [GTNumM.bflyt](/docs/menu-docs/menus/ResidentMenu/GTNumM.bflyt/index.md)
+    - [Hud.bflyt](/docs/menu-docs/menus/ResidentMenu/Hud.bflyt/index.md)
+    - [HudBatteryNum.bflyt](/docs/menu-docs/menus/ResidentMenu/HudBatteryNum.bflyt/index.md)
+    - [HudSignal.bflyt](/docs/menu-docs/menus/ResidentMenu/HudSignal.bflyt/index.md)
+    - [HudTime.bflyt](/docs/menu-docs/menus/ResidentMenu/HudTime.bflyt/index.md)
+    - [RdtBalloon.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloon.bflyt/index.md)
+    - [RdtBalloonCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloonCtrl.bflyt/index.md)
+    - [RdtBase.bflyt.md](/docs/menu-docs/menus/ResidentMenu/RdtBase.bflyt.md)
+    - [RdtBtnCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnCtrl.bflyt/index.md)
+    - [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt)/index.md
+    - [RdtBtnSet.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnSet.bflyt/index.md)
+
+  - [Common](/docs/menu-docs/menus/common/index.md)
+    - [BgNml.bflyt](/docs/menu-docs/menus/common/BgNml.bflyt/index.md)
+    - [BtnDialogNml.bflyt](/docs/menu-docs/menus/common/BtnDialogNml.bflyt/index.md)
+    - [BtnLineNml.bflyt](/docs/menu-docs/menus/common/BtnLineNml.bflyt/index.md)
+    - [DBaseNml.bflyt](/docs/menu-docs/menus/common/DBaseNml.bflyt/index.md)
+    - [DBtmBaseNml.bflyt](/docs/menu-docs/menus/common/DBtmBaseNml.bflyt/index.md)
+    - [DCntIconLauncherText.bflyt](/docs/menu-docs/menus/common/DCntIconLauncherText.bflyt/index.md)
+    - [FooterAll.bflyt](/docs/menu-docs/menus/common/FooterAll.bflyt/index.md)
+    - [FooterBtn.bflyt](/docs/menu-docs/menus/common/FooterBtn.bflyt/index.md)
+    - [LineFooter.bflyt](/docs/menu-docs/menus/common/LineFooter.bflyt/index.md)
+    - [SystemAppletFader.bflyt](/docs/menu-docs/menus/common/SystemAppletFader.bflyt/index.md)
+
+  - [Entrance](/docs/menu-docs/menus/Entrance/index.md) 
+    -  [EntMain.bflyt.md](/docs/menu-docs/menus/Entrance/EntMain.bflyt.md)
+
+  - [Flaunch](/docs/menu-docs/menus/Flaunch/index.md) 
+      - [FlcCntMain.bflyt.md](/docs/menu-docs/menus/Flaunch/FlcCntMain.bflyt.md)
   
+  - [Psl](/docs/menu-docs/menus/Psl/index.md) 
+    - [PslBtnCardPlayer.bflyt](/docs/menu-docs/menus/Psl/PslBtnCardPlayer.bflyt/index.md)
+
+
+
+
 
 
 
