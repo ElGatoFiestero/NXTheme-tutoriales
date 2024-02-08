@@ -39,3 +39,6 @@ Otro término para elementos en archivos `bflyt`. Por ejemplo, `P_Pict`, `N_Butt
 ### Actualización del sistema
 
 Abreviatura de actualización del sistema
+
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/66c4f545-4b06-411d-8fba-dd0e33781566)
+
