@@ -1,0 +1,285 @@
+{
+    "PatchName": "Jag Patterns 1x1 Common Layout",
+    "AuthorName": "El Gato Fiestero",
+    "TargetName": "common.szs",
+    "ID": "Themezer_Custom:41ee1a79-0461-4eb6-a650-3ea5c7511690",
+    "Files": [
+        {
+            "FileName": "blyt/FooterAll.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "L_Line_00",
+                    "Position": {
+                        "X": 145,
+                        "Y": 52
+                    }
+                },
+                {
+                    "PaneName": "L_Line_01",
+                    "Position": {
+                        "X": 145,
+                        "Y": 52
+                    }
+                },
+                {
+                    "PaneName": "L_Line_02",
+                    "Position": {
+                        "X": 145,
+                        "Y": 52
+                    }
+                },
+                {
+                    "PaneName": "L_Ctrl",
+                    "Position": {
+                        "X": 200
+                    }
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/LineFooter.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "P_Line",
+                    "Position": {
+                        "X": 150,
+                        "Y": -60
+                    },
+                    "Scale": {
+                        "X": 1,
+                        "Y": 1
+                    },
+                    "Size": {
+                        "X": 1350,
+                        "Y": 75
+                    },
+                    "Visible": false,
+                    "UsdPatches": [
+                        {
+                            "PropName": "S_RoundRadius",
+                            "PropValues": [
+                                "0"
+                            ],
+                            "type": 2
+                        }
+                    ],
+                    "ColorTL": "FF000000",
+                    "ColorTR": "FF000000",
+                    "ColorBL": "FF000000",
+                    "ColorBR": "FF000000"
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/IconGame.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "P_Icon",
+                    "Scale": {
+                        "X": 0.8984375,
+                        "Y": 1.35
+                    },
+                    "Visible": false
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/FooterCtrl.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "P_CtrlDummy",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "L_Indi_00",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "P_IcoKey",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                }
+            ],
+            "Materials": [
+                {
+                    "MaterialName": "P_CtrlDummy",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "L_Indi_00",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "P_IcoKey",
+                    "BackgroundColor": "FFFFFFFF"
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/FooterBtn.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "T_Key",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "P_TouchEff",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "T_00",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "P_Key",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                },
+                {
+                    "PaneName": "T_01",
+                    "UsdPatches": [
+                        {
+                            "PropName": "C_W",
+                            "PropValues": [
+                                "0",
+                                "0",
+                                "0",
+                                "0"
+                            ],
+                            "type": 1
+                        }
+                    ],
+                    "ColorTL": "FF666666",
+                    "ColorTR": "FF666666",
+                    "ColorBL": "FF666666",
+                    "ColorBR": "FF666666"
+                }
+            ],
+            "Materials": [
+                {
+                    "MaterialName": "T_Key",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "P_TouchEff",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "T_00",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "T_Key",
+                    "BackgroundColor": "FFFFFFFF"
+                },
+                {
+                    "MaterialName": "T_01",
+                    "BackgroundColor": "FFFFFFFF"
+                }
+            ]
+        }
+    ]
+}

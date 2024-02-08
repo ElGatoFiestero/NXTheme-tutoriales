@@ -1,0 +1,240 @@
+{
+    "PatchName": "Switch Real Covers Zonai Ultrahand",
+    "AuthorName": "El Gato Fiestero",
+    "TargetName": "Entrance.szs",
+    "ID": "Themezer_Custom:d5e4186c-49a5-4b85-9021-dc1a832cf78b",
+    "Files": [
+        {
+            "FileName": "blyt/EntMain.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "N_CntRMain",
+                    "Position": {
+                        "X": -182,
+                        "Y": -16
+                    },
+                    "Scale": {
+                        "X": 1.1,
+                        "Y": 1.1
+                    }
+                },
+                {
+                    "PaneName": "N_Home",
+                    "Position": {}
+                },
+                {
+                    "PaneName": "L_BtnResume",
+                    "Position": {
+                        "X": 1000
+                    },
+                    "Visible": false
+                },
+                {
+                    "PaneName": "N_ChildLock",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "N_MarginChildLockHud",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "L_Hud",
+                    "Position": {
+                        "X": -245,
+                        "Y": 280
+                    },
+                    "Visible": false
+                },
+                {
+                    "PaneName": "N_CntL",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "N_News",
+                    "Position": {
+                        "X": -100,
+                        "Y": 36
+                    },
+                    "Visible": false
+                },
+                {
+                    "PaneName": "L_BtnNtf",
+                    "Scale": {
+                        "X": 0.8,
+                        "Y": 0.8
+                    },
+                    "Visible": false
+                },
+                {
+                    "PaneName": "L_Lock",
+                    "Position": {},
+                    "Scale": {
+                        "X": 0.8,
+                        "Y": 0.8
+                    },
+                    "Visible": false
+                },
+                {
+                    "PaneName": "L_BtnBack",
+                    "Position": {
+                        "X": -362,
+                        "Y": -285
+                    },
+                    "Visible": false
+                }
+            ],
+            "AddGroups": [
+                {
+                    "GroupName": "NSX_G_Lock",
+                    "Panes": [
+                        "P_BgL",
+                        "P_LocBgRMask",
+                        "P_LockBgR",
+                        "N_CntR",
+                        "N_CntRMain",
+                        "L_BtnHome",
+                        "L_BtnSystemAppletLock",
+                        "N_CntL",
+                        "N_News",
+                        "N_BtnNews_00",
+                        "N_BtnNews_01",
+                        "N_BtnNews_02",
+                        "L_BtnNews_00",
+                        "L_BtnNews_01",
+                        "L_BtnNews_02",
+                        "L_IconNew_00",
+                        "L_IconNew_01",
+                        "L_IconNew_02",
+                        "L_BtnNewsLock",
+                        "L_BtnNewsListLock",
+                        "L_BtnNtf",
+                        "N_Lock",
+                        "N_LockSub",
+                        "P_BgR",
+                        "N_BtnNewsPriority",
+                        "N_CntHud",
+                        "L_BtnResume"
+                    ]
+                }
+            ],
+            "Materials": [
+                {
+                    "MaterialName": "P_Pict",
+                    "ForegroundColor": "14000000",
+                    "BackgroundColor": "E6FFFFFF"
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/EntBtnChildLock.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "RootPane",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "N_Root",
+                    "Visible": false
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/EntBtnResumeSystemApplet.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "P_Image",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "P_Circle_00",
+                    "Position": {
+                        "X": 999999,
+                        "Y": 999999
+                    }
+                },
+                {
+                    "PaneName": "P_Circle_01",
+                    "Position": {
+                        "X": 999999,
+                        "Y": 999999
+                    }
+                },
+                {
+                    "PaneName": "P_BtnDecideKey",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "P_BtnTouch",
+                    "Visible": false
+                },
+                {
+                    "PaneName": "P_ImageEffect",
+                    "Visible": false
+                }
+            ],
+            "AddGroups": [
+                {
+                    "GroupName": "NSX_G_BtnTouch",
+                    "Panes": [
+                        "N_DecideTouch",
+                        "P_BtnTouch",
+                        "P_Image",
+                        "P_ImageEffect",
+                        "P_CircleEffect_00",
+                        "P_CircleEffect_01",
+                        "P_Circle_00",
+                        "P_Circle_01",
+                        "P_PictHome",
+                        "P_PictNews_00",
+                        "P_PictNews_01",
+                        "P_PictShop",
+                        "P_PictSet",
+                        "N_PictFlc",
+                        "N_PictNews",
+                        "P_PictPvr",
+                        "P_PictCtrl",
+                        "P_PictPcl"
+                    ]
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/Hud.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "N_Root",
+                    "Scale": {
+                        "X": 1.1,
+                        "Y": 1.1
+                    }
+                }
+            ]
+        },
+        {
+            "FileName": "blyt/BatteryConsole.bflyt",
+            "Patches": [
+                {
+                    "PaneName": "P_Charge",
+                    "ColorTL": "FF80FFFF",
+                    "ColorTR": "FF00FFFF",
+                    "ColorBL": "FF80FFFF",
+                    "ColorBR": "FF00FFFF"
+                }
+            ]
+        }
+    ],
+    "Anims": [
+        {
+            "FileName": "anim/EntBtnResumeSystemApplet_DecideTouch.bflan",
+            "AnimJson": "{\"LittleEndian\":true,\"Version\":150994944,\"pat1\":{\"AnimationOrder\":1,\"Name\":\"DecideTouch\",\"ChildBinding\":0,\"Groups\":[\"NSX_G_BtnTouch\"],\"Unk_StartOfFile\":0,\"Unk_EndOfFile\":0,\"Unk_EndOfHeader\":\"AIAA\"},\"pai1\":{\"FrameSize\":400,\"Flags\":1,\"Textures\":[],\"Entries\":[{\"Name\":\"P_BtnTouch\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"P_PictHome\",\"Target\":0,\"Tags\":[{\"Unknown\":0,\"TagType\":\"FLPA\",\"Entries\":[{\"Index\":0,\"AnimationTarget\":4,\"DataType\":2,\"KeyFrames\":[{\"Frame\":0.0,\"Value\":0.0,\"Blend\":0.0},{\"Frame\":400.0,\"Value\":360.0,\"Blend\":0.0}],\"FLEUUnknownInt\":0,\"FLEUEntryName\":\"\"}]}],\"UnkwnownData\":\"\"}]}}"
+        },
+        {
+            "FileName": "anim/EntMain_LockMainIn.bflan",
+            "AnimJson": "{\"LittleEndian\":true,\"Version\":150994944,\"pat1\":{\"AnimationOrder\":1,\"Name\":\"LockMainIn\",\"ChildBinding\":0,\"Groups\":[\"NSX_G_Lock\"],\"Unk_StartOfFile\":0,\"Unk_EndOfFile\":0,\"Unk_EndOfHeader\":\"ADwA\"},\"pai1\":{\"FrameSize\":1000,\"Flags\":0,\"Textures\":[],\"Entries\":[{\"Name\":\"N_CntR\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"N_Lock\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"N_CntL\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"N_CntHud\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"N_LockSub\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"L_BtnResume\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"L_BtnHome\",\"Target\":0,\"Tags\":[],\"UnkwnownData\":\"\"},{\"Name\":\"P_BgL\",\"Target\":1,\"Tags\":[{\"Unknown\":0,\"TagType\":\"FLPA\",\"Entries\":[{\"Index\":0,\"AnimationTarget\":0,\"DataType\":2,\"KeyFrames\":[{\"Frame\":0,\"Value\":0,\"Blend\":0},{\"Frame\":500,\"Value\":1000,\"Blend\":0},{\"Frame\":1000,\"Value\":30,\"Blend\":0}],\"FLEUUnknownInt\":0,\"FLEUEntryName\":null}]}],\"UnkwnownData\":\"\"},{\"Name\":\"L_BgNml\",\"Target\":0,\"Tags\":[{\"Unknown\":0,\"TagType\":\"FLPA\",\"Entries\":[{\"Index\":0,\"AnimationTarget\":0,\"DataType\":2,\"KeyFrames\":[{\"Frame\":0,\"Value\":0,\"Blend\":0},{\"Frame\":500,\"Value\":-1000,\"Blend\":0}],\"FLEUUnknownInt\":0,\"FLEUEntryName\":null}]}],\"UnkwnownData\":\"\"}]}}"
+        },
+        {
+            "FileName": "anim/EntMain_Home.bflan",
+            "AnimJson": "{\"LittleEndian\":true,\"Version\":150994944,\"pat1\":{\"AnimationOrder\":17,\"Name\":\"Home\",\"ChildBinding\":20,\"Groups\":[\"G_Home\"],\"Unk_StartOfFile\":0,\"Unk_EndOfFile\":0,\"Unk_EndOfHeader\":\"ABUAAAAAAA==\"},\"pai1\":{\"FrameSize\":1000,\"Flags\":0,\"Textures\":[],\"Entries\":[{\"Name\":\"N_Home\",\"Target\":0,\"Tags\":[{\"Unknown\":0,\"TagType\":\"FLPA\",\"Entries\":[{\"Index\":0,\"AnimationTarget\":1,\"DataType\":2,\"KeyFrames\":[{\"Frame\":0,\"Value\":-155,\"Blend\":0},{\"Frame\":1,\"Value\":-155,\"Blend\":0},{\"Frame\":1,\"Value\":-176,\"Blend\":0}],\"FLEUUnknownInt\":0,\"FLEUEntryName\":\"\"},{\"Index\":0,\"AnimationTarget\":0,\"DataType\":2,\"KeyFrames\":[{\"Frame\":0,\"Value\":0,\"Blend\":0},{\"Frame\":500,\"Value\":500,\"Blend\":0},{\"Frame\":1000,\"Value\":2000,\"Blend\":0}],\"FLEUUnknownInt\":0,\"FLEUEntryName\":null}]}],\"UnkwnownData\":\"\"}]}}"
+        }
+    ]
+}
