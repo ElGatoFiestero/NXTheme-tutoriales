@@ -9,4 +9,4 @@
 Si estás interesado en [contribuir a LayoutDocs](/README-LayoutsDocsTraducido.md) puedes crear una solicitud de extracción (Pull Request) con tus cambios/adiciones.
 También puedes enviar un mensaje directo a `Migush#4096` en Discord.
 
-# [Empezando](guide/index.md) :octicons-arrow-right-16:
+# [Empezando](guide/index.md)

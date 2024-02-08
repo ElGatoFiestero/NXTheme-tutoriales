@@ -4,15 +4,15 @@ Aquí tienes algunas herramientas que podrían ser útiles para tematización y 
 
 ## Herramientas de Theming
 
-- [Switch-Toolbox](https://github.com/KillzXGaming/Switch-Toolbox) :octicons-tasklist-16:  
+- [Switch-Toolbox](https://github.com/KillzXGaming/Switch-Toolbox)  
     **Tipos de archivos compatibles:** [Ver esta lista](https://github.com/KillzXGaming/Switch-Toolbox#features)  
     El Switch Toolbox puede abrir y modificar muchos formatos de archivo que podrías encontrar al, por ejemplo, modificar juegos. Se trata de un editor visual. También cuenta con soporte para los archivos de menú de Switch y a menudo incluso puede previsualizarlos.
-- [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector) :octicons-tasklist-16:  
+- [Switch Theme Injector](https://github.com/exelix11/SwitchThemeInjector)  
     **Tipos de archivos compatibles:** `szs`, `nxtheme`, `json`
-    - Switch Theme Injector (aplicación para Windows) :octicons-tasklist-16:: Una aplicación para crear y editar temas personalizados.
+    - Switch Theme Injector (aplicación para Windows) Una aplicación para crear y editar temas personalizados.
     - [Switch Theme Injector Online](http://exelix11.github.io/SwitchThemeInjector/v2) (también llamado WebInjector): Un puerto del inyector de Windows como una aplicación web, sin embargo, carece de algunas características como iconos personalizados y soporte para `common.szs`.
     - NXThemes Installer: Una aplicación homebrew que se ejecuta en el propio switch y se puede usar para instalar y administrar temas.
-- [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor) :octicons-tasklist-16:  
+- [Switch Layout Editor](https://github.com/FuryBaguette/SwitchLayoutEditor)  
     **Tipos de archivos compatibles:** `blfyt`, `bflan`  
     El Switch Layout Editor fue desarrollado especialmente para crear diseños personalizados. Se trata de un editor visual. Una introducción básica a la herramienta está disponible [aquí](https://github.com/FuryBaguette/SwitchLayoutEditor/wiki).
 - [3DSKit](https://github.com/Tyulis/3DSkit)  

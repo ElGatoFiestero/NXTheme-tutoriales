@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Animaciones: curso de repaso](refresher.md)
+#####  [Volver a Animaciones: curso de repaso](refresher.md)
 
 # Animaciones: Tutorial principal
 ---
@@ -174,5 +174,5 @@ Esto producirá un archivo `.json` que utilizaremos para compilar un `.nxtheme` 
     |-----------------------------------------------------------------------|--------------------------------------------------|
     | Sección `Agregar Grupos`                                              | Sección `Anims`                                  |
 
-# [Continúa con Animaciones: plantillas](anim-templates.md) :octicons-arrow-right-16:
+# [Continúa con Animaciones: plantillas](anim-templates.md) 
 

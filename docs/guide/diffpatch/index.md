@@ -50,4 +50,4 @@ Este JSON (diffpatch) se puede aplicar a un archivo SZS ya sea con [Switch Theme
 
 Aquí tienes un ejemplo de sodasoba sobre cómo aplicar un parche diferencial:
 
-# [Continuar a Diffing](diff-example.md) :octicons-arrow-right-16:
+# [Continuar a Diffing](diff-example.md) 

@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back common.szs](../index.md)
+#####  [Back common.szs](../index.md)
 
 #DCntIconLauncherText.bflyt
 

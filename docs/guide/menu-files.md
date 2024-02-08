@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a la Introducción](index.md)
+##### [Volver a la Introducción](index.md)
 
 # Archivos de Menú
 
@@ -29,4 +29,4 @@ Cada menú tiene su propio archivo. Aquí tienes una lista de los menús admitid
 | Selección de Jugador    | `Psl.szs`          |
 | Página de Usuario        | `MyPage.szs`       |
 
-# [Continuar a Tipos de Archivos](filetypes.md) :octicons-arrow-right-16:
+# [Continuar a Tipos de Archivos](filetypes.md) 

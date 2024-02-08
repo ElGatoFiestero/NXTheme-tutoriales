@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back Psl.szs](../index.md)
+#####  [Back Psl.szs](../index.md)
 
 #PslBtnCardPlayer.bflyt
 

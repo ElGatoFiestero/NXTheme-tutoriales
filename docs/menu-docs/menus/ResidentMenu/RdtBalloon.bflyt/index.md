@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](../index.md)
+#####  [Back ResidentMenu.szs](../index.md)
 
 #RdtBalloon.bflyt
 

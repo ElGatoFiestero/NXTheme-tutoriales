@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](../index.md)
+#####  [Back ResidentMenu.szs](../index.md)
 
 #RdtBtnIconGame.bflyt
 
@@ -54,7 +54,7 @@
 
 ---
 
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](../index.md)
+#####  [Back ResidentMenu.szs](../index.md)
 
 **File:** `ResidentMenu.szs/blyt/RdtBtnIconGame.bflyt`<br>
 **Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)

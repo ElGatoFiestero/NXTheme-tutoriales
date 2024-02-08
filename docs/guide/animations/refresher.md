@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Animaciones: introducción](index.md)
+#####  [Volver a Animaciones: introducción](index.md)
 
 # Animaciones: repaso de archivos y diferenciación
 ---
@@ -8,9 +8,9 @@
 !!! info
     Para más detalles, consulta las siguientes secciones:
     
-    - **[Archivos de menú](../menu-files.md) :octicons-arrow-right-16:**
+    - **[Archivos de menú](../menu-files.md) **
     
-    - **[Tipos de archivos](../filetypes.md) :octicons-arrow-right-16:**
+    - **[Tipos de archivos](../filetypes.md) **
 
 Hacer temas implica alterar archivos `.szs`. Estos son archivos que contienen los elementos gráficos de la interfaz de usuario, todos ellos almacenados en archivos `.bflyt` y `.bflan`. Básicamente, toda la interfaz de usuario se descompone en tales archivos. Entonces, para crear animaciones, obviamente tendremos que modificarlos.
 
@@ -44,7 +44,7 @@ así que si alguien quiere editar elementos de la interfaz de usuario en la pág
 !!! info
     Para más detalles, consulta la siguiente sección:
     
-    - **[Diferenciación](../diffing.md) :octicons-arrow-right-16:**
+    - **[Diferenciación](../diffing.md) **
 
 Es posible que estés acostumbrado a trastear con archivos `.json` y compilar temas con Switch Theme Injector, pero quizás no estés familiarizado con Switch Layout Editor. Piensa en él como un lector/archivador de archivos `.szs` que también ofrece una vista previa real en pantalla de la posición de los paneles, lo cual es bastante conveniente para la edición de diseños. Resulta que Layout Editor también se utiliza para la edición de animaciones.
 
@@ -67,4 +67,4 @@ Pasaremos por estos pasos generales que se aplican a **cualquier tipo de edició
 
 Con todo esto presentado, finalmente podemos empezar a crear animaciones.
 
-# [Continuar con Animaciones: Tutorial principal](main-tutorial.md) :octicons-arrow-right-16:
+# [Continuar con Animaciones: Tutorial principal](main-tutorial.md) 

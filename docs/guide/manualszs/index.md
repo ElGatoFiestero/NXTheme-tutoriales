@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver al ejemplo de parcheo diferencial](../diffpatch/diff-example.md)
+#####  [Volver al ejemplo de parcheo diferencial](../diffpatch/diff-example.md)
 
 # Temas para applets no compatibles: tematización manual de szs
 _Escrito por [Capybara](https://themezer.net/creators/382997176307154945). Última actualización: Junio de 2023_
@@ -145,4 +145,4 @@ Las imágenes de fondo personalizadas para menús no compatibles *pueden ser* al
 - exelix por su consejo
 - contribuyentes de la escena NX
 
-# [Continuar a Guías Específicas](../examples/index.md) :octicons-arrow-right-16:
+# [Continuar a Guías Específicas](../examples/index.md) 

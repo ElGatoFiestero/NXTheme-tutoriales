@@ -70,7 +70,7 @@ Consulta estas wikis para obtener más información sobre todo tipo de formatos 
 - [Switchbrew](https://switchbrew.org/)
 
 
-### **[Continuar a Diseños (bflyt)](layouts/index.md) :octicons-arrow-right-16:**
+### **[Continuar a Diseños (bflyt)](layouts/index.md) **
 
-### **[Continuar a Animaciones (bflan)](animations/index.md) :octicons-arrow-right-16:**
+### **[Continuar a Animaciones (bflan)](animations/index.md) **
 

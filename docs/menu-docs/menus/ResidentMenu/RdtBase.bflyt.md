@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](index.md)
+#####  [Back ResidentMenu.szs](index.md)
 
 #RdtBase.bflyt (Main bflyt)
 
@@ -40,6 +40,6 @@
         -   **L_Hud [prt 1]** `the hud (clock, network, battery) Hud.bflyt`
         -   **L_BalloonCtrl [prt 1]** `the balloon that pops up when (dis)connecting a controller RdtBalloonCtrl.bflyt`
 
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](index.md)
+#####  [Back ResidentMenu.szs](index.md)
 
 **File:** `ResidentMenu.szs/blyt/RdtBase.bflyt`<br>

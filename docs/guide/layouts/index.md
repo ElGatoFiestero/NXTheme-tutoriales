@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Tipos de Archivos](../filetypes.md)
+#####  [Volver a Tipos de Archivos](../filetypes.md)
 
 # Empezando
 
@@ -45,4 +45,4 @@ Consulta estas guías para obtener más información sobre cómo crear diseños:
 - [Rainbow Simple Homescreen with Rounded Icons and Album Icon Tutorial](https://www.reddit.com/r/NXThemes/comments/ba5o8i/rainbow_simple_homescreen_with_rounded_icons_and/)
 - [Edición de BFLYT con Switch Toolbox](https://github.com/KillzXGaming/Switch-Toolbox/wiki/BFLYT-Editing)
 
-# [Continuar a Secciones USD](usd-sections.md) :octicons-arrow-right-16:
+# [Continuar a Secciones USD](usd-sections.md) 

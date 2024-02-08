@@ -23,7 +23,7 @@ Como puedes ver en la vista previa anterior, el icono del álbum se reemplaza po
 ## Paquetes de Iconos
 
 ![Paquete 1](pack1.jpg)
-Un ejemplo de paquete de iconos por u/akaisora255 se puede descargar [desde aquí :octicons-download-16:](Icon Pack 1.zip).
+Un ejemplo de paquete de iconos por u/akaisora255 se puede descargar [desde aquí](Icon Pack 1.zip).
 
 ![Paquete 2](pack2.png)
-Un paquete de iconos por [sodasoba](https://github.com/sodasoba1) se puede descargar [desde aquí :octicons-download-16:](Icon Pack 2.zip).
+Un paquete de iconos por [sodasoba](https://github.com/sodasoba1) se puede descargar [desde aquí](Icon Pack 2.zip).

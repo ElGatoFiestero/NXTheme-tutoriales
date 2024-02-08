@@ -67,4 +67,4 @@ Pega el Option.szs parcheado desde tu escritorio en la tarjeta SD
 	
 Reinicia tu Switch y listo.
 
-# [Continúa con Tematización manual de SZS](../manualszs/index.md) :octicons-arrow-right-16:
+# [Continúa con Tematización manual de SZS](../manualszs/index.md) 

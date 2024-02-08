@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](../index.md)
+#####  [Back ResidentMenu.szs](../index.md)
 
 #RdtBtnSet.bflyt
 
@@ -46,7 +46,7 @@
 	-	**4: P_Pict**
 ---
 	
-##### :octicons-arrow-left-16: [Back ResidentMenu.szs](../index.md)
+#####  [Back ResidentMenu.szs](../index.md)
 
 **File:** `ResidentMenu.szs/blyt/RdtBtnSet.bflyt`<br>
 **Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)

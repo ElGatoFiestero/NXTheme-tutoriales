@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Tipos de Archivo](../filetypes.md)
+#####  [Volver a Tipos de Archivo](../filetypes.md)
 
 # Creando animaciones personalizadas para tus temas de NX
 _Escrito por [Capybara](https://themezer.net/creators/382997176307154945), revisado por Migush. Última actualización: junio de 2023_
@@ -55,7 +55,7 @@ Aquí está la estructura general de esta guía:
     - **Tablas:** para experimentar más y ampliar las posibilidades de animación
 
 
-# [Continuar con Animaciones: repaso del curso](refresher.md) :octicons-arrow-right-16:
+# [Continuar con Animaciones: repaso del curso](refresher.md) 
 
 ---
 

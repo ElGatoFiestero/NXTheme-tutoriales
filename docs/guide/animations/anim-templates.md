@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Animaciones: tutorial principal](main-tutorial.md)
+#####  [Volver a Animaciones: tutorial principal](main-tutorial.md)
 
 # Animaciones: plantillas bflan
 ---
@@ -11,7 +11,7 @@ La versión 15 del Editor de Diseño ha introducido plantillas definidas por el 
 !!! cite "¡Echa un vistazo a las tablas!"
         En el tutorial principal nos centramos en crear animaciones de escala que solo involucraban `FLPA` `PaiTag`s y dos valores específicos de `AnimationTarget`. Aquí iremos más lejos usando `FLVC` y diferentes valores de `AnimationTarget`. Puede que quieras consultar las siguientes tablas y tenerlas cerca mientras lees esta sección.
 
-        - **[AnimationTargets y PaiTags](./paitags-and-targets.md) :octicons-arrow-right-16:**
+        - **[AnimationTargets y PaiTags](./paitags-and-targets.md) **
 
 ## ¿Cómo funciona?
 
@@ -243,7 +243,7 @@ Toma estos como principios generales:
 - Todos los valores de interés (es decir, que determinarán cómo se ve realmente la animación) se almacenan en parámetros: `%START_FRAME_POSITION%`, `%END_FRAME_POSITION%`, `%START_FRAME_SCALE%`, `%END_FRAME_SCALE%`, `%BASE_POSITION%`, `%POSITION_OFFSET%`, `%BASE_SCALE%`, `%SCALE_FACTOR%`
 - En el descriptor `.json`, el tipo de valor de los parámetros (especificado por `Kind`) debe definirse en consecuencia: `Int` (entero), `Float` (número real), `String` (texto)
 - Cada parámetro definido dentro del archivo `.template` tiene su propia entrada en el descriptor `.json`. Por ejemplo:
-    - **`%SCALE_FACTOR%`** :octicons-arrow-right-16:
+    - **`%SCALE_FACTOR%`** 
 
         ```json
         {
@@ -278,7 +278,7 @@ Podemos proceder cargando esta nueva plantilla en el Editor de Diseño y finalme
 !!! info
         Para obtener más detalles sobre los colores, consulta la siguiente sección:
         
-        - **[PaiTags y Targets - FLVC (Color de vértice)](paitags-and-targets.md#flvc-vertex-color) :octicons-arrow-right-16:**
+        - **[PaiTags y Targets - FLVC (Color de vértice)](paitags-and-targets.md#flvc-vertex-color) **
 
 En este punto, sabes casi todo sobre las plantillas `.bflan`. En esta sección solo te mostraré cómo se aplican a animaciones basadas en color.
 
@@ -530,4 +530,4 @@ Esta plantilla se ha utilizado para crear **[Unison R](https://themezer.net/pack
 
 Según [código fuente del Editor de Diseño](https://github.com/FuryBaguette/SwitchLayoutEditor/blob/master/BflytPreview/Automation/BflanTemplates.cs), también puedes usar plantillas `.bflan` para agregar paneles a la sección `Pai1`, agregando aún más automatización al proceso. Personalmente no lo he probado, pero siéntete libre de experimentar y compartir tus plantillas.
 
-# [Continuar con Animaciones: extras](going-further.md) :octicons-arrow-right-16:
+# [Continuar con Animaciones: extras](going-further.md) 

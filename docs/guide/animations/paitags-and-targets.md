@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Animaciones: extras](./going-further.md)
+#####  [Volver a Animaciones: extras](./going-further.md)
 
 # PaiTags y objetivos para animaciones FLAN
 
@@ -184,7 +184,7 @@ Relacionado con las transformaciones de colores de vértices listadas abajo.
 | `8`               | Información Extendida del Usuario        | Lista de valores de cadena, enteros o números reales |        |
 | `9`               | Indirecto                                |                                                     |        |
 
-# [Continuar a Animaciones: archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) :octicons-arrow-right-16:
+# [Continuar a Animaciones: archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) 
 
 ---
 

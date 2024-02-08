@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Empezando](index.md)
+#####  [Volver a Empezando](index.md)
 
 # Secciones USD
 
@@ -724,4 +724,4 @@ Example usage: `RdtBtnIconGame`
 }
 ```
 
-# [Continue a Animaciones](../animations/index.md) :octicons-arrow-right-16:
+# [Continue a Animaciones](../animations/index.md) 

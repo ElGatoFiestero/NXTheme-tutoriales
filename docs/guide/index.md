@@ -68,4 +68,4 @@ Para esta guía, se espera que ya tengas conocimientos básicos sobre cómo inst
 !!! Consejo
     Cualquier elemento eliminado se moverá a la papelera, así que si accidentalmente borras algo, ¡estás de suerte! Restaurar los archivos desde la papelera y hacer clic en el botón de actualización es suficiente.
 
-# [Continuar a Archivos de Menú](menu-files.md) :octicons-arrow-right-16:
+# [Continuar a Archivos de Menú](menu-files.md) 

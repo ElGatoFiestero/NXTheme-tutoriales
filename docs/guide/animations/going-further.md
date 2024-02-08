@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a Animaciones: plantillas](anim-templates.md)
+#####  [Volver a Animaciones: plantillas](anim-templates.md)
 
 # Más sobre animaciones
 ---
@@ -9,13 +9,13 @@
 
 Los valores de `AnimationTarget` y el comportamiento de la animación subsecuente cambian dependiendo del `PaiTag` definido. Una lista completa de Etiquetas y Objetivos de animación se puede ver en la siguiente página:
 
-##### **[PaiTags y AnimationTargets](./paitags-and-targets.md) :octicons-arrow-right-16:**
+##### **[PaiTags y AnimationTargets](./paitags-and-targets.md) **
 
 ### Archivos bflyt, bflan, szs
 
 Algunos `.bflyt`, `.bflan` y sus correspondientes `.szs` también están documentados allí:
 
-##### **[Archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) :octicons-arrow-right-16:**
+##### **[Archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) **
 
 ## Estados activos e inactivos
 
@@ -23,7 +23,7 @@ Podemos encontrar pares específicos de archivos `.bflan` para algunos `.bflyt`s
 
 En la sección principal del tutorial, trabajamos en `RdtBtnIconGame_Active.bflan` / `RdtBtnIconGame_Inactive.bflan`, pero también hay un par más, por ejemplo `RdtBtnSet_Active.bflan` / `RdtBtnSet_Inactive.bflan`.
 
-##### **[Archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) :octicons-arrow-right-16:**
+##### **[Archivos szs, bflyt, bflan](./szs-bflyt-bflan.md) **
 
 - `<bflyt>_Active.bflan` anima los paneles `<bflyt>` cuando el elemento de la interfaz de usuario está **seleccionado**
 
@@ -86,4 +86,4 @@ Un caso notable es el botón de Volver a descargar software en la parte inferior
 
 Dando otro ejemplo, echa un vistazo a mi tema de menú de inicio Unison R: los juegos destacados tienen una tarjeta blanca redondeada alrededor de su icono. Los paneles correspondientes a estas tarjetas son `P_BtnBase` de `RdtBtnIconGame.bflyt`. Este panel en realidad tiene cierta transparencia definida a través de animaciones de forma predeterminada. Por lo tanto, para hacer que este panel sea completamente opaco, debemos analizar las animaciones de `P_BtnBase` y cambiar su valor de `KeyFrames` a `255` bajo la entrada `FLVC`.
 
-# [Continuar con Animaciones: PaiTags y AnimationTargets](./paitags-and-targets.md) :octicons-arrow-right-16:
+# [Continuar con Animaciones: PaiTags y AnimationTargets](./paitags-and-targets.md) 

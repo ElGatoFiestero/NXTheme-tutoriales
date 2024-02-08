@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Back Enterance.szs](index.md)
+#####  [Back Enterance.szs](index.md)
 
 #EntMain.bflyt (Main bflyt)
 
@@ -95,7 +95,7 @@
 			-	**L_AlarmBtnPagerR [prt 1]**
 			-	**L_AlarmBtnPagerL [prt 1]**
 			
-##### :octicons-arrow-left-16: [Back Enterance.szs](index.md)
+#####  [Back Enterance.szs](index.md)
 
 #EntMain.bflyt (Main bflyt)
 

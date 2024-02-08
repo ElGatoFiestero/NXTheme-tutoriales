@@ -1,4 +1,4 @@
-##### :octicons-arrow-left-16: [Volver a common.szs](../index.md)
+#####  [Volver a common.szs](../index.md)
 
 # DBaseNml.bflyt
 

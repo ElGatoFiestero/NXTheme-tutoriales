@@ -53,4 +53,4 @@ Repasaremos estos pasos generales que se aplican a **cualquier tipo de edición 
 
 Dicho esto, finalmente podemos empezar a crear animaciones.
 
-# [Continuar a Animaciones: Tutorial principal](main-tutorial.md) :octicons-arrow-right-16:
+# [Continuar a Animaciones: Tutorial principal](main-tutorial.md) 
