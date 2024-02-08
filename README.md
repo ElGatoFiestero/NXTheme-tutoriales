@@ -5,6 +5,8 @@
 
 Bienvenidos a esta recopilación de tutoriales sobre creación de temas para la Nintendo Switch, traducidos en español
 
+[Aquí](/ElGatoFiestero/Layouts) se encuentran los temas que he creado, tanto animados como en otros estilos. Sientanse libres de reusar las plantillas para hacer sus temas o para aprender
+
 ---
 
 <div align="center">
