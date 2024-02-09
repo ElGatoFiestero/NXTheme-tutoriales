@@ -1,23 +1,23 @@
-#####  [Back ResidentMenu.szs](../index.md)
+[Regresar a ResidentMenu.szs](../index.md)
 
-#HudBatteryNum.bflyt
+# HudBatteryNum.bflyt
 
-**File:** `ResidentMenu.szs/blyt/HudBatteryNum.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+**Archivo:** `ResidentMenu.szs/blyt/HudBatteryNum.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
 
 ---
 
-## Layout of `ResidentMenu.szs/blyt/HudBatteryNum.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/HudBatteryNum.bflyt`
 
 <!-- prettier-ignore -->
-!!! Info
-    These aren't all the functions, most are unknown or the component is unimportant.
+!!! Información
+    Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 	
-## Tree
+## Árbol
 
 -	**RootPane [pan 1]**
 	-	**N_Root [pan 1]**
-		-	**P_Per [pic 1]** `Percentage character`
+		-	**P_Per [pic 1]** `Carácter de porcentaje`
 		-	**L_GTNum_00 [prt 1]**
 		-	**L_GTNum_01 [prt 1]**
 		-	**L_GTNum_02 [prt 1]**
