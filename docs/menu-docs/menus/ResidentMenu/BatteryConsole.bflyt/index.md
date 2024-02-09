@@ -1,19 +1,14 @@
 #####  [Back ResidentMenu.szs](../index.md)
 
-#BatteryConsole.bflyt
+# BatteryConsole.bflyt
 
-**File:** `ResidentMenu.szs/blyt/BatteryConsole.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
-
----
-
-## Layout of `ResidentMenu.szs/blyt/BatteryConsole.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/BatteryConsole.bflyt`
 
 <!-- prettier-ignore -->
 !!! Info
-    These aren't all the functions, most are unknown or the component is unimportant.
+    Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 
-## Tree
+## Árbol
 
 -	**RootPane [pan 1]**
 	-	**N_Root [pan 1]** 
@@ -25,10 +20,10 @@
 		-	**N_00 [pan 1]**
 			-	**P_BatBase [pic 1]**
 			-	**N_GaugeNml [pan 1]**
-				-	**P_GaugeNml [pic 1]** `Inner Battery Element; color can be changed`
+				-	**P_GaugeNml [pic 1]** `Elemento interno de la batería; el color puede cambiarse`
 			-	**N_GaugeOther [pan 1]**
 				-	**P_GaugeOther [pic 1]**
-			-	**P_Charge [pic 1]** `Charger Icon Color`
+			-	**P_Charge [pic 1]** `Color del ícono del cargador`
 			-	**P_Ico00 [pic 1]**
-		-	**P_Ico00 [pic 1]** `Outer Battery Color`
+		-	**P_Ico00 [pic 1]** `Color externo de la batería`
 	-	**B_Hit [bnd 1]**
