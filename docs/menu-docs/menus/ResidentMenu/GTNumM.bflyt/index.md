@@ -7,11 +7,9 @@
 
 ---
 
-## Layout of `ResidentMenu.szs/blyt/GTNumM.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/GTNumM.bflyt`
 
-<!-- prettier-ignore -->
-
-## Tree
+## Árbol
 
 -	**RootPane [pan 1]**
-	-	**P_GTNum_00 [pic1]** `can be used to change time number color`
+	-	**P_GTNum_00 [pic1]** `se puede usar para cambiar el color del número de la hora`
