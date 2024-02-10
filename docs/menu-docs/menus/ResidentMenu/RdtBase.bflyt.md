@@ -21,7 +21,7 @@
 		-	**T_Blank [txt 1]**
         -   **N_GameRoot [pan 1]** `panel que contiene todos los elementos que se desplazarán`
 			-	**N_Game [pan 1]**
-				-   **[`N_Icon[00-11] [pan 1]`](RdtBtnIconGame.bflyt.md)** `los 12 iconos de juego. Utilizan el mismo diseño`
+				-   **[`N_Icon[00-11] [pan 1]`](/docs/menu-docs/menus/ResidentMenu/RdtBtnIconGame.bflyt/index.md)** `los 12 iconos de juego. Utilizan el mismo diseño`
 					-	**L_BtnChangeUser [prt 1]** `contiene "`:material-alpha-y-circle:` Cambiar usuario" RdtBtnChangeUser.bflyt`
 				-   **N_Icon_12 [pan 1]** `El 13er icono: panel raíz de todas las aplicaciones`
 					-   **L_BtnFlc [prt 1]** `botón de Todas las aplicaciones` [`RdtBtnFullLauncher.bflyt`](RdtBtnFullLauncher.bflyt/index.md)
