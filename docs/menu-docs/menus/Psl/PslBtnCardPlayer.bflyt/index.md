@@ -12,7 +12,7 @@
 !!! Info
     Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 
-## Tree
+## Árbol
 
 -	**RootPane [pan 1]**
 	-	**N_Root_00 [pan 1]** 
@@ -21,8 +21,8 @@
 		-	**N_BtnCntImg [pan 1]**
 			-	**P_PlayerImage [pic 1]**
 		-	**N_BtnCnt [pan 1]**
-			-	**P_BgName [pic 1]** `background plate of player name`
-			-	**T_PlayerName [txt 1]** `Player Name Text Color`
+			-	**P_BgName [pic 1]** `placa de fondo del nombre del jugador`
+			-	**T_PlayerName [txt 1]** `color del texto del nombre del jugador`
 		-	**N_PlayerNameScroll [pan 1]**
 			-	**N_Size [pan 1]**
 				-	**N_Scissor [pan 1]**
