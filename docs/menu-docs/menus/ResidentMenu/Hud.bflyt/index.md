@@ -30,3 +30,5 @@
 			-	**L_Time [prt 1]**
 
 
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/97d45d63-1307-4577-98c2-4fff32ac42da)
+
