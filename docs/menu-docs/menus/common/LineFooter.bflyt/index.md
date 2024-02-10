@@ -1,17 +1,18 @@
-#####  [Back common.szs](../index.md)
+#####  [Volver a common.szs](../index.md)
 
-#LineFooter.bflyt
+# LineFooter.bflyt
 
-**File:** `common.szs/blyt/LineFooter.bflyt`
+**Archivo:** `common.szs/blyt/LineFooter.bflyt`
 
 ---
 
-## Layout of `common.szs/blyt/LineFooter.bflyt`
+## Diseño de `common.szs/blyt/LineFooter.bflyt`
 
 <!-- prettier-ignore -->
 
-![Selection](selection.jpg)
-## Tree
+![Selección](selection.jpg)
+
+## Árbol
 
 -	**RootPane [pan1]**
-	-	**P_Line [pic 1]** `Line in the footer; Visible: True/False`
+	-	**P_Line [pic 1]** `Línea en el pie de página; Visible: Verdadero/Falso`
