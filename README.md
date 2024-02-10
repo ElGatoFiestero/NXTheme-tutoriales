@@ -3,16 +3,6 @@
 
 ---
 
-<table border="1" cellpadding="1" cellspacing="1" style="width:611.6px">
-	<tbody>
-		<tr>
-			<td style="width:213px">Bienvenidos a esta recopilaci&oacute;n de tutoriales sobre creaci&oacute;n de temas para la Nintendo Switch, traducidos en espa&ntilde;ol.<br />
-			<br />
-			[Aqu&iacute;](/ElGatoFiestero/Layouts) se encuentran los temas que he creado, tanto animados como en otros estilos. Sientanse libres de reusar las plantillas para hacer sus temas o para aprender</td>
-			<td style="width:387px"><img alt="" src="https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/0684b990-d772-4b15-a2c0-bbbb8bd34966" /></td>
-		</tr>
-	</tbody>
-</table>
 
 
 |  Bienvenidos a esta recopilación de tutoriales sobre creación de temas para la Nintendo Switch, traducidos en español. <br/><br/> [Aquí](/ElGatoFiestero/Layouts) se encuentran los temas que he creado, tanto animados como en otros estilos. Sientanse libres de reusar las plantillas para hacer sus temas o para aprender |  ![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/0684b990-d772-4b15-a2c0-bbbb8bd34966) |
