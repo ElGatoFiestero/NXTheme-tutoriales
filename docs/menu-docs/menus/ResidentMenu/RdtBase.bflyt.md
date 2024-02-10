@@ -27,9 +27,9 @@
 					-   **L_BtnFlc [prt 1]** `botón de Todas las aplicaciones` [`RdtBtnFullLauncher.bflyt`](RdtBtnFullLauncher.bflyt/index.md)
         -   **N_System [pan 1]** `contiene todos los applets del sistema de Nintendo`
 			-	**L_BtnLR [prt 1]** `botón de Nintendo Switch Online que no se puede ocultar mediante visibilidad`
-            -   **L_BtnNoti [prt 1]** `el botón de notificaciones RdtBtnNtf.bflyt`
+            -   **L_BtnNoti [prt 1]** `el botón de notificaciones `
             -   **L_BtnShop [prt 1]** `el botón de la tienda en línea RdtBtnShop.bflyt`
-            -   **L_BtnPvr [prt 1]** `el botón del álbum RdtBtnPvr.bflyt`
+            -   **L_BtnPvr [prt 1]** `el botón del álbum [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt/index.md)`
             -   **L_BtnCtrl [prt 1]** `el botón de los controles RdtBtnCtrl.bflyt`
             -   **L_BtnSet [prt 1]** `el botón de configuraciones RdtBtnSet.bflyt`
             -   **L_BtnPow [prt 1]** `el botón de encendido RdtBtnPow`
