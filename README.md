@@ -56,6 +56,8 @@
   - [Edición de diseño para applets no admitidos](/layouts/uns_applets/uns_applets.md)
     
 - Guias Utiles y trucos para personalizar los temas
+
+  - [Traducir o cambiar Textos](/docs/custom-messages.md)
   - [Ocultar linea del footer](/docs/guide/examples/hide-footer-line/index.md)
   - [Ocultar linea del header](/docs/guide/examples/hide-header-lines/index.md)
   - [Empujar o jalar elementos hacia el fondo o hacia el frente](/docs/guide/examples/pull-push-front-back/index.md)
