@@ -9,7 +9,7 @@
 
 ## Diseño de `ResidentMenu.szs/blyt/RdtBase.bflyt `
 
-<!-- prettier-ignore -->
+<!-- prettier-ignore [XXXXXXXX](XXXXX) -->
 
 ## Árbol
 
@@ -29,16 +29,16 @@
 			-	**L_BtnLR [prt 1]** `botón de Nintendo Switch Online que no se puede ocultar mediante visibilidad`
             -   **L_BtnNoti [prt 1]** `el botón de notificaciones `
             -   **L_BtnShop [prt 1]** `el botón de la tienda en línea RdtBtnShop.bflyt`
-            -   **L_BtnPvr [prt 1]** `el botón del álbum ` [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt/index.md)
-            -   **L_BtnCtrl [prt 1]** `el botón de los controles RdtBtnCtrl.bflyt`
-            -   **L_BtnSet [prt 1]** `el botón de configuraciones RdtBtnSet.bflyt`
+            -   **L_BtnPvr [prt 1]** `el botón del álbum RdtBtnPvr.bflyt` [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt/index.md)
+            -   **L_BtnCtrl [prt 1]** `el botón de los controles RdtBtnCtrl.bflyt` [RdtBtnCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnCtrl.bflyt/index.md)
+            -   **L_BtnSet [prt 1]** `el botón de configuraciones RdtBtnSet.bflyt` [RdtBtnSet.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnSet.bflyt/index.md)
             -   **L_BtnPow [prt 1]** `el botón de encendido RdtBtnPow`
         -   **L_ChildLock [prt 1]** `el botón de bloqueo infantil`
         -   **N_Balloon [pan 1]**
         -   **N_MyPage [pan 1]** `panel raíz de iconos de usuario`
             -   **L_BtnAccount_[00-07] [prt1]** `todos los iconos de usuario que utilizan un único diseño`
         -   **L_Hud [prt 1]** `el HUD (reloj, red, batería) Hud.bflyt`
-        -   **L_BalloonCtrl [prt 1]** `el globo que aparece cuando se (des)conecta un controlador RdtBalloonCtrl.bflyt`
+        -   **L_BalloonCtrl [prt 1]** `el globo que aparece cuando se (des)conecta un controlador RdtBalloonCtrl.bflyt`  [RdtBalloonCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloonCtrl.bflyt/index.md)
 
 #####  [Volver a ResidentMenu.szs](index.md)
 
