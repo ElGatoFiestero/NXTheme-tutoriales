@@ -21,3 +21,5 @@
         - **P_Wifi [pic 1]** `Ícono de Wifi`
         - **P_Local [pic 1]** `Ícono de Wifi para juego local`
         - **P_WireLine [pic 1]** `Ícono de LAN`
+
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/9b99d5f8-5620-46f2-8036-f56db6ca2805)
