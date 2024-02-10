@@ -77,7 +77,7 @@
     - [HudTime.bflyt](/docs/menu-docs/menus/ResidentMenu/HudTime.bflyt/index.md)
     - [RdtBalloon.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloon.bflyt/index.md)
     - [RdtBalloonCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBalloonCtrl.bflyt/index.md)
-    - [RdtBase.bflyt.md](/docs/menu-docs/menus/ResidentMenu/RdtBase.bflyt.md)
+    - [RdtBase.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBase.bflyt.md)
     - [RdtBtnCtrl.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnCtrl.bflyt/index.md)
     - [RdtBtnPvr.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnPvr.bflyt/index.md)
     - [RdtBtnSet.bflyt](/docs/menu-docs/menus/ResidentMenu/RdtBtnSet.bflyt/index.md)
@@ -95,10 +95,10 @@
     - [SystemAppletFader.bflyt](/docs/menu-docs/menus/common/SystemAppletFader.bflyt/index.md)
 
   - [Entrance](/docs/menu-docs/menus/Entrance/index.md) 
-    -  [EntMain.bflyt.md](/docs/menu-docs/menus/Entrance/EntMain.bflyt.md)
+    -  [EntMain.bflyt](/docs/menu-docs/menus/Entrance/EntMain.bflyt.md)
 
   - [Flaunch](/docs/menu-docs/menus/Flaunch/index.md) 
-      - [FlcCntMain.bflyt.md](/docs/menu-docs/menus/Flaunch/FlcCntMain.bflyt.md)
+      - [FlcCntMain.bflyt](/docs/menu-docs/menus/Flaunch/FlcCntMain.bflyt.md)
   
   - [Psl](/docs/menu-docs/menus/Psl/index.md) 
     - [PslBtnCardPlayer.bflyt](/docs/menu-docs/menus/Psl/PslBtnCardPlayer.bflyt/index.md)
