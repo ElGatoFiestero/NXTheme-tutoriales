@@ -12,44 +12,38 @@
 	La mayoría de los usuarios lo conocerán como AllApps. Este archivo ahora contiene carpetas/grupos desde HOS 14.0.0.
 
 | Nombre de archivo              | Nombre completo hipotético            | Función                                                                             |
-| ----------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------ |
-| AreaNml.bflyt		      	    | ÁreaNormal				 	           | Define área de desplazamiento/toque/puntero										  |
-| AreaNmlL.bflyt		        | ÁreaNormalGrande			 		   | Área de desplazamiento/toque/puntero más grande									   |
-| AreaNmlLGrp.bflyt	     	    | GrupoÁreaNormalGrande		           | Ventanas de grupo de desplazamiento/toque/puntero									   |
-| AreaNmlNav.bflyt	     	    | NavegaciónÁreaNormal		       	   | Área de navegación de desplazamiento/toque/puntero (lateral de añadir/crear grupo)   |
-| AreaNmlNavMain.bflyt	        | VentanaPrincipalNavegaciónNormal    | Ventana principal de navegación de desplazamiento/toque/puntero (iconos?)			   |
-| BaseBg.bflyt                  | FondoBase                            | Contiene un indicador de carga para cuando la lista aún se está cargando               |
-| BaseChild.bflyt		        | HijoBase (applet?)		           | Contiene información básica de diseño para partes de applet (encabezado/lado/contenido principal) |
-| BgNav_Root.bflyt	   	        | FondoNavegación_Raíz		       	   | Panel de fondo de navegación												 	   |
-| BgNml.bflyt                   | FondoNormal                         | Contiene panel de fondo del menú principal + '[exelixbg](../../../definitions.md#exelixbg)' |
-| BtnIslandIcon.bflyt           | BotónIslaIcono		               | Color de texto/ícono del contenido del botón (L R +)								   |
-| BtnIslandNml.bflyt	        | BotónIslaNormal		           	   | Información estándar del botón color de texto										   |
-| BtnLineNml.bflyt	       	    | LíneaBotónNormal			 	       | Botón "en línea" es decir, ¿lista desplegable?									   |
-| BtnOpt_Root.bflyt	       	    | OpciónBotón_Raíz			         | Información del botón en menú desplegable? Contiene marcado de casilla inválido y válido |
-| BtnExpand.bflyt               | BotónExpandir                       | Menú desplegable [grupos?/ordenar] posiblemente cambiado en 14.0                       |
-| Cursor3.bflyt                 | Cursor3                             | Cursor                                                                              |
-| DBtmFlcSortAndFilter.bflyt    | OrdenarYFiltrarFondoCompletoLauncher| Contiene la información base del menú "ordenar y filtrar" cuando la lista todavía se está cargando |
-| DBtmHeaderNml.bflyt	        | EncabezadoInferiorNormal		     | Contiene información de encabezado icono/texto y línea superior						   |
-| FlcBalloon.bflyt              | GloboCompletoLauncher               | Globo de nombre de la aplicación                                                      |
-| FlcBtnGrp.bflyt			    | GrupoBotonesCompletoLanzador		 | Icono de grupo con iconos agrupados incluye el botón de ordenar / texto				   |
-| FlcBtnGrpBlock.bflyt		    | BloqueGrupoBotonesCompletoLanzador | Información de bloque de iconos de grupo desplazamiento/espaciado de las 4 filas de iconos de grupo |
-| FlcBtnIconGame.bflyt          | IconoJuegoCompletoLanzador         | El diseño del icono del juego. Utilizado para todos los iconos                          |
-| FlcBtnIconGameBlock.bflyt     | BloqueIconoJuegoCompletoLanzador   | Información del icono del juego en filas/espaciado                                    |
-| FlcBtnIconGameEdit.bflyt	    | EdiciónIconoJuegoCompletoLanzador	 | Diseño del icono del juego en la pantalla de edición (ordenar/mover/comprobar)		   |
-| FlcBtnIconGameEditBlock.bflyt | BloqueEdiciónIconoJuegoCompletoLanzador | Información de diseño del icono del juego en la pantalla de edición (espaciado)	   |
-| FlcBtnLineAddGrp.bflyt	 	| AñadirGrupoLíneaBotónCompletoLanzador | Botón de crear grupo														  	   |
-| FlcCntMain.bflyt		 		| ContenidoPrincipalCompletoLanzador | Ventana principal de AllApps												  	   |
-| FlcDGrpDelete.bflyt		 	| EliminarGrupoDiálogoCompletoLanzador | Información de diseño de "Eliminar Grupo" applet									   |
-| FlcDGrpOption.bflyt          	| OpciónGrupoDiálogoCompletoLanzador | Información de lista desplegable "Editar Grupo"									   |
-| FlcGrpList.bflyt		 		| ListaGruposCompletoLanzador	     | Ventana principal de grupos / Ordenar grupos (ambos diseños están en esta ventana)	   |
-| FlcGrpMain.bflyt		 		| PrincipalGrupoCompletoLanzador	 | Ventana de contenido de carpeta de grupo (iconos en carpeta de grupo)				   |
-| FlcGrpSoftArrangement.bflyt   | DisposiciónSoftwareGrupoCompletoLanzador | Ordenar ventana de contenido de software (Ordenar juegos en una carpeta de grupo)	   |
-| FlcGrpSoftEdit.bflyt		    | EdiciónSoftwareGrupoCompletoLanzador    | Agregar/eliminar ventana de contenido de software (Agregar y quitar/buscar juegos ventana) |
-| LineHeader_Root.bflyt         | RaízLíneaEncabezado                 | La línea horizontal que se muestra en el encabezado (tamaño y posición relativa)        |
-| NtfBtnSearchChannel.bflyt     | BotónBúsquedaCanalNotificación      | Cuadro/botón de "Buscar por palabra clave" e icono de lupa							   |
-| TextH1.bflyt                  | TextoEncabezado1                    | El componente de encabezado principal completo                                         |
-| TextH2.bflyt			 		| TextoEncabezado2			           | Texto de encabezado dentro de los grupos											   |
-| Waitingicon.bflyt		 		| IconoEspera				           | Icono de carga																	       |
+| ----------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------- |
+| AreaNml.bflyt                 | AreaNormal                          | Define el área de desplazamiento/toque/cursor                                       |
+| AreaNmlL.bflyt                | AreaNormalLarge                     | Área de desplazamiento/toque/cursor más grande                                      |
+| AreaNmlLGrp.bflyt             | AreaNormalLargeGroup                | Ventanas de grupo de área de desplazamiento/toque/cursor                             |
+| AreaNmlNav.bflyt              | AreaNormalNavigation                | Área de navegación de desplazamiento/toque/cursor (lado de agregar/crear grupo)      |
+| AreaNmlNavMain.bflyt          | AreaNormalNavigationMain            | Ventana principal de navegación de desplazamiento/toque/cursor (¿iconos?)            |
+| BaseBg.bflyt                  | BaseBackground                      | Contiene un indicador de carga para cuando la lista todavía está cargando            |
+| BaseChild.bflyt               | BaseChild (applet?)                 | Contiene información básica de diseño para partes del applet (encabezado/lateral/contenido principal) |
+| BgNav_Root.bflyt              | BackgroundNavigation_Root           | Panel de fondo de navegación                                                        |
+| BgNml.bflyt                   | BackgroundNormal                    | Contiene el panel de fondo del menú principal + '[exelixbg](../../../definitions.md#exelixbg)' |
+| BtnIslandIcon.bflyt           | ButtonIslandIcon                    | Color de texto/ícono del contenido del botón (L R +)                                 |
+| BtnIslandNml.bflyt            | ButtonIslandNormal                  | Información estándar del botón: color de texto                                       |
+| BtnLineNml.bflyt              | ButtonLineNormal                    | Botón "en línea", ¿es una lista desplegable?                                         |
+| BtnOpt_Root.bflyt             | ButtonOption_Root                   | Información del botón en el menú desplegable: incluye marca de verificación inválida y válida |
+| BtnExpand.bflyt               | ButtonExpand                        | Menú desplegable [grupos/clasificación] posiblemente cambiado en 14.0                |
+| Cursor3.bflyt                 | Cursor3                             | Cursor                                                                               |
+| DBtmFlcSortAndFilter.bflyt    | BottomFullLauncherSortAndFilter     | Contiene la base de información del menú "ordenar y filtrar"                          |
+| DBtmHeaderNml.bflyt           | BottomHeaderNormal                  | Contiene información del encabezado: icono/texto y línea superior                     |
+| FlcBalloon.bflyt              | FullLauncherBalloon                 | Globo de nombre de la aplicación                                                      |
+| FlcBtnGrp.bflyt               | FullLaunchButtonGroup               | Icono de grupo con iconos agrupados: incluye la opción de clasificación/texto          |
+| FlcBtnGrpBlock.bflyt          | FullLaunchButtonGroupBlock          | Información del bloque de iconos de grupo en filas/espaciado                           |
+| FlcBtnIconGame.bflyt          | FullLauncherButtonIconGame          | Diseño del ícono del juego. Se usa para todos los íconos                                |
+| FlcBtnIconGameBlock.bflyt     | FullLauncherButtonIconGameBlock     | Información del ícono del juego en filas/espaciado                                      |
+| FlcBtnIconGameEdit.bflyt      | FullLaunchButtonIconGameEdit        | Pantalla de edición del ícono del juego (ordenar/mover/comprobar)                       |
+| FlcBtnIconGameEditBlock.bflyt | FullLaunchButtonIconGameEditBlock   | Información del diseño de edición del ícono del juego                                       |
+| FlcBtnLineAddGrp.bflyt        | FullLaunchButtonLineAddGroup        | Botón de "crear grupo"                                                                  |
+| FlcCntMain.bflyt              | FullLauncherContentMain             | Ventana principal de todas las aplicaciones                                                |
+| FlcDGrpDelete.bflyt           | FullLaunchDialogGroupDelete         | Información del diseño del applet "eliminar grupo"                                       |
+| FlcDGrpOption.bflyt           | FullLaunchDialogGroupOption         | Información de la lista desplegable "editar grupo"                                       |
+| FlcGrpList.bflyt              | FullLaunchGroupList                 | Ventana principal de grupos/ordenar grupos (ambos diseños están en esta ventana)            |
+| FlcGrpMain.bflyt              | FullLaunchGroupMain                 | Ventana de contenido de carpeta de grupo
+		 		| IconoEspera				           | Icono de carga																	       |
 
 
 <details>
