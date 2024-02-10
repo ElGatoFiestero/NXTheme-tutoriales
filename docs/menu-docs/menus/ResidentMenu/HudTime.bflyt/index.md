@@ -30,3 +30,6 @@
         - **P_A [pic 1]**
         - **P_M [pic 1]**
         - **P_P [pic 1]**
+
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/152af100-8187-4606-8583-f4eec65878f0)
+
