@@ -1,23 +1,23 @@
-#####  [Back ResidentMenu.szs](../index.md)
+##### [Regresar a ResidentMenu.szs](../index.md)
 
-#HudSignal.bflyt
+# HudSignal.bflyt
 
-**File:** `ResidentMenu.szs/blyt/HudSignal.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+**Archivo:** `ResidentMenu.szs/blyt/HudSignal.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
 
 ---
 
-## Layout of `ResidentMenu.szs/blyt/HudSignal.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/HudSignal.bflyt`
 
 <!-- prettier-ignore -->
-!!! Info
-    These aren't all the functions, most are unknown or the component is unimportant.
+!!! Información
+    Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 	
-## Tree
+## Árbol
 
--	**RootPane [pan 1]**
-	-	**P_Plane [pic 1]** `Flightmode Icon (plane)`
-	-	**N_Signal [pan 1]**
-		-	**P_Wifi [pic 1]** `Wifi icon`
-		-	**P_Local [pic 1]** `Local Play Wifi icon`
-		-	**P_WireLine [pic 1]** `LAN Icon`
+- **RootPane [pan 1]**
+    - **P_Plane [pic 1]** `Ícono de modo de vuelo (avión)`
+    - **N_Signal [pan 1]**
+        - **P_Wifi [pic 1]** `Ícono de Wifi`
+        - **P_Local [pic 1]** `Ícono de Wifi para juego local`
+        - **P_WireLine [pic 1]** `Ícono de LAN`
