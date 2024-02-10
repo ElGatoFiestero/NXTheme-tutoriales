@@ -14,7 +14,7 @@
 ## Árbol
 
 -	**RootPane [pan 1]**
-    -   **L_BgNml [prt 1]** `contiene el fondo original claro/oscuro, pero también el panel 'exelixbg' después de ser parcheado con un fondo personalizado`
+    -   **L_BgNml [prt 1]** `contiene el fondo original claro/oscuro, pero también el panel 'exelixbg' después de ser parcheado con un fondo personalizado` [BgNml](/docs/menu-docs/menus/common/BgNml.bflyt/index.md)
     -   **N_Root [pan 1]**
 		-	**N_ScrollArea [pan 1]** `área de desplazamiento de iconos de juego`
 		-	**N_ScrollWindow [pan 1]** `ventana de desplazamiento de iconos de juego "Relacionada con el toque"`
