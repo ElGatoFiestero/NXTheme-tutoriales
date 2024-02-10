@@ -21,3 +21,6 @@
 		-	**L_GTNum_00 [prt 1]**
 		-	**L_GTNum_01 [prt 1]**
 		-	**L_GTNum_02 [prt 1]**
+
+
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/1a4143db-ad11-4fbe-a74e-bada85183cb6)
