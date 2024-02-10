@@ -10,10 +10,10 @@
 
 | Nombre de archivo                                         | Nombre completo hipotético       | Función                                                                       	|
 | --------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------- |
-| [PslBtnCardPlayer.bflyt](PslBtnCardPlayer.bflyt/index.md) | BotónSeleccionarJugadorTarjeta | Ventana de selección de jugador										    		|
-| BgNav_Root.bflyt											| Fondo Navegación Raíz			  |																				    |
+| [PslBtnCardPlayer.bflyt](PslBtnCardPlayer.bflyt/index.md) | PlayerSelectButtonCardPlayer | Ventana de selección de jugador										    		|
+| BgNav_Root.bflyt											| Background Navigation Root			  |																				    |
 | BgNavNoHeader.bflyt										|								  |																				    |
-| BtnCardPlayerData_Root.bflyt								| Botón Datos Jugador Raíz		  | Posiblemente la versión horizontal 'Arcade Archives' de Psl					    |
+| BtnCardPlayerData_Root.bflyt								| Button Card Player Data Root		  | Posiblemente la versión horizontal 'Arcade Archives' de Psl					    |
 | BtnIslandNml.bflyt										|								  |																				    |
 | BtnLineIconOnly.bflyt										|								  |																				    |
 | BtnLineNml.bflyt											|								  |																				    |
