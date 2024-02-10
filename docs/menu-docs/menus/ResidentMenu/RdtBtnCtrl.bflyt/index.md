@@ -1,25 +1,25 @@
-#####  [Back ResidentMenu.szs](../index.md)
+##### [Regresar a ResidentMenu.szs](../index.md)
 
-#RdtBtnCtrl.bflyt
+# RdtBtnCtrl.bflyt
 
-**File:** `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+**Archivo:** `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
 
 ---
 
-## Layout of `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`
 
 <!-- prettier-ignore -->
-!!! Info
-    These aren't all the functions, most are unknown or the component is unimportant.
+!!! Información
+    Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 	
-## Tree
+## Árbol
 
 -   **N_Root [pan 1]**
 	-	**N_DecideKey [pan 1]**
 		-	**N_DecideTouch [pan1]**
 			-	**N_Pict [pan 1]**
-				-	**P_Form [pic 1]** `Controller outline or replaced icon`
+				-	**P_Form [pic 1]** `Contorno del controlador o icono reemplazado`
 				-	**P_Stick [pic 1]**
 				-	**P_Y [pic 1]**
 				-	**P_X [pic 1]**
@@ -38,12 +38,10 @@
 ---
 
 <!-- prettier-ignore -->
-!!! Info
-    Material Editing colors can be tricky, edit background colors (RGBA) `255;255;255;AAA` (Alpha 0-255 for opacity)
+!!! Información
+    La edición de colores del material puede ser complicada, edite los colores de fondo (RGBA) `255;255;255;AAA` (Alfa 0-255 para opacidad)
 
-
-
--	**Materials**
+-	**Materiales**
 	-	**0: P_Form**
 	-	**1: P_Effect**
 	-	**2: P_BtnTouch**
@@ -53,11 +51,11 @@
 	-	**6: P_X**
 	-	**7: P_Y**
 	-	**8: P_Stick**
-	-	**9: P_PictBase** `( Icon Background; Change BackgroundColor not `_`ForegroundColor`_`)`
+	-	**9: P_PictBase** `(Fondo del icono; Cambiar el color de fondo no `_`ForegroundColor`_`)`
 
 ---
-	
-#####  [Back ResidentMenu.szs](../index.md)
 
-**File:** `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+##### [Regresar a ResidentMenu.szs](../index.md)
+
+**Archivo:** `ResidentMenu.szs/blyt/RdtBtnCtrl.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
