@@ -1,12 +1,12 @@
-#####  [Back Psl.szs](../index.md)
+#####  [Volver a Psl.szs](../index.md)
 
-#PslBtnCardPlayer.bflyt
+# PslBtnCardPlayer.bflyt
 
-**File:** `Psl.szs/blyt/PslBtnCardPlayer.bflyt`
+**Archivo:** `Psl.szs/blyt/PslBtnCardPlayer.bflyt`
 
 ---
 
-## Layout of `Psl.szs/blyt/PslBtnCardPlayer.bflyt`
+## Diseño de `Psl.szs/blyt/PslBtnCardPlayer.bflyt`
 
 <!-- prettier-ignore -->
 !!! Info
