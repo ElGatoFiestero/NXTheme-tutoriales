@@ -28,4 +28,5 @@
 		-	**P_Ico00 [pic 1]** `Color externo de la batería`
 	-	**B_Hit [bnd 1]**
 
-![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/a7f06652-7fb5-4e25-9ad7-5ae3fa60018b)
+
+![image](https://github.com/ElGatoFiestero/TutorialTemasNintendoSwitch/assets/159089859/fd2f0b36-4fe5-4f73-99b9-b6500b5aa2fe)
