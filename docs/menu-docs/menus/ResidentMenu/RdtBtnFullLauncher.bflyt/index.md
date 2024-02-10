@@ -1,34 +1,34 @@
-#####  [Back ResidentMenu.szs](../index.md)
+##### [Regresar a ResidentMenu.szs](../index.md)
 
-#RdtBtnFullLauncher.bflyt
+# RdtBtnFullLauncher.bflyt
 
-**File:** `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+**Archivo:** `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
 
 ---
 
-## Layout of `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`
+## Diseño de `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`
 
 <!-- prettier-ignore -->
-!!! Info
-    These aren't all the functions, most are unknown or the component is unimportant.
+!!! Información
+    Estas no son todas las funciones, la mayoría son desconocidas o el componente no es importante.
 	
-## Tree
+## Árbol
 
 -   **RootPane [pan 1]**
 	-	**N_Root [pan 1]**
 		-	**N_DecideKey [pan 1]**
 			-	**N_DecideTouch [pan1]**
-				-	**P_PicBase [pic 1]** `full launcher background color`
+				-	**P_PicBase [pic 1]** `color de fondo completa del lanzador`
 				-	**N_Pict [pan1]**
-					-	**P_Pict_00 [pic1]** `four square icons - Top Left`
-						-	**P_PictBase_00 [pic 1]
-					-	**P_Pict_01 [pic1]** `four square icons - Top Right`
-						-	**P_PictBase_01 [pic 1]
-					-	**P_Pict_02 [pic1]** `four square icons - Bottom Left`
-						-	**P_PictBase_02 [pic 1]
-					-	**P_Pict_03 [pic1]** `four Square icons - Bottom Right`
-						-	**P_PictBase_03 [pic 1]
+					-	**P_Pict_00 [pic1]** `cuatro íconos cuadrados - Arriba a la izquierda`
+						-	**P_PictBase_00 [pic 1]**
+					-	**P_Pict_01 [pic1]** `cuatro íconos cuadrados - Arriba a la derecha`
+						-	**P_PictBase_01 [pic 1]**
+					-	**P_Pict_02 [pic1]** `cuatro íconos cuadrados - Abajo a la izquierda`
+						-	**P_PictBase_02 [pic 1]**
+					-	**P_Pict_03 [pic1]** `cuatro íconos cuadrados - Abajo a la derecha`
+						-	**P_PictBase_03 [pic 1]**
 				-	**N_ScaleDecide [pan 1]**
 					-	**P_BtnDecideKey [pic 1]**
 					-	**P_BtnTouch [pic 1]**
@@ -41,12 +41,10 @@
 ---
 
 <!-- prettier-ignore -->
-!!! Info
-    Material Editing colors can be tricky, edit background colors (RGBA) `255;255;255;AAA` (Alpha 0-255 for opacity)
+!!! Información
+    La edición de colores del material puede ser complicada, edite los colores de fondo (RGBA) `255;255;255;AAA` (Alfa 0-255 para opacidad)
 
-
-
--	**Materials**
+-	**Materiales**
 	-	**0: P_BtnDecideKey**
 	-	**1: P_Btn_Touch**
 	-	**2: T_Main**
@@ -59,10 +57,10 @@
 	-	**9: P_PictBase_01**
 	-	**10: P_PictBase_02**
 	-	**11: P_PictBase_03**
-	-	**12: P_PictBase** `( Background launcher; Change BackgroundColor not `_`ForegroundColor`_`)`
-
+	-	**12: P_PictBase** `(Fondo del lanzador; Cambiar el color de fondo no `_`ForegroundColor`_`)`
 
 ---
-#####  [Back ResidentMenu.szs](../index.md)
-**File:** `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`<br>
-**Main `bflyt` file:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
+
+##### [Regresar a ResidentMenu.szs](../index.md)
+**Archivo:** `ResidentMenu.szs/blyt/RdtBtnFullLauncher.bflyt`<br>
+**Archivo principal `bflyt`:** [`RdtBase.bflyt`](../RdtBase.bflyt.md)
