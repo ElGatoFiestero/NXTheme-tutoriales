@@ -1,23 +1,22 @@
-#####  [Back Enterance.szs](index.md)
+##### [Volver a Enterance.szs](index.md)
 
-#EntMain.bflyt (Main bflyt)
+# EntMain.bflyt (bflyt principal)
 
-**ARchivo:** `Enterance.szs/blyt/EntMain.bflyt`<br>
-**Este es el archivo `bflyt` principal**
+**Archivo:** `Enterance.szs/blyt/EntMain.bflyt`<br>
+**Este es el archivo bflyt principal**
 
 ---
 
-## Layout de `Enterance.szs/blyt/EntMain.bflyt `
+## Diseño de `Enterance.szs/blyt/EntMain.bflyt`
 
 <!-- prettier-ignore -->
-
-## ÁRbol
+## Árbol
 
 -	**RootPane [pan1]**
-	-	**P_BgL [pic 1]** `left background`
-	-	**P_BgR [pic 1]** `right background`
-	-	**N_CntR [pan 1]** `Right Content non promo stuff panel root`
-		-	**N_CntRMain [pan 1]** `Main Content panel for Right Side`
+	-	**P_BgL [pic 1]** `fondo izquierdo`
+	-	**P_BgR [pic 1]** `fondo derecho`
+	-	**N_CntR [pan 1]** `Panel de contenido derecho no promocional`
+		-	**N_CntRMain [pan 1]** `Panel de contenido principal para el lado derecho`
 			-	**N_AlarmCtrlRGameSysApp [pan 1]**
 				-	**N_Game [pan 1]**
 					-	**L_BtnGame [prt 1]** `EntBtnResumeGame.bflyt`
@@ -35,9 +34,9 @@
 					-	**L_ChildLock [prt 1]**
 				-	**N_MarginChildLockHud [pan 1]**
 				-	**L_Hud [prt 1]**
-	-	**P_LocBgRMask [pic 1]** `BG Mask right`
-	-	**P_Lock_BgR [pic 1]** `lock background right`
-	-	**N_CntL [pan 1]** `Left Content promo stuff`
+	-	**P_LocBgRMask [pic 1]** `máscara de fondo derecha`
+	-	**P_Lock_BgR [pic 1]** `fondo de bloqueo derecho`
+	-	**N_CntL [pan 1]** `Contenido izquierdo de promoción`
 		-	**N_News [pan 1]**
 			-	**N_BtnNewsNormal [pan 1]**
 				-	**N_BtnNewsPriority [pan 1]**
@@ -95,8 +94,8 @@
 			-	**L_AlarmBtnPagerR [prt 1]**
 			-	**L_AlarmBtnPagerL [prt 1]**
 			
-#####  [Back Enterance.szs](index.md)
+##### [Volver a Enterance.szs](index.md)
 
-#EntMain.bflyt (Main bflyt)
+# EntMain.bflyt (bflyt principal)
 
-**File:** `Enterance.szs/blyt/EntMain.bflyt`<br>
+**Archivo:** `Enterance.szs/blyt/EntMain.bflyt`<br>
