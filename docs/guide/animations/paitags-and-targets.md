@@ -115,6 +115,7 @@ Relacionado con transformaciones básicas enumeradas a continuación.
 | `31`              | Tev Konstant Color 2 Blue  | int   | 0-255  |
 | `32`              | Tev Konstant Color 2 Alpha | int   | 0-255  |
 
+
 ### <a href="#FLVC"></a>FLVC (Vertex Color)
 
 Relacionado con las transformaciones de colores de vértices listadas abajo.
@@ -137,6 +138,9 @@ Relacionado con las transformaciones de colores de vértices listadas abajo.
 | `13`              | Verde Inferior Derecho   | int  | 0-255  |
 | `14`              | Azul Inferior Derecho    | int  | 0-255  |
 | `15`              | Alfa Inferior Derecho    | int  | 0-255  |
+| `15`              | Alfa Inferior Derecho    | int  | 0-255  |
+| `16`              | Panel Alfa   | int  | 0-255  |
+
 
 ### <a href="#FLTP"></a>FLTP (Patrón de Textura)
 
